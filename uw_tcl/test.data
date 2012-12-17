@@ -1,4 +1,0 @@
-SINK(0) : num_send = 0, num_recv = 0, cum_delay = 0.000000
-SINK(2) : num_send = 99, num_recv = 0, cum_delay = 0.000000
-SINK(3) : num_send = 99, num_recv = 0, cum_delay = 0.000000
-God : consumped_energy = 2.303452
