@@ -1,0 +1,84 @@
+New simulation....
+nodes  = 6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 76.944330
+New simulation....
+nodes  = 6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 76.424320
+New simulation....
+nodes  = 6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 76.363142
+New simulation....
+nodes  = 6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 77.005507
+New simulation....
+nodes  = 6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 50, cum_delay = 66.834308
+God : consumped_energy = 85.123520
+New simulation....
+nodes  = 6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 50, cum_delay = 66.834308
+God : consumped_energy = 85.123520
+New simulation....
+nodes  = 6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 50, cum_delay = 66.834308
+God : consumped_energy = 85.123520
+New simulation....
+nodes  = 6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 50, cum_delay = 66.834308
+God : consumped_energy = 85.123520
+New simulation....
+nodes  = 6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 50, cum_delay = 66.834308
+God : consumped_energy = 85.123520
+New simulation....
+nodes  = 6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 50, cum_delay = 66.834308
+God : consumped_energy = 85.123520
+New simulation....
+nodes  = 6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 50, cum_delay = 66.834308
+God : consumped_energy = 85.123520
+New simulation....
+nodes  = 6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 50, cum_delay = 66.834308
+God : consumped_energy = 85.123520
+New simulation....
+nodes  = 6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 50, cum_delay = 65.754308
+God : consumped_energy = 77.264000
+New simulation....
+nodes  = 6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 50, cum_delay = 65.754308
+God : consumped_energy = 77.264000
