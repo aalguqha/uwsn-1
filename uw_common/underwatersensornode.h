@@ -1,8 +1,11 @@
-
+#include <stdio.h>
+#undef max
+//#undef min
+#include <set>
+using namespace std;
 
 #ifndef __ns_underwatersensornode_h__
 #define __ns_underwatersensornode_h__
-
 #include "object.h"
 #include "trace.h"
 #include "lib/bsd-list.h"
@@ -76,6 +79,28 @@ public:
 	void handle(Event*);
 private:
 	UnderwaterSensorNode *node;
+};
+
+struct neighbor_node_elem{
+	int node_id;
+	double _X;
+	double _Y;
+	double _Z;
+	neighbor_node_elem(int id,double x,double y,double z){
+		node_id = id;
+		_X = x;
+		_Y = y;
+		_Z = z;
+	}
+	friend bool operator<(const neighbor_node_elem&  e1, const neighbor_node_elem& e2);
+
+};
+
+
+class NeighborNodes{
+public:
+	set<neighbor_node_elem> neighbor_node_set;
+	void insert(neighbor_node_elem);
 };
 
 
@@ -154,7 +179,9 @@ public:
 	int failure_status_;// 1 if node fails, 0 otherwise
 	int setHopStatus; // used by test-rmac.tcl. add by peng xie
 	int next_hop;// used by test-rmac.tcl. add by peng xie
-
+	NeighborNodes neighbor_nodes;
+	
+	
 	enum  TransmissionStatus trans_status;
 	enum  TransmissionStatus pre_trans_status; //the previous status
 	double status_change_time_;  //the time when changing pre_trans_status to trans_status

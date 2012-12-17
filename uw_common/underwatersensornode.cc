@@ -1,5 +1,3 @@
-#include <math.h>
-#include <stdlib.h>
 #include "connector.h"
 #include "delay.h"
 #include "packet.h"
@@ -62,7 +60,17 @@ UnderwaterPositionHandler::handle(Event*)
 		node->position_update_interval_);
 }
 
+/*=======================================================================
+NeighborNodes
+=========================================================================*/
+bool operator<(const neighbor_node_elem&  e1, const neighbor_node_elem& e2)
+{
+	return (e1.node_id<e2.node_id);
+}
 
+void NeighborNodes::insert(neighbor_node_elem em){
+	neighbor_node_set.insert(em);
+}
 
 /* ======================================================================
 Underwater Sensor Node 
@@ -175,7 +183,7 @@ UnderwaterSensorNode::command(int argc, const char*const* argv)
 	     	//bind the mobility models
 			bindMobilePattern(argv[2]);
 			return TCL_OK;
-	    }else if(strcmp(argv[1], "setPositionUpdateInterval") == 0){
+		}else if(strcmp(argv[1], "setPositionUpdateInterval") == 0){
 			position_update_interval_=atof(argv[2]);
 			return TCL_OK;
 		} else if(strcmp(argv[1], "set-failure_status") == 0){
@@ -194,6 +202,9 @@ UnderwaterSensorNode::command(int argc, const char*const* argv)
 		} else  if (strcmp(argv[1], "set_next_hop") == 0) {
 			setHopStatus=1;
 			next_hop=atoi(argv[2]);
+			return TCL_OK;
+		}else if(strcmp(argv[1], "set-neighbors") == 0){
+			printf("%s\n",argv[2]);
 			return TCL_OK;
 		}
 		else if(strcmp(argv[1],"topography")==0){

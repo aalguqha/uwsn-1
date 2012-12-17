@@ -146,7 +146,7 @@ void UWALOHA::TxProcess(Packet* pkt)
 	  t = NOW;
 	UWALOHAh->packet_type = hdr_UWALOHA::DATA;
 	UWALOHAh->SA = index_;
-	
+	printf("IP_BROADCAST:%d\n",IP_BROADCAST);
 	if( cmh->next_hop() == (nsaddr_t)IP_BROADCAST ) {
 		UWALOHAh->DA = MAC_BROADCAST;
 	}

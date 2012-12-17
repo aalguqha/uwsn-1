@@ -1,9 +1,9 @@
 set opt(chan)		Channel/UnderwaterChannel
 set opt(prop)		Propagation/UnderwaterPropagation
 set opt(netif)		Phy/UnderwaterPhy
-set opt(mac)		Mac/UnderwaterMac/BroadcastMac
+#set opt(mac)		Mac/UnderwaterMac/BroadcastMac
 #set opt(mac)		Mac/UnderwaterMac/SFAMA
-#set opt(mac)		Mac/UnderwaterMac/UWALOHA
+set opt(mac)		Mac/UnderwaterMac/UWALOHA
 set opt(ifq)		Queue/DropTail/PriQueue
 set opt(ll)		LL
 set opt(energy)         EnergyModel
@@ -144,10 +144,11 @@ puts "Width=$opt(width)"
 set node_(0) [ $ns_  node 0]
 $node_(0) set sinkStatus_ 1
 $god_ new_node $node_(0)
-$node_(0) set X_  450
+$node_(0) set X_  440
 $node_(0) set Y_  0
 $node_(0) set Z_  0
 $node_(0) set passive 1
+$node_(0) set-neighbors "1,390,0,0"
 
 set rt [$node_(0) set ragent_]
 $rt set control_packet_size  $opt(routing_control_packet_size)
@@ -167,10 +168,12 @@ $a_(0) cmd set-packetsize $opt(packet_size) ;# # of bytes
 set node_(1) [ $ns_  node 1]
 $node_(1) set sinkStatus_ 1
 $god_ new_node $node_(1)
-$node_(1) set X_  400
+$node_(1) set X_  390
 $node_(1) set Y_  0
 $node_(1) set Z_  0
 $node_(1) set passive 1
+$node_(1) set-neighbors "0,440,0,0|2,360,0,15|3,360,0,-15"
+
 
 set rt [$node_(1) set ragent_]
 $rt set control_packet_size  $opt(routing_control_packet_size)
@@ -198,8 +201,10 @@ $node_(2) set position_update_interval_ $opt(position_update_interval)
 $god_ new_node $node_(2)
 $node_(2) set X_  360
 $node_(2) set Y_  0
-$node_(2) set Z_  0
+$node_(2) set Z_  15
 $node_(2) set passive 1
+$node_(2) set-neighbors "1,390,0,0|3,360,0,-15|4,330,0,0"
+
 
 set rt [$node_(2) set ragent_]
 $rt set control_packet_size  $opt(routing_control_packet_size)
@@ -225,10 +230,11 @@ $node_(3) set min_speed $opt(minspeed)
 $node_(3) set position_update_interval_ $opt(position_update_interval)
 
 $god_ new_node $node_(3)
-$node_(3) set X_  320
+$node_(3) set X_  360
 $node_(3) set Y_  0
-$node_(3) set Z_  0
+$node_(3) set Z_  -15
 $node_(3) set passive 1
+$node_(3) set-neighbors "1,390,0,0|2,360,0,15|4,330,0,0"
 
 set rt [$node_(3) set ragent_]
 $rt set control_packet_size  $opt(routing_control_packet_size)
@@ -255,10 +261,11 @@ $node_(4) set min_speed $opt(minspeed)
 $node_(4) set position_update_interval_ $opt(position_update_interval)
 
 $god_ new_node $node_(4)
-$node_(4) set X_  280
+$node_(4) set X_  330
 $node_(4) set Y_  0
 $node_(4) set Z_  0
 $node_(4) set passive 1
+$node_(4) set-neighbors "2,360,0,15|3,360,0,-15|5,290,0,0"
 
 set rt [$node_(4) set ragent_]
 $rt set control_packet_size  $opt(routing_control_packet_size)
@@ -281,7 +288,7 @@ $god_ new_node $node_($total_number)
 
 $node_($total_number) set  sinkStatus_ 1
 
-$node_($total_number) set X_  250
+$node_($total_number) set X_  290
 $node_($total_number) set Y_  0
 $node_($total_number) set Z_  0
 $node_($total_number) set-cx  200
