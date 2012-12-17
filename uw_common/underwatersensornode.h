@@ -83,10 +83,10 @@ private:
 
 struct neighbor_node_elem{
 	int node_id;
-	double _X;
-	double _Y;
-	double _Z;
-	neighbor_node_elem(int id,double x,double y,double z){
+	float _X;
+	float _Y;
+	float _Z;
+	neighbor_node_elem(int id,float x,float y,float z){
 		node_id = id;
 		_X = x;
 		_Y = y;
@@ -103,6 +103,11 @@ public:
 	void insert(neighbor_node_elem);
 };
 
+class CommTools{
+public:
+	list<string>& spilit(const string&, char,list<string>&);
+	list<string> spilit(const string&,char);
+};
 
 class UnderwaterSensorNode : public MobileNode 
 {
@@ -111,7 +116,6 @@ class UnderwaterSensorNode : public MobileNode
 	friend class UW_Kinematic;		
 	friend class UW_RWP;
 public:
-
 	UnderwaterSensorNode();
 	~UnderwaterSensorNode();
 	virtual int command(int argc, const char*const* argv);
@@ -134,31 +138,7 @@ public:
 	inline void SetTransmissionStatus(enum TransmissionStatus status) {
 		trans_status = status;
 	}
-	
-	//set status considering state transition
-	/*
-	inline double SetTransmissionStatus(enum TransmissionStatus status, UnderwaterPhy* phy){
-		//compare the pre_trans, current_status, and i
-		//then decide the transition time
-		double transit_time = 0.0;
-		if( trans_status == IDLE ) {
-			if( NOW-status_change_time() >= phy->getTransitTime(trans_status, status)  ) {
-				transit_time = phy->getTransitTime(trans_status, status);
-			}
-			else {
-			
-			}
-		}
-		
-		if( status != trans_status ) {
-			pre_trans_status = trans_status;
-			status_change_time_ = NOW;
-			trans_status = status;
-		}
-		trans_status = status;
-	}
-	*/
-	
+
 	inline void SetCarrierSense(bool f){
 		carrier_sense=f;
 		carrier_id=f;
@@ -179,8 +159,10 @@ public:
 	int failure_status_;// 1 if node fails, 0 otherwise
 	int setHopStatus; // used by test-rmac.tcl. add by peng xie
 	int next_hop;// used by test-rmac.tcl. add by peng xie
-	NeighborNodes neighbor_nodes;
 	
+	//added by shaoyang
+	NeighborNodes neighbor_nodes;
+	CommTools* tools;
 	
 	enum  TransmissionStatus trans_status;
 	enum  TransmissionStatus pre_trans_status; //the previous status

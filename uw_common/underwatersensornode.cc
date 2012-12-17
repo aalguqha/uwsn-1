@@ -1,3 +1,9 @@
+#include<iostream>
+#include<sstream>
+#include<string>
+#include<list>
+using namespace std;
+
 #include "connector.h"
 #include "delay.h"
 #include "packet.h"
@@ -60,17 +66,6 @@ UnderwaterPositionHandler::handle(Event*)
 		node->position_update_interval_);
 }
 
-/*=======================================================================
-NeighborNodes
-=========================================================================*/
-bool operator<(const neighbor_node_elem&  e1, const neighbor_node_elem& e2)
-{
-	return (e1.node_id<e2.node_id);
-}
-
-void NeighborNodes::insert(neighbor_node_elem em){
-	neighbor_node_set.insert(em);
-}
 
 /* ======================================================================
 Underwater Sensor Node 
@@ -91,7 +86,7 @@ MobileNode(),uw_pos_handle_(this)
 	position_update_interval_ = 1.0;
 	max_thought_time_ = 0.0;  //by default, node does not stop after arrive at the new way point
 	UWMP_ = NULL;
-
+	tools = new CommTools;
 	bind("sinkStatus_", &sinkStatus_);
 	bind("position_update_interval_", &position_update_interval_);
 	bind("max_speed", &max_speed);
@@ -204,7 +199,28 @@ UnderwaterSensorNode::command(int argc, const char*const* argv)
 			next_hop=atoi(argv[2]);
 			return TCL_OK;
 		}else if(strcmp(argv[1], "set-neighbors") == 0){
-			printf("%s\n",argv[2]);
+			string s(argv[2]);
+			list<string> res = tools->spilit(s,'|');
+			while(!res.empty()){
+				string sub = res.back();
+				list<string> sub_list = tools->spilit(sub,',');
+				list<string>::iterator i;
+				string info[4];
+				int j=0;
+				for(i=sub_list.begin();i!=sub_list.end();i++,j++){
+					info[j] = *i;
+				}
+				neighbor_nodes.insert(neighbor_node_elem(atoi(info[0].c_str()),atof(info[1].c_str()),atof(info[2].c_str()),atof(info[3].c_str())));
+				res.pop_back();
+			}
+			set<neighbor_node_elem> n_set = neighbor_nodes.neighbor_node_set;
+			set<neighbor_node_elem>::iterator k;
+			cout << this->nodeid() << ":";
+			for(k=n_set.begin();k!= n_set.end();++k){
+				neighbor_node_elem em = *k;
+				cout << em.node_id << " ";
+			}
+			cout << endl;
 			return TCL_OK;
 		}
 		else if(strcmp(argv[1],"topography")==0){
@@ -261,8 +277,6 @@ UnderwaterSensorNode::random_position()
 	position_update_time_ = 0.0;
 }
 
-
-
 void 
 UnderwaterSensorNode::generateFailure()
 {
@@ -285,12 +299,6 @@ UnderwaterSensorNode::check_position()
 	}
 }
 
-
-
-
-
-
-
 void
 UnderwaterSensorNode::random_speed()
 {
@@ -303,7 +311,6 @@ void
 UnderwaterSensorNode
 ::random_destination()
 {
-	//printf("mobilenode: ?????????????????the randmo_destionation\n");
 	if (T_ == 0) {
 		fprintf(stderr, "No TOPOLOGY assigned\n");
 		exit(1);
@@ -319,18 +326,12 @@ UnderwaterSensorNode
 		speed_);
 }
 
-
-
-
 double
 UnderwaterSensorNode::propdelay(UnderwaterSensorNode *m)
 {
 	//printf("underwatersensornode: ?????????????????the properdelay\n");
 	return distance(m) / SPEED_OF_SOUND_IN_WATER;
 }
-
-
-
 
 int
 UnderwaterSensorNode::setSinkStatus()
@@ -365,14 +366,37 @@ UnderwaterSensorNode::bindMobilePattern(const char* PatternName)
 			UWMP_ = new UW_RWP(this);
 			break;
 		default:
-			/*
-			 *i.e., mpt_ is MPT_NTYPE
-			 *UnderwaterPositionHandler will proccess this case
-			 */		
 			;
 	}
 	
 }
 
 
+/*=======================================================================
+NeighborNodes
+=========================================================================*/
+bool operator<(const neighbor_node_elem&  e1, const neighbor_node_elem& e2)
+{
+	return (e1.node_id<e2.node_id);
+}
 
+void NeighborNodes::insert(neighbor_node_elem em){
+	neighbor_node_set.insert(em);
+}
+
+
+list<string>&
+CommTools::spilit(const string &s, char delim,list<string> &elems){
+	stringstream ss(s);
+	string item;
+	while(getline(ss,item,delim)){
+		elems.push_back(item);
+	}
+	return elems;
+}
+
+list<string>
+CommTools::spilit(const string &s,char delim){
+	list<string> elems;
+	return spilit(s,delim,elems);
+}
