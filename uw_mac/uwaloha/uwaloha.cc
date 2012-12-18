@@ -15,7 +15,6 @@ public:
 	}
 }class_UWALOHA_hdr;
 
-
 static class UWALOHAClass : public TclClass {
 public:
 	UWALOHAClass():TclClass("Mac/UnderwaterMac/UWALOHA") {}
@@ -23,8 +22,6 @@ public:
 		return (new UWALOHA());
 	}
 }class_UWALOHA;
-
-
 
 /*===========================UWALOHA Timer===========================*/
 long UWALOHA_ACK_RetryTimer::id_generator = 0;
@@ -44,8 +41,6 @@ void UWALOHA_WaitACKTimer::expire(Event *e) //WaitACKTimer expire
 	mac_->doBackoff();	
 }
 
-
-
 //construct function
 UWALOHA::UWALOHA(): UnderwaterMac(), bo_counter(0), UWALOHA_Status(PASSIVE), Persistent(1.0),
 		ACKOn(1), Min_Backoff(0.0), Max_Backoff(1.5), MAXACKRetryInterval(0.05), 
@@ -60,7 +55,6 @@ UWALOHA::UWALOHA(): UnderwaterMac(), bo_counter(0), UWALOHA_Status(PASSIVE), Per
 	bind("Max_Backoff",&Max_Backoff);
 	bind("WaitACKTime",&WaitACKTime);
 }
-
 
 void UWALOHA::doBackoff()
 {
@@ -80,7 +74,6 @@ void UWALOHA::doBackoff()
 	  }
 }
 
-
 void UWALOHA::processPassive()
 {
 	if (UWALOHA_Status == PASSIVE && !blocked) {
@@ -88,7 +81,6 @@ void UWALOHA::processPassive()
 			sendDataPkt();
 	}
 }
-
 
 void UWALOHA_StatusHandler::handle(Event *e)
 {
@@ -127,7 +119,6 @@ void UWALOHA::CallbackProcess(Event* e)
 	callback_->handle(e);
 }
 
-
 /*===========================Send and Receive===========================*/
 
 void UWALOHA::TxProcess(Packet* pkt)
@@ -158,12 +149,11 @@ void UWALOHA::TxProcess(Packet* pkt)
 	
 	//fill the next hop when sending out the packet;
 	if(UWALOHA_Status == PASSIVE 
-		&& PktQ_.size() == 1 && !blocked ) 
+		&& PktQ_.size() == 1 && !blocked )
 	{
 		sendDataPkt();
 	}
 }
-
 
 void UWALOHA::sendDataPkt()
 {	
@@ -186,7 +176,6 @@ void UWALOHA::sendDataPkt()
 	return;
 
 }
-
 
 void UWALOHA::sendPkt(Packet *pkt)
 {
@@ -327,7 +316,6 @@ Packet* UWALOHA::makeACK(nsaddr_t Data_Sender)
 	return pkt;
 }
 
-
 void UWALOHA::processRetryTimer(UWALOHA_ACK_RetryTimer* timer)
 {
 	Packet* pkt = timer->pkt();
@@ -340,7 +328,6 @@ void UWALOHA::processRetryTimer(UWALOHA_ACK_RetryTimer* timer)
 	sendPkt(pkt);
 }
 
-
 void UWALOHA::retryACK(Packet* ack)
 {
 	UWALOHA_ACK_RetryTimer* timer = new UWALOHA_ACK_RetryTimer(this, ack);
@@ -348,25 +335,7 @@ void UWALOHA::retryACK(Packet* ack)
 	RetryTimerMap_[timer->id()] = timer;
 }
 
-
-
-
 int UWALOHA::command(int argc, const char *const *argv)
 {
 	return UnderwaterMac::command(argc, argv);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -35,7 +35,7 @@ set opt(nam)            "vbf_example_5.nam"  ;# nam file
 set opt(adhocRouting)   Vectorbasedforward
 set opt(width)           100
 set opt(interval)        10.0
-set opt(range)           100    ;#range of each node in meters
+set opt(range)           50    ;#range of each node in meters
 
 if { $argc > 0 } {
   set opt(seed) [lindex $argv 0]
@@ -294,6 +294,8 @@ $node_($total_number) set Z_  0
 $node_($total_number) set-cx  200
 $node_($total_number) set-cy  0
 $node_($total_number) set-cz  0
+$node_($total_number) set-neighbors "4,330,0,0"
+
 set rt [$node_($total_number) set ragent_]
 $rt set control_packet_size  $opt(routing_control_packet_size)
 

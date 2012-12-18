@@ -4,6 +4,7 @@
 #include <signal.h>
 #include <float.h>
 #include <stdlib.h>
+#include <set>
 #include <tcl.h>
 #include "underwatersensor/uw_mac/underwaterchannel.h"
 #include "agent.h"
@@ -22,8 +23,7 @@
 #include "dsr/path.h"
 #include "god.h"
 #include  "underwatersensor/uw_mac/underwaterpropagation.h"
-
-
+#include  "underwatersensor/uw_common/underwatersensornode.h"
 int hdr_uwvb::offset_;
 
 
@@ -34,9 +34,6 @@ public:
         bind_offset(&hdr_uwvb::offset_);
     }
 } class_uwvbhdr;
-
-
-
 
 void UWPkt_Hash_Table::reset()
 {
@@ -52,8 +49,6 @@ void UWPkt_Hash_Table::reset()
         entryPtr = Tcl_NextHashEntry(&searchPtr);
     }
 }
-
-
 
 vbf_neighborhood* UWPkt_Hash_Table::GetHash(ns_addr_t sender_id,
         unsigned int pk_num)
@@ -71,8 +66,6 @@ vbf_neighborhood* UWPkt_Hash_Table::GetHash(ns_addr_t sender_id,
 
     return (vbf_neighborhood *)Tcl_GetHashValue(entryPtr);
 }
-
-
 
 void UWPkt_Hash_Table::put_in_hash(hdr_uwvb * vbh)
 {
@@ -124,12 +117,6 @@ void UWPkt_Hash_Table::put_in_hash(hdr_uwvb * vbh)
     Tcl_SetHashValue(entryPtr, hashPtr);
 
 }
-
-
-
-
-
-
 
 void UWPkt_Hash_Table::put_in_hash(hdr_uwvb * vbh, position* p)
 {
@@ -184,7 +171,6 @@ void UWPkt_Hash_Table::put_in_hash(hdr_uwvb * vbh, position* p)
 
 }
 
-
 void UWData_Hash_Table::reset()
 {
     Tcl_HashEntry *entryPtr;
@@ -197,12 +183,10 @@ void UWData_Hash_Table::reset()
     }
 }
 
-
 Tcl_HashEntry  *UWData_Hash_Table::GetHash(int *attr)
 {
     return Tcl_FindHashEntry(&htable, (char *)attr);
 }
-
 
 void UWData_Hash_Table::PutInHash(int *attr)
 {
@@ -219,12 +203,10 @@ void UWData_Hash_Table::PutInHash(int *attr)
 
 }
 
-
 void UWDelayTimer:: handle(Event* e)
 {
     a_->timeout((Packet*) e);
 }
-
 
 static class VectorbasedforwardClass : public TclClass {
 public:
@@ -235,12 +217,9 @@ public:
 } class_vectorbasedforward;
 
 
-
 VectorbasedforwardAgent::VectorbasedforwardAgent() : Agent(PT_UWVB),
         delaytimer(this)
 {
-    // Initialize variables.
-    //  printf("VB initialized\n");
     pk_count = 0;
     target_ = 0;
     node = NULL;
@@ -255,7 +234,6 @@ VectorbasedforwardAgent::VectorbasedforwardAgent() : Agent(PT_UWVB),
     bind("width",& width);
     Random::seed_heuristically();
     //bind("useOverhear_", &useOverhear);
-
 }
 
 
@@ -271,8 +249,18 @@ void VectorbasedforwardAgent::recv(Packet* packet, Handler*)
     p1[0].x=vbh->info.fx;
     p1[0].y=vbh->info.fy;
     p1[0].z=vbh->info.fz;
-
-
+	
+/*
+	if(!neighbor_nodes.empty()){
+		set<neighbor_node_elem>::iterator it;
+		for(it=neighbor_nodes.begin();it!=neighbor_nodes.end();it++){
+			neighbor_node_elem em = *it;
+			printf("%d ",em.node_id);
+		}
+		printf("\n");
+	}
+*/	
+	
     if ( !EnableRouting ) {
         if ( vbh->mess_type != DATA ) {
             Packet::free(packet);
@@ -289,20 +277,22 @@ void VectorbasedforwardAgent::recv(Packet* packet, Handler*)
         }
         return;
     }
-
     vbf_neighborhood *hashPtr= PktTable.GetHash(vbh->sender_id, vbh->pk_num);
-
-    // Received this packet before ?
-
+    // Received this packet before 
     if (hashPtr != NULL) {
         PktTable.put_in_hash(vbh,p1);
         Packet::free(packet);
         printf("vectrobasedforward: this is duplicate packet\n");
-    }
-    else {
-
+    }else {
+		hdr_cmn* cmh = HDR_CMN(packet);
+		set<neighbor_node_elem> neighbor_nodes =  node->neighbor_nodes.neighbor_node_set;
+		set<neighbor_node_elem>::iterator it = neighbor_nodes.begin();
+		neighbor_node_elem em = *it;
+		cmh->next_hop_ = em.node_id;
+		printf("node id:%d next_hop:%d\n",node->nodeid(),cmh->next_hop());
+		hdr_cmn* cmh2 = HDR_CMN(packet);
         // Never receive it before ? Put in hash table.
-        printf("vectrobasedforward: this is new packet\n");
+        printf("vectrobasedforward: this is new packet, next_hop:%d\n",cmh2->next_hop());
         PktTable.put_in_hash(vbh,p1);
         ConsiderNew(packet);
     }
@@ -603,7 +593,7 @@ void VectorbasedforwardAgent::MACprepare(Packet *pkt)
 
     cmh->xmit_failure_ = 0;
     // printf("vectorbased: the mac_Broadcast is:%d\n",MAC_BROADCAST);
-    cmh->next_hop() = MAC_BROADCAST;
+   // cmh->next_hop() = MAC_BROADCAST;
     cmh->addr_type() = NS_AF_ILINK;
     // cmh->txtime()=0;
     // printf("vectorbased: the address type is :%d and suppose to be %d and  nexthop %d MAC_BROAD %d\n", cmh->addr_type(),NS_AF_ILINK,cmh->next_hop(),MAC_BROADCAST);
@@ -706,8 +696,10 @@ void VectorbasedforwardAgent::timeout(Packet * pkt) {
     hdr_uwvb* vbh = HDR_UWVB(pkt);
     unsigned char msg_type =vbh->mess_type;
     vbf_neighborhood  *hashPtr;
+	
+	hdr_cmn* cmh1 = HDR_CMN(pkt);
+	printf("next in timeout:%d\n",cmh1->next_hop());
     switch (msg_type) {
-
     case DATA:
         hashPtr= PktTable.GetHash(vbh->sender_id, vbh->pk_num);
         if (hashPtr != NULL) {

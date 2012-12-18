@@ -232,7 +232,7 @@ UnderwaterPhy::sendDown(Packet *p)
 		printf("ok, there is no antenna\n");
 	p->txinfo_.stamp((MobileNode*)node(), ant_->copy(), Pt_, lambda_);
 
-	channel_->recv(p, this);	//underwaterchannel的recv函数
+	channel_->recv(p, this);	//underwaterchannel的sendup函数
 }
 
 

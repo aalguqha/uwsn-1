@@ -2,6 +2,8 @@
 #undef max
 //#undef min
 #include <set>
+#include <list>
+#include <string>
 using namespace std;
 
 #ifndef __ns_underwatersensornode_h__
@@ -20,13 +22,8 @@ using namespace std;
 
 enum TransmissionStatus {SLEEP,IDLE,SEND,RECV, NStatus};
 #include "underwatersensor/uw_mac/underwaterphy.h"
-
 class GridKeeper; // think it later
-
  //NStatus is used to get the number of elements in this enums
-
-
-
 #if COMMENT_ONLY
 -----------------------
 |			|
@@ -95,7 +92,6 @@ struct neighbor_node_elem{
 	friend bool operator<(const neighbor_node_elem&  e1, const neighbor_node_elem& e2);
 
 };
-
 
 class NeighborNodes{
 public:
@@ -206,7 +202,6 @@ private:
 	Topography* T_;
 
 };
-
 #endif // ns_underwatersensornode_h
 
 

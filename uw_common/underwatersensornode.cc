@@ -66,7 +66,6 @@ UnderwaterPositionHandler::handle(Event*)
 		node->position_update_interval_);
 }
 
-
 /* ======================================================================
 Underwater Sensor Node 
 ====================================================================== */
@@ -95,12 +94,10 @@ MobileNode(),uw_pos_handle_(this)
 	
 }
 
-
 UnderwaterSensorNode::~UnderwaterSensorNode()
 {
 	delete UWMP_;
 }
-
 
 void 
 UnderwaterSensorNode::start()
@@ -127,7 +124,6 @@ UnderwaterSensorNode::start()
 
 	s.schedule(&uw_pos_handle_, &uw_pos_intr_, position_update_interval_);
 }
-
 
 int
 UnderwaterSensorNode::command(int argc, const char*const* argv)
@@ -235,21 +231,11 @@ UnderwaterSensorNode::command(int argc, const char*const* argv)
 	return MobileNode::command(argc, argv);
 }
 
-
 //added by peng xie
 void 
 UnderwaterSensorNode::move()
 {
 	Scheduler& s = Scheduler::instance();
-	//	printf("underwatersensornode: ?????????????????the move\n");
-	//	if(random_motion_ == 0) {
-	//log_movement();
-	//return;
-	//}
-
-	//assert(initialized());
-
-	//	random_position(z);
 #ifdef DEBUG
 	fprintf(stderr, "%d - %s: calling random_destination()\n",
 		address_, __PRETTY_FUNCTION__);
@@ -257,8 +243,6 @@ UnderwaterSensorNode::move()
 	random_destination();
 	s.schedule(&uw_pos_handle_, &uw_pos_intr_, position_update_interval_);
 }
-
-
 
 void 
 UnderwaterSensorNode::random_position()
@@ -272,8 +256,6 @@ UnderwaterSensorNode::random_position()
 	X_ = Random::uniform() * T_->upperX();
 	Y_ = Random::uniform() * T_->upperY();
 	Z_ = Random::uniform() * T_->upperZ();
-	//original one	Z_ = T_->height(X_, Y_);
-	// Z_ =z;
 	position_update_time_ = 0.0;
 }
 
@@ -282,8 +264,6 @@ UnderwaterSensorNode::generateFailure()
 {
 	double error_pro=Random::uniform();
 	if(error_pro<failure_status_pro_) failure_status_=1;
-
-
 }
 
 void 
@@ -292,7 +272,6 @@ UnderwaterSensorNode::check_position()
 	if((X_==destX_)||(Y_==destY_)) {
 		random_speed();
 		random_destination();
-		//    printf("vectorbased:set new des and speed+++++\n");
 	}
 	else {
 		log_movement();
@@ -302,9 +281,7 @@ UnderwaterSensorNode::check_position()
 void
 UnderwaterSensorNode::random_speed()
 {
-
 	speed_ = (Random::uniform() * (max_speed-min_speed))+min_speed;
-	//	printf("underwatersensornode: ?????????????????the max_speed%f min %f speed  %f interval%f\n",max_speed,min_speed,speed_,position_update_interval_);
 }
 
 void
@@ -341,8 +318,6 @@ UnderwaterSensorNode::setSinkStatus()
 	return 0; 
 }
 
-
-
 int
 UnderwaterSensorNode::clearSinkStatus()
 {
@@ -350,7 +325,6 @@ UnderwaterSensorNode::clearSinkStatus()
 	sinkStatus_=0;
 	return 0; 
 }
-
 
 void
 UnderwaterSensorNode::bindMobilePattern(const char* PatternName)
@@ -371,7 +345,6 @@ UnderwaterSensorNode::bindMobilePattern(const char* PatternName)
 	
 }
 
-
 /*=======================================================================
 NeighborNodes
 =========================================================================*/
@@ -383,7 +356,6 @@ bool operator<(const neighbor_node_elem&  e1, const neighbor_node_elem& e2)
 void NeighborNodes::insert(neighbor_node_elem em){
 	neighbor_node_set.insert(em);
 }
-
 
 list<string>&
 CommTools::spilit(const string &s, char delim,list<string> &elems){

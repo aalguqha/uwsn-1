@@ -218,12 +218,29 @@ void UWSinkAgent::sendpkt()
 		}
 	}
 
+	//add by Shaoyang
+	/*
+	set<neighbor_node_elem> neighbor_nodes =  node->neighbor_nodes.neighbor_node_set;
+	set<neighbor_node_elem>::iterator it;
+	neighbor_node_elem em;
+	int next_hop_id;
+	printf("%d\n",node->nodeid());
+
+	if(!neighbor_nodes.empty()){		
+		for(it=neighbor_nodes.begin();it!=neighbor_nodes.end();it++){
+			neighbor_node_elem em = *it;
+			printf("%d ",em.node_id);
+		}
+		printf("\n");
+	}
+	*/
 	Packet* pkt = Packet::alloc();
 	hdr_uwvb* vbh = HDR_UWVB(pkt);
 	hdr_ip* iph = HDR_IP(pkt);
 	hdr_cmn*  cmh = HDR_CMN(pkt);
 
-
+	//added by Shaoyang,temporarily use the first as the next_hop
+	
 	cmh->ptype()=PT_UWVB;
 	cmh->size() = packetsize_;
 	cmh->uid() = pkt_id_++;
@@ -239,23 +256,17 @@ void UWSinkAgent::sendpkt()
 	vbh->sender_id = here_;
 	// vbh->data_type = data_type_;
 	vbh->forward_agent_id = here_; 
-
 	vbh->target_id=target_id;
 	vbh->range=range_;
-
-
 	vbh->info.tx=target_x;
 	vbh->info.ty=target_y; 
 	vbh->info.tz=target_z;
-
 	vbh->info.fx=node->CX();
 	vbh->info.fy=node->CY();
 	vbh->info.fz=node->CZ();
-
 	vbh->info.ox=node->CX();
 	vbh->info.oy=node->CY(); 
 	vbh->info.oz=node->CZ();
-
 	vbh->info.dx=0;
 	vbh->info.dy=0; 
 	vbh->info.dz=0;
@@ -267,10 +278,6 @@ void UWSinkAgent::sendpkt()
 	*/
 
 	//printf("uw_sink:source(%d,%d) send packet %d at %lf : the coordinates of target is (%lf,%lf,%lf) and range=%lf and my position (%f,%f,%f) and cx is(%f,%f,%f)  type is %d\n", vbh->sender_id.addr_,vbh->sender_id.port_,vbh->pk_num, NOW, vbh->info.tx=target_x,vbh->info.ty=target_y, vbh->info.tz=target_z,vbh->range,node->X(),node->Y(),node->Z(),node->CX(),node->CY(),node->CZ(),vbh->mess_type);
-
-
-
-
 	num_send++;
 	//   vbh->attr[0] = data_type_;
 

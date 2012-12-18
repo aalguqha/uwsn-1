@@ -203,7 +203,7 @@ void
 UnderwaterMac::sendDown(Packet* p) {
     assert(initialized());
     //  printf("uwmac: node %d sendDown\n",index_);
-    downtarget_->recv(p,this);	//downtarget_ 本质上是 UnderwaterPhy
+    downtarget_->recv(p,this);	//downtarget_ 本质上是 UnderwaterPhy的sendDown函数
 }
 
 
