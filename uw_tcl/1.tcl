@@ -1,41 +1,41 @@
 set opt(chan)		Channel/UnderwaterChannel
 set opt(prop)		Propagation/UnderwaterPropagation
 set opt(netif)		Phy/UnderwaterPhy
-#set opt(mac)		Mac/UnderwaterMac/BroadcastMac
+set opt(mac)		Mac/UnderwaterMac/BroadcastMac
 #set opt(mac)		Mac/UnderwaterMac/SFAMA
-set opt(mac)		Mac/UnderwaterMac/UWALOHA
+#set opt(mac)		Mac/UnderwaterMac/UWALOHA
 set opt(ifq)		Queue/DropTail/PriQueue
-set opt(ll)		LL
+set opt(ll)			LL
 set opt(energy)         EnergyModel
 set opt(txpower)        2.0
 set opt(rxpower)        0.75
 set opt(initialenergy)  10000
 set opt(idlepower)      0.008
 set opt(ant)            Antenna/OmniAntenna
-set opt(filters)        GradientFilter    ;# options can be one or more of 
-                                ;# TPP/OPP/Gear/Rmst/SourceRoute/Log/TagFilter
-set opt(minspeed)           0  ;#minimum speed of node
-set opt(maxspeed)           3   ;#maximum speed of node
-set opt(speed)              0.5  ;#speed of node
-set opt(position_update_interval) 0.3  ;# the length of period to update node's position
-set opt(packet_size) 50  ;#50 bytes
+set opt(filters)        GradientFilter  ;# options can be one or more of 
+										;# TPP/OPP/Gear/Rmst/SourceRoute/Log/TagFilter
+set opt(minspeed)       0  				;#minimum speed of node
+set opt(maxspeed)       3   			;#maximum speed of node
+set opt(speed)          0.5  			;#speed of node
+set opt(position_update_interval) 0.3  	;# the length of period to update node's position
+set opt(packet_size) 	50  			;#50 bytes
 set opt(routing_control_packet_size) 20 ;#bytes 
-
-set opt(ifqlen)		50	;# max queue length in if
-set opt(nn)		6	;# number of nodes 
-set opt(x)		1000	;# X dimension of the topography
-set opt(y)	        10  ;# Y dimension of the topography
+set opt(ifqlen)			50				;# max queue length in if
+set opt(nn)				6				;# number of nodes 
+set opt(x)				1000			;# X dimension of the topography
+set opt(y)	        	10  			;# Y dimension of the topography
 set opt(z)              10
-set opt(seed)		11
-set opt(stop)		500	;# simulation time
-set opt(prestop)        90     ;# time to prepare to stop
-set opt(tr)		"vbf_example_5.tr"	;# trace file
-set opt(datafile)	"vbf_example_5.data"
-set opt(nam)            "vbf_example_5.nam"  ;# nam file
+set opt(seed)			11
+set opt(stop)			100				;# simulation time
+set opt(prestop)        90     			;# time to prepare to stop
+set opt(tr)				"data/1.tr"		;# trace file
+set fd					[open data/1_1.tr w]
+set opt(datafile)		"data/1.data"	;# data file
+set opt(nam)            "data/1.nam" 	;# nam file
 set opt(adhocRouting)   Vectorbasedforward
-set opt(width)           100
-set opt(interval)        10.0
-set opt(range)           50    ;#range of each node in meters
+set opt(width)          100
+set opt(interval)       10.0
+set opt(range)          50    			;#range of each node in meters
 
 if { $argc > 0 } {
   set opt(seed) [lindex $argv 0]
@@ -43,8 +43,8 @@ if { $argc > 0 } {
   set opt(datafile) [lindex $argv 2]
 }
 
-puts "the file name is $opt(datafile)"
-puts "the sending interval is $opt(interval)"
+#puts "the file name is $opt(datafile)"
+#puts "the sending interval is $opt(interval)"
 
 # ==================================================================
 
@@ -58,17 +58,15 @@ Queue/DropTail/PriQueue set Prefer_Routing_Protocols    1
 # set up the antennas to be centered in the node and 1.5 meters above it
 Antenna/OmniAntenna set X_ 0
 Antenna/OmniAntenna set Y_ 0
-#Antenna/OmniAntenna set Z_ 1.5
+Antenna/OmniAntenna set Z_ 1.5
 Antenna/OmniAntenna set Z_ 0.05
 Antenna/OmniAntenna set Gt_ 1.0
 Antenna/OmniAntenna set Gr_ 1.0
 
-Agent/Vectorbasedforward set hop_by_hop_ 0
-
+Agent/Vectorbasedforward set hop_by_hop_ 1
 Mac/UnderwaterMac set bit_rate_  1.0e4 ;#10kbps
 Mac/UnderwaterMac set encoding_efficiency_ 1
 Mac/UnderwaterMac/BroadcastMac set packetheader_size_ 0 ;# #of bytes
-
 # Initialize the SharedMedia interface with parameters to make
 # it work like the 914MHz Lucent WaveLAN DSSS radio interface
 Phy/UnderwaterPhy set CPThresh_  10  ;#10.0
@@ -98,9 +96,7 @@ $ns_ trace-all $tracefd
 set nf [open $opt(nam) w]
 $ns_ namtrace-all-wireless $nf $opt(x) $opt(y)
 
-
 set data [open $opt(datafile) a]
-
 
 set total_number  [expr $opt(nn)-1]
 set god_ [create-god  $opt(nn)]
@@ -108,13 +104,10 @@ set god_ [create-god  $opt(nn)]
 
 $ns_ at 0.0 "$god_  set_filename $opt(datafile)"
 
-
 set chan_1_ [new $opt(chan)]
-
 
 global defaultRNG
 $defaultRNG seed $opt(seed)
-
 
 $ns_ node-config -adhocRouting $opt(adhocRouting) \
 		 -llType $opt(ll) \
@@ -126,20 +119,18 @@ $ns_ node-config -adhocRouting $opt(adhocRouting) \
 		 -phyType $opt(netif) \
 		 #-channelType $opt(chan) \
 		 -agentTrace OFF \
-                 -routerTrace OFF \
-                 -macTrace ON\
-                 -topoInstance $topo\
-                 -energyModel $opt(energy)\
-                 -txPower $opt(txpower)\
-                 -rxPower $opt(rxpower)\
-                 -initialEnergy $opt(initialenergy)\
-                 -idlePower $opt(idlepower)\
-                 -channel $chan_1_
+         -routerTrace OFF \
+         -macTrace ON\
+         -topoInstance $topo\
+         -energyModel $opt(energy)\
+         -txPower $opt(txpower)\
+         -rxPower $opt(rxpower)\
+         -initialEnergy $opt(initialenergy)\
+         -idlePower $opt(idlepower)\
+          -channel $chan_1_
                  
-
 puts "Width=$opt(width)"
 #Set the Sink node
-
 
 set node_(0) [ $ns_  node 0]
 $node_(0) set sinkStatus_ 1
@@ -173,7 +164,6 @@ $node_(1) set Y_  0
 $node_(1) set Z_  0
 $node_(1) set passive 1
 $node_(1) set-neighbors "0,440,0,0|2,360,0,15|3,360,0,-15"
-
 
 set rt [$node_(1) set ragent_]
 $rt set control_packet_size  $opt(routing_control_packet_size)
@@ -299,7 +289,7 @@ $node_($total_number) set-neighbors "4,330,0,0"
 set rt [$node_($total_number) set ragent_]
 $rt set control_packet_size  $opt(routing_control_packet_size)
 
-
+if 0 {
 set a_($total_number) [new Agent/UWSink]
 $ns_ attach-agent $node_($total_number) $a_($total_number)
 $a_($total_number) attach-vectorbasedforward $opt(width)
@@ -309,6 +299,28 @@ $a_($total_number) cmd set-target-y 0
 $a_($total_number) cmd set-target-z 0
 $a_($total_number) cmd set-filename $opt(datafile)
 $a_($total_number) cmd set-packetsize $opt(packet_size) ;# # of bytes
+}
+
+set a [new Agent/UWSink]
+$ns_ attach-agent $node_($total_number) $a
+$a attach-vectorbasedforward $opt(width)
+$a cmd set-range $opt(range)
+$a cmd set-target-x 500
+$a cmd set-target-y 0
+$a cmd set-target-z 0
+$a cmd set-filename $opt(datafile)
+$a cmd set-packetsize $opt(packet_size) ;# # of bytes
+
+proc record {} {
+	global a fd
+	set ns [Simulator instance]
+	set time 0.5
+	set bw0 [$a set num_send]
+	set now [$ns now]
+	puts $fd "$now $bw0"
+	#$a set num_send 0
+	$ns at [expr $now + 100] "record"
+}
 
 if 0 {
 	set start_time 1.33
@@ -326,21 +338,28 @@ for {set k 0} { $k<$opt(nn)} {incr k} {
 $ns_ initial_node_pos $node_($k) $node_size
 }
 
+proc finish {} {
+	global opt
+	exec xgraph data/1_1.tr -geometry 400*300 &
+	set ns [Simulator instance]
+	$ns halt
+}
 
-set opt(stop2) [expr $opt(stop)+200]
+set opt(stop2) [expr $opt(stop)]
+$ns_ at 0 "record"
 puts "Node $total_number is sending first!!"
-$a_($total_number) set data_rate_ [expr 1.0/$opt(interval)]
-$ns_ at 1.33 "$a_($total_number) cbr-start"
-$ns_ at $opt(stop).001 "$a_($total_number) terminate"
+$a set data_rate_ [expr 1.0/$opt(interval)]
+$ns_ at 1.33 "$a cbr-start"
+$ns_ at $opt(stop).001 "$a terminate"
 $ns_ at $opt(stop2).002 "$a_(0) terminate"
 $ns_ at $opt(stop2).003  "$god_ compute_energy"
 $ns_ at $opt(stop2).004  "$ns_ nam-end-wireless $opt(stop)"
-$ns_ at $opt(stop2).005 "puts \"NS EXISTING...\"; $ns_ halt"
-
-
- puts $data  "New simulation...."
- puts $data "nodes  = $opt(nn), maxspeed = $opt(maxspeed), minspeed = $opt(minspeed), random_seed = $opt(seed), sending_interval_=$opt(interval), width=$opt(width)"
- puts $data "x= $opt(x) y= $opt(y) z= $opt(z)"
- close $data
- puts "starting Simulation..."
- $ns_ run
+$ns_ at $opt(stop2).005 "puts \"xgraph...\""
+#$ns_ at $opt(stop2).005 "puts \"NS EXISTING...\"; $ns_ halt"
+puts $data  "New simulation...."
+puts $data "nodes=$opt(nn), maxspeed = $opt(maxspeed), minspeed = $opt(minspeed), random_seed = $opt(seed), sending_interval_=$opt(interval), width=$opt(width)"
+puts $data "x= $opt(x) y= $opt(y) z= $opt(z)"
+close $data
+$ns_ at [expr $opt(stop2).005] "finish"
+puts "starting Simulation..."
+$ns_ run
