@@ -2,7 +2,7 @@
 set ns [new Simulator]
 
 #open the nam trace file
-set nf [open data/example.out.nam w]
+set nf [open data/example1.out.nam w]
 $ns namtrace-all $nf
 
 #define a 'finish' procedure
@@ -12,7 +12,7 @@ proc finish {} {
     #close trace file
     close $nf
     #exec nam on the trace file
-    exec nam out.nam &
+    exec nam data/example1.out.nam &
     exit 0
 }
 #create two nodes
