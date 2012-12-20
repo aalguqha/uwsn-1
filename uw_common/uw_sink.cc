@@ -72,29 +72,23 @@ UWSinkAgent::UWSinkAgent() : Agent(PT_UWVB),running_(0), random_(0), sink_timer_
 report_timer_(this)
 {
 	// set option first.
-
 	APP_DUP_ = true; // allow duplication 
-
 	periodic_ = false; //just send out interest once
-	// always_max_rate_ = false; //?
+	//always_max_rate_ = false; //?
 
-	// Bind Tcl and C++ Variables
+	//Bind Tcl and C++ Variables
+	bind("num_send",&num_send);
+	bind("num_recv",&num_recv);
+	bind("maxpkts_", &maxpkts_);
 
-
-	// bind("num_send",&num_send);
-	//bind("num_recv",&num_recv);
-	// bind("maxpkts_", &maxpkts_);
-
-	// Initialize variables.
+	//Initialize variables.
 
 	maxpkts_ = 1000;
 	pk_count=0;
 	num_recv=0;
 	num_send=0;
 	//  RecvPerSec=0;
-
 	strcpy(f_name,"test.data");
-
 	target_x=0;
 	target_y=0;
 	target_z=0;
@@ -119,20 +113,13 @@ report_timer_(this)
 	// bind("num_recv", &num_recv);
 	// bind("num_send", &num_send);
 	// bind("cum_delay", &cum_delay);
-
-
 	/* 
 	size_=64;
 	interval_=1;
-
 	random_=0;
 	*/
-
 	data_counter = 0;
-
-
 	//simple_report_rate = ORIGINAL;
-
 	last_arrival_time = -1.0;
 }
 
@@ -248,7 +235,8 @@ void UWSinkAgent::sendpkt()
 	vbh->pk_num = pk_count;
 	vbh->ts_=NOW;
 	pk_count++;
-
+	//shaoyang
+	num_send++;
 	iph->src_=here_;
 	iph->dst_.addr_=here_.addr_;
 	iph->dst_.port_=255;
