@@ -1,9 +1,10 @@
 #include "packet.h"
 #include "random.h"
+#include "underwatersensor/uw_common/underwatersensornode.h"
 #include "mac.h"
 #include "uwaloha.h"
 #include "../underwaterphy.h"
-#include "underwatersensor/uw_common/underwatersensornode.h"
+
 
 int hdr_UWALOHA::offset_;
 static class UWALOHA_HeaderClass: public PacketHeaderClass{
@@ -42,11 +43,12 @@ void UWALOHA_WaitACKTimer::expire(Event *e) //WaitACKTimer expire
 
 //construct function
 UWALOHA::UWALOHA(): UnderwaterMac(), bo_counter(0), UWALOHA_Status(PASSIVE), Persistent(1.0),
-		ACKOn(1), Min_Backoff(0.0), Max_Backoff(1.5), MAXACKRetryInterval(0.05),
+		ACKOn(1), Min_Backoff(0.0), Max_Backoff(1.5), MAXACKRetryInterval(0.05), 
 		blocked(false), BackoffTimer(this), WaitACKTimer(this),
 		CallBack_handler(this), status_handler(this)
 {
 	MaxPropDelay = UnderwaterChannel::Transmit_distance()/1500.0;
+
 	bind("Persistent",&Persistent);
 	bind("ACKOn",&ACKOn);
 	bind("Min_Backoff",&Min_Backoff);
@@ -56,13 +58,14 @@ UWALOHA::UWALOHA(): UnderwaterMac(), bo_counter(0), UWALOHA_Status(PASSIVE), Per
 
 void UWALOHA::doBackoff()
 {
-	  printf("node %d doBackoff at %f \n", index_,NOW);
+//	printf("node %d doBackoff at %f \n", index_,NOW);
 	  Time BackoffTime=Random::uniform(Min_Backoff,Max_Backoff);
 	  bo_counter++;
 	  if (bo_counter < MAXIMUMCOUNTER) {
 		  UWALOHA_Status = BACKOFF;
 		  BackoffTimer.resched(BackoffTime);
-	  }else {
+	  }
+	  else {
 		  bo_counter=0;
 		  printf("backoffhandler: too many backoffs\n");
 		  Packet::free(PktQ_.front());
@@ -134,6 +137,7 @@ void UWALOHA::TxProcess(Packet* pkt)
 	  t = NOW;
 	UWALOHAh->packet_type = hdr_UWALOHA::DATA;
 	UWALOHAh->SA = index_;
+	printf("IP_BROADCAST:%d\n",IP_BROADCAST);
 	if( cmh->next_hop() == (nsaddr_t)IP_BROADCAST ) {
 		UWALOHAh->DA = MAC_BROADCAST;
 	}
@@ -160,7 +164,7 @@ void UWALOHA::sendDataPkt()
 	UWALOHA_Status = SEND_DATA;
 	
 	if( P<=Persistent ) {
-		if( HDR_CMN(tmp)->next_hop() == recver )
+		if( HDR_CMN(tmp)->next_hop() == recver )// {
 			sendPkt(tmp->copy());
 	}
 	else {
@@ -181,16 +185,18 @@ void UWALOHA::sendPkt(Packet *pkt)
 	cmh->direction() = hdr_cmn::DOWN;
 	
 	UnderwaterSensorNode* n=(UnderwaterSensorNode*) node_;
+	
 	double txtime=cmh->txtime();
 	Scheduler& s=Scheduler::instance();
 
 	switch( n->TransmissionStatus() ) {
 		case SLEEP:
 			Poweron();
+			
 		case IDLE:
 		  
 			n->SetTransmissionStatus(SEND); 
-			cmh->timestamp() = NOW;
+			cmh->timestamp() = NOW;//why?
 			cmh->direction() = hdr_cmn::DOWN;
 			
 			//ACK doesn't affect the status, only process DATA here
@@ -241,7 +247,6 @@ void UWALOHA::RecvProcess(Packet *pkt)
 {
 	hdr_UWALOHA* UWALOHAh = hdr_UWALOHA::access(pkt);
 	hdr_cmn* cmh=HDR_CMN(pkt);
-	
 	nsaddr_t recver = UWALOHAh->DA;
 
 	if( cmh->error() ) 
@@ -251,6 +256,7 @@ void UWALOHA::RecvProcess(Packet *pkt)
 	  }
 	  else
 		  Packet::free(pkt);	
+	  
 	  //processPassive();
 	  return;
 	}
@@ -258,12 +264,10 @@ void UWALOHA::RecvProcess(Packet *pkt)
 	if( UWALOHAh->packet_type == hdr_UWALOHA::ACK ) {
 			//if get ACK after WaitACKTimer, ignore ACK
 			if( recver == index_ && UWALOHA_Status == WAIT_ACK) {
-				printf("node %d recv ACK from node %d,ack_pkt_no:%d\n",UWALOHAh->DA,UWALOHAh->SA,UWALOHAh->ack_pkt_no);
 				WaitACKTimer.cancel();
 				bo_counter=0;
 				Packet::free(PktQ_.front());
 				PktQ_.pop();
-				//处理完ACK后将status的状态修改为PASSIVE
 				UWALOHA_Status=PASSIVE;
 				processPassive();
 			}
@@ -272,43 +276,27 @@ void UWALOHA::RecvProcess(Packet *pkt)
 			//process Data packet
 			if( recver == index_ || recver == (nsaddr_t)MAC_BROADCAST ) {
 				cmh->size() -= hdr_UWALOHA::size();
-				/*start of shaoyang*/
-				
-				bool tag = possion_dis();
-				hdr_uwvb* vbh = HDR_UWVB(pkt);
-				if(tag){
-					printf("node %d recv pkt %d ,at %f\n",index_,vbh->pk_num,NOW);
-					//Packet::free(pkt);
-					return;
-				}
-				
-				/*end of shaoyang*/
 				sendUp(pkt->copy());	//UnderwaterMAC.cc
 				if ( ACKOn && (recver != (nsaddr_t)MAC_BROADCAST))
 					replyACK(pkt->copy());
 				else 
 					processPassive();
 			}
+
 	}
 	Packet::free(pkt);	
 }
 
-//sendACK
-void UWALOHA::replyACK(Packet *pkt)
+void UWALOHA::replyACK(Packet *pkt)//sendACK
 {
 	nsaddr_t Data_Sender = hdr_UWALOHA::access(pkt)->SA;
-
-	/*start shaoyang*/
-	hdr_uwvb* vbh = HDR_UWVB(pkt);
-	Packet *ack_pkt = makeACK(Data_Sender,vbh->pk_num);
-	/*end shaoyang*/
 	
-	sendPkt(ack_pkt);
+	sendPkt(makeACK(Data_Sender));
 	bo_counter=0;
 	Packet::free(pkt);
 }
 
-Packet* UWALOHA::makeACK(nsaddr_t Data_Sender,int pkt_num)
+Packet* UWALOHA::makeACK(nsaddr_t Data_Sender)
 {
 	Packet* pkt = Packet::alloc();
 	hdr_cmn* cmh = HDR_CMN(pkt);
@@ -320,11 +308,11 @@ Packet* UWALOHA::makeACK(nsaddr_t Data_Sender,int pkt_num)
 	cmh->direction() = hdr_cmn::DOWN;
 	cmh->next_hop() = Data_Sender;
 	cmh->ptype() = PT_UWALOHA;
-	
+
 	UWALOHAh->packet_type = hdr_UWALOHA::ACK;
 	UWALOHAh->SA = index_;
 	UWALOHAh->DA = Data_Sender;
-	UWALOHAh->ack_pkt_no = pkt_num;
+
 	return pkt;
 }
 
@@ -345,28 +333,6 @@ void UWALOHA::retryACK(Packet* ack)
 	UWALOHA_ACK_RetryTimer* timer = new UWALOHA_ACK_RetryTimer(this, ack);
 	timer->resched(MAXACKRetryInterval*Random::uniform());
 	RetryTimerMap_[timer->id()] = timer;
-}
-
-/* 产生一个泊松分布的随机数，Lamda为总体平均数*/
-bool UWALOHA::possion_dis()
-{
-		int Lambda = 20, k = 0;
-		double f;
-		long double p = 1.0;
-		long double l=exp(-Lambda);
-		srand( (unsigned)time( NULL ));
-		f = (float)(rand() % 100);
-		f /= 100;
-		while (p>=l)
-		{
-		double u = f;
-		p *= u;
-		k++;
-		}
-		if((k-1)>=50)
-			return true;
-		else
-			return false;
 }
 
 int UWALOHA::command(int argc, const char *const *argv)
