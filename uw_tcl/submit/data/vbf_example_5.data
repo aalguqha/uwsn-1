@@ -1,0 +1,13 @@
+New simulation....
+nodes  = 6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+New simulation....
+nodes  = 6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(1) : num_send = 100, num_recv = 0, cum_delay = 0.000000
+SINK(2) : num_send = 100, num_recv = 0, cum_delay = 0.000000
+SINK(3) : num_send = 100, num_recv = 0, cum_delay = 0.000000
+SINK(4) : num_send = 100, num_recv = 0, cum_delay = 0.000000
+SINK(5) : num_send = 100, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 150, cum_delay = 24.012500
+God : consumped_energy = 184.000975

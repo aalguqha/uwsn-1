@@ -1,0 +1,28 @@
+(1)use_modified_vbf
+
+SINK(0) : send_id = 6, num_recv = 20
+God node's residual energy:(0,7.318938,0.268106)
+God node's residual energy:(1,6.247080,0.375292)
+God node's residual energy:(2,6.500795,0.349920)
+God node's residual energy:(3,5.224555,0.477544)
+God node's residual energy:(4,4.970840,0.502916)
+God node's residual energy:(5,2.669882,0.733012)
+God node's residual energy:(6,4.478891,0.552111)
+god: the energy consumped is 32.589019
+
+
+(2)not use_modified_vbf
+
+SINK(0) : send_id = 6, num_recv = 20
+God node's residual energy:(0,7.182354,0.281765)
+God node's residual energy:(1,4.858509,0.514149)
+God node's residual energy:(2,6.046058,0.395394)
+God node's residual energy:(3,4.845341,0.515466)
+God node's residual energy:(4,3.532693,0.646731)
+God node's residual energy:(5,2.615581,0.738442)
+God node's residual energy:(6,4.694368,0.530563)
+god: the energy consumped is 36.225097
+NS EXISTING...
+
+
+

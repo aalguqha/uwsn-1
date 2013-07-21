@@ -1,0 +1,16 @@
+以下数据结果反应了，一旦一个节点告诉它的前一跳节点它的后继信道状况不好，那么它则不会再被信任。
+next_hop statistics:here_:5, nexthop_node:3,desire_factor:1.311397,energy:8.708056,channel_status_factor:1.000000
+next_hop statistics:here_:5, nexthop_node:3,desire_factor:1.311397,energy:8.708056,channel_status_factor:1.000000
+next_hop statistics:here_:5, nexthop_node:3,desire_factor:1.311397,energy:8.708056,channel_status_factor:1.000000
+next_hop statistics:here_:5, nexthop_node:3,desire_factor:1.311397,energy:8.708056,channel_status_factor:1.000000
+next_hop statistics:here_:5, nexthop_node:3,desire_factor:1.311397,energy:8.708056,channel_status_factor:1.000000
+next_hop statistics:here_:5, nexthop_node:3,desire_factor:1.311397,energy:8.708056,channel_status_factor:1.000000
+next_hop statistics:here_:5, nexthop_node:3,desire_factor:1.311397,energy:8.708056,channel_status_factor:1.000000
+next_hop statistics:here_:5, nexthop_node:3,desire_factor:1.311397,energy:8.708056,channel_status_factor:1.000000
+next_hop statistics:here_:5, nexthop_node:3,desire_factor:1.311397,energy:8.708056,channel_status_factor:1.000000
+next_hop statistics:here_:5, nexthop_node:3,desire_factor:1.311397,energy:8.708056,channel_status_factor:1.000000
+next_hop statistics:here_:5, nexthop_node:3,desire_factor:1.311397,energy:8.708056,channel_status_factor:1.000000
+next_hop statistics:here_:5, nexthop_node:3,desire_factor:1.311397,energy:8.708056,channel_status_factor:1.000000
+next_hop statistics:here_:5, nexthop_node:3,desire_factor:1.311397,energy:8.708056,channel_status_factor:1.000000
+next_hop statistics:here_:5, nexthop_node:3,desire_factor:1.311397,energy:8.708056,channel_status_factor:1.000000
+next_hop statistics:here_:5, nexthop_node:3,desire_factor:1.311397,energy:8.708056,channel_status_factor:1.000000

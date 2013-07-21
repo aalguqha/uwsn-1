@@ -1,0 +1,10 @@
+	if(n->nodeid() == 3){
+	  bool poss = possion_dis();
+	  if(poss==false){
+	    printf("dis_possion the rand's %d and res is\n",poss);
+	    Packet::free(pkt);
+	    return ;
+	  }
+	}
+	
+

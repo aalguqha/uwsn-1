@@ -1,0 +1,6 @@
+节点3首先被刷掉了，然后又被重新启用了，整个过程如下：
+研究对象是：node 5
+next_hop statistics:here_:5,被筛掉的下一跳:3,time:46.939664
+next_hop statistics:here_:5,被重新启用的下一跳:3,time:52.704124
+next_hop statistics:here_:5,被筛掉的下一跳:3,time:91.939664
+next_hop statistics:here_:5,被重新启用的下一跳:3,time:97.684132

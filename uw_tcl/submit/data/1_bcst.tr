@@ -1,0 +1,805 @@
+N -t 1.000000 -n 0 -e 9.992000
+N -t 1.000000 -n 1 -e 9.992000
+N -t 1.000000 -n 2 -e 9.992000
+N -t 1.000000 -n 3 -e 9.992000
+N -t 1.000000 -n 4 -e 9.992000
+N -t 1.000000 -n 5 -e 9.992000
+s -t 1.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 9.992000 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 0 -Iv 0 
+r -t 1.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 9.959146 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 0 -Iv 0 
+N -t 2.000000 -n 0 -e 9.984000
+N -t 2.000000 -n 1 -e 9.984000
+N -t 2.000000 -n 2 -e 9.984000
+N -t 2.000000 -n 3 -e 9.984000
+N -t 2.000000 -n 4 -e 9.954320
+N -t 2.000000 -n 5 -e 9.904320
+s -t 2.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 9.954320 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 0 -Iv 0 
+r -t 2.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 9.872096 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 0 -Iv 0 
+N -t 3.000000 -n 0 -e 9.976000
+N -t 3.000000 -n 1 -e 9.976000
+N -t 3.000000 -n 2 -e 9.976000
+N -t 3.000000 -n 3 -e 9.946320
+N -t 3.000000 -n 4 -e 9.866640
+N -t 3.000000 -n 5 -e 9.866640
+N -t 4.000000 -n 0 -e 9.968000
+N -t 4.000000 -n 1 -e 9.968000
+N -t 4.000000 -n 2 -e 9.968000
+N -t 4.000000 -n 3 -e 9.938320
+N -t 4.000000 -n 4 -e 9.858640
+N -t 4.000000 -n 5 -e 9.858640
+N -t 5.000000 -n 0 -e 9.960000
+N -t 5.000000 -n 1 -e 9.960000
+N -t 5.000000 -n 2 -e 9.960000
+N -t 5.000000 -n 3 -e 9.930320
+N -t 5.000000 -n 4 -e 9.850640
+N -t 5.000000 -n 5 -e 9.850640
+N -t 6.000000 -n 0 -e 9.952000
+N -t 6.000000 -n 1 -e 9.952000
+N -t 6.000000 -n 2 -e 9.952000
+N -t 6.000000 -n 3 -e 9.922320
+N -t 6.000000 -n 4 -e 9.842640
+N -t 6.000000 -n 5 -e 9.842640
+s -t 6.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 9.842640 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 1 -Iv 0 
+r -t 6.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 9.809786 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 1 -Iv 0 
+N -t 7.000000 -n 0 -e 9.944000
+N -t 7.000000 -n 1 -e 9.944000
+N -t 7.000000 -n 2 -e 9.944000
+N -t 7.000000 -n 3 -e 9.914320
+N -t 7.000000 -n 4 -e 9.804960
+N -t 7.000000 -n 5 -e 9.754960
+s -t 7.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 9.804960 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 1 -Iv 0 
+r -t 7.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 9.722736 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 1 -Iv 0 
+r -t 7.339064406 -Hs 3 -Hd 2 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 9.881927 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 1 -Iv 0 
+N -t 8.000000 -n 0 -e 9.936000
+N -t 8.000000 -n 1 -e 9.936000
+N -t 8.000000 -n 2 -e 9.936000
+N -t 8.000000 -n 3 -e 9.876640
+N -t 8.000000 -n 4 -e 9.717280
+N -t 8.000000 -n 5 -e 9.717280
+s -t 8.047815992 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 9.876640 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 1 -Iv 0 
+r -t 8.121149326 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 9.905351 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 1 -Iv 0 
+r -t 8.135542062 -Hs 4 -Hd 1 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 9.686516 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 1 -Iv 0 
+N -t 9.000000 -n 0 -e 9.928000
+N -t 9.000000 -n 1 -e 9.928000
+N -t 9.000000 -n 2 -e 9.898320
+N -t 9.000000 -n 3 -e 9.788960
+N -t 9.000000 -n 4 -e 9.679600
+N -t 9.000000 -n 5 -e 9.709280
+s -t 9.040878299 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 9.898320 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 1 -Iv 0 
+r -t 9.128604369 -Hs 1 -Hd 1 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 9.897291 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 1 -Iv 0 
+s -t 9.703702583 -Hs 1 -Hd 0 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 9.897291 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 1 -Iv 0 
+r -t 9.791428654 -Hs 2 -Hd 0 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 9.782629 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 1 -Iv 0 
+r -t 9.797035917 -Hs 0 -Hd 0 -Ni 0 -Nx 440.00 -Ny 0.00 -Nz 0.00 -Ne 9.891944 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 1 -Iv 0 
+N -t 10.000000 -n 0 -e 9.890320
+N -t 10.000000 -n 1 -e 9.810640
+N -t 10.000000 -n 2 -e 9.780960
+N -t 10.000000 -n 3 -e 9.751280
+N -t 10.000000 -n 4 -e 9.671600
+N -t 10.000000 -n 5 -e 9.701280
+N -t 11.000000 -n 0 -e 9.882320
+N -t 11.000000 -n 1 -e 9.802640
+N -t 11.000000 -n 2 -e 9.772960
+N -t 11.000000 -n 3 -e 9.743280
+N -t 11.000000 -n 4 -e 9.663600
+N -t 11.000000 -n 5 -e 9.693280
+s -t 11.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 9.693280 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 2 -Iv 0 
+r -t 11.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 9.630746 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 2 -Iv 0 
+N -t 12.000000 -n 0 -e 9.874320
+N -t 12.000000 -n 1 -e 9.794640
+N -t 12.000000 -n 2 -e 9.764960
+N -t 12.000000 -n 3 -e 9.735280
+N -t 12.000000 -n 4 -e 9.625920
+N -t 12.000000 -n 5 -e 9.605600
+s -t 12.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 9.625920 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 2 -Iv 0 
+r -t 12.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 9.573376 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 2 -Iv 0 
+N -t 13.000000 -n 0 -e 9.866320
+N -t 13.000000 -n 1 -e 9.786640
+N -t 13.000000 -n 2 -e 9.756960
+N -t 13.000000 -n 3 -e 9.697600
+N -t 13.000000 -n 4 -e 9.538240
+N -t 13.000000 -n 5 -e 9.567920
+N -t 14.000000 -n 0 -e 9.858320
+N -t 14.000000 -n 1 -e 9.778640
+N -t 14.000000 -n 2 -e 9.748960
+N -t 14.000000 -n 3 -e 9.689600
+N -t 14.000000 -n 4 -e 9.530240
+N -t 14.000000 -n 5 -e 9.559920
+N -t 15.000000 -n 0 -e 9.850320
+N -t 15.000000 -n 1 -e 9.770640
+N -t 15.000000 -n 2 -e 9.740960
+N -t 15.000000 -n 3 -e 9.681600
+N -t 15.000000 -n 4 -e 9.522240
+N -t 15.000000 -n 5 -e 9.551920
+N -t 16.000000 -n 0 -e 9.842320
+N -t 16.000000 -n 1 -e 9.762640
+N -t 16.000000 -n 2 -e 9.732960
+N -t 16.000000 -n 3 -e 9.673600
+N -t 16.000000 -n 4 -e 9.514240
+N -t 16.000000 -n 5 -e 9.543920
+s -t 16.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 9.543920 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 3 -Iv 0 
+r -t 16.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 9.481386 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 3 -Iv 0 
+N -t 17.000000 -n 0 -e 9.834320
+N -t 17.000000 -n 1 -e 9.754640
+N -t 17.000000 -n 2 -e 9.724960
+N -t 17.000000 -n 3 -e 9.665600
+N -t 17.000000 -n 4 -e 9.476560
+N -t 17.000000 -n 5 -e 9.456240
+s -t 17.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 9.476560 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 3 -Iv 0 
+r -t 17.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 9.424016 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 3 -Iv 0 
+r -t 17.339064406 -Hs 3 -Hd 2 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 9.633207 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 3 -Iv 0 
+N -t 18.000000 -n 0 -e 9.826320
+N -t 18.000000 -n 1 -e 9.746640
+N -t 18.000000 -n 2 -e 9.716960
+N -t 18.000000 -n 3 -e 9.627920
+N -t 18.000000 -n 4 -e 9.388880
+N -t 18.000000 -n 5 -e 9.418560
+s -t 18.047815992 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 9.627920 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 3 -Iv 0 
+r -t 18.121149326 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 9.686311 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 3 -Iv 0 
+r -t 18.135542062 -Hs 4 -Hd 1 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 9.358116 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 3 -Iv 0 
+N -t 19.000000 -n 0 -e 9.818320
+N -t 19.000000 -n 1 -e 9.738640
+N -t 19.000000 -n 2 -e 9.679280
+N -t 19.000000 -n 3 -e 9.540240
+N -t 19.000000 -n 4 -e 9.351200
+N -t 19.000000 -n 5 -e 9.410560
+s -t 19.040878299 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 9.679280 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 3 -Iv 0 
+r -t 19.128604369 -Hs 1 -Hd 1 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 9.707931 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 3 -Iv 0 
+s -t 19.703702583 -Hs 1 -Hd 0 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 9.707931 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 3 -Iv 0 
+r -t 19.791428654 -Hs 2 -Hd 0 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 9.563589 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 3 -Iv 0 
+r -t 19.797035917 -Hs 0 -Hd 0 -Ni 0 -Nx 440.00 -Ny 0.00 -Nz 0.00 -Ne 9.782264 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 3 -Iv 0 
+N -t 20.000000 -n 0 -e 9.780640
+N -t 20.000000 -n 1 -e 9.621280
+N -t 20.000000 -n 2 -e 9.561920
+N -t 20.000000 -n 3 -e 9.502560
+N -t 20.000000 -n 4 -e 9.343200
+N -t 20.000000 -n 5 -e 9.402560
+N -t 21.000000 -n 0 -e 9.772640
+N -t 21.000000 -n 1 -e 9.613280
+N -t 21.000000 -n 2 -e 9.553920
+N -t 21.000000 -n 3 -e 9.494560
+N -t 21.000000 -n 4 -e 9.335200
+N -t 21.000000 -n 5 -e 9.394560
+s -t 21.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 9.394560 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 4 -Iv 0 
+r -t 21.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 9.302346 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 4 -Iv 0 
+N -t 22.000000 -n 0 -e 9.764640
+N -t 22.000000 -n 1 -e 9.605280
+N -t 22.000000 -n 2 -e 9.545920
+N -t 22.000000 -n 3 -e 9.486560
+N -t 22.000000 -n 4 -e 9.297520
+N -t 22.000000 -n 5 -e 9.306880
+s -t 22.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 9.297520 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 4 -Iv 0 
+r -t 22.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 9.274656 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 4 -Iv 0 
+N -t 23.000000 -n 0 -e 9.756640
+N -t 23.000000 -n 1 -e 9.597280
+N -t 23.000000 -n 2 -e 9.537920
+N -t 23.000000 -n 3 -e 9.448880
+N -t 23.000000 -n 4 -e 9.209840
+N -t 23.000000 -n 5 -e 9.269200
+N -t 24.000000 -n 0 -e 9.748640
+N -t 24.000000 -n 1 -e 9.589280
+N -t 24.000000 -n 2 -e 9.529920
+N -t 24.000000 -n 3 -e 9.440880
+N -t 24.000000 -n 4 -e 9.201840
+N -t 24.000000 -n 5 -e 9.261200
+N -t 25.000000 -n 0 -e 9.740640
+N -t 25.000000 -n 1 -e 9.581280
+N -t 25.000000 -n 2 -e 9.521920
+N -t 25.000000 -n 3 -e 9.432880
+N -t 25.000000 -n 4 -e 9.193840
+N -t 25.000000 -n 5 -e 9.253200
+N -t 26.000000 -n 0 -e 9.732640
+N -t 26.000000 -n 1 -e 9.573280
+N -t 26.000000 -n 2 -e 9.513920
+N -t 26.000000 -n 3 -e 9.424880
+N -t 26.000000 -n 4 -e 9.185840
+N -t 26.000000 -n 5 -e 9.245200
+s -t 26.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 9.245200 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 5 -Iv 0 
+r -t 26.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 9.152986 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 5 -Iv 0 
+N -t 27.000000 -n 0 -e 9.724640
+N -t 27.000000 -n 1 -e 9.565280
+N -t 27.000000 -n 2 -e 9.505920
+N -t 27.000000 -n 3 -e 9.416880
+N -t 27.000000 -n 4 -e 9.148160
+N -t 27.000000 -n 5 -e 9.157520
+s -t 27.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 9.148160 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 5 -Iv 0 
+r -t 27.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 9.125296 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 5 -Iv 0 
+r -t 27.339064406 -Hs 3 -Hd 2 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 9.384487 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 5 -Iv 0 
+N -t 28.000000 -n 0 -e 9.716640
+N -t 28.000000 -n 1 -e 9.557280
+N -t 28.000000 -n 2 -e 9.497920
+N -t 28.000000 -n 3 -e 9.379200
+N -t 28.000000 -n 4 -e 9.060480
+N -t 28.000000 -n 5 -e 9.119840
+s -t 28.047815992 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 9.379200 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 5 -Iv 0 
+r -t 28.121149326 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 9.467271 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 5 -Iv 0 
+r -t 28.135542062 -Hs 4 -Hd 1 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 9.029716 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 5 -Iv 0 
+N -t 29.000000 -n 0 -e 9.708640
+N -t 29.000000 -n 1 -e 9.549280
+N -t 29.000000 -n 2 -e 9.460240
+N -t 29.000000 -n 3 -e 9.291520
+N -t 29.000000 -n 4 -e 9.022800
+N -t 29.000000 -n 5 -e 9.111840
+s -t 29.040878299 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 9.460240 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 5 -Iv 0 
+r -t 29.114211632 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 9.260926 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 5 -Iv 0 
+r -t 29.128604369 -Hs 1 -Hd 1 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 9.518571 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 5 -Iv 0 
+s -t 29.703702583 -Hs 1 -Hd 0 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 9.518571 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 5 -Iv 0 
+r -t 29.791428654 -Hs 2 -Hd 0 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 9.344549 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 5 -Iv 0 
+r -t 29.797035917 -Hs 0 -Hd 0 -Ni 0 -Nx 440.00 -Ny 0.00 -Nz 0.00 -Ne 9.672584 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 5 -Iv 0 
+N -t 30.000000 -n 0 -e 9.670960
+N -t 30.000000 -n 1 -e 9.431920
+N -t 30.000000 -n 2 -e 9.342880
+N -t 30.000000 -n 3 -e 9.253840
+N -t 30.000000 -n 4 -e 9.014800
+N -t 30.000000 -n 5 -e 9.103840
+N -t 31.000000 -n 0 -e 9.662960
+N -t 31.000000 -n 1 -e 9.423920
+N -t 31.000000 -n 2 -e 9.334880
+N -t 31.000000 -n 3 -e 9.245840
+N -t 31.000000 -n 4 -e 9.006800
+N -t 31.000000 -n 5 -e 9.095840
+s -t 31.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 9.095840 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 6 -Iv 0 
+r -t 31.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 8.973946 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 6 -Iv 0 
+N -t 32.000000 -n 0 -e 9.654960
+N -t 32.000000 -n 1 -e 9.415920
+N -t 32.000000 -n 2 -e 9.326880
+N -t 32.000000 -n 3 -e 9.237840
+N -t 32.000000 -n 4 -e 8.969120
+N -t 32.000000 -n 5 -e 9.008160
+s -t 32.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 8.969120 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 6 -Iv 0 
+r -t 32.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 8.975936 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 6 -Iv 0 
+N -t 33.000000 -n 0 -e 9.646960
+N -t 33.000000 -n 1 -e 9.407920
+N -t 33.000000 -n 2 -e 9.318880
+N -t 33.000000 -n 3 -e 9.200160
+N -t 33.000000 -n 4 -e 8.881440
+N -t 33.000000 -n 5 -e 8.970480
+N -t 34.000000 -n 0 -e 9.638960
+N -t 34.000000 -n 1 -e 9.399920
+N -t 34.000000 -n 2 -e 9.310880
+N -t 34.000000 -n 3 -e 9.192160
+N -t 34.000000 -n 4 -e 8.873440
+N -t 34.000000 -n 5 -e 8.962480
+N -t 35.000000 -n 0 -e 9.630960
+N -t 35.000000 -n 1 -e 9.391920
+N -t 35.000000 -n 2 -e 9.302880
+N -t 35.000000 -n 3 -e 9.184160
+N -t 35.000000 -n 4 -e 8.865440
+N -t 35.000000 -n 5 -e 8.954480
+N -t 36.000000 -n 0 -e 9.622960
+N -t 36.000000 -n 1 -e 9.383920
+N -t 36.000000 -n 2 -e 9.294880
+N -t 36.000000 -n 3 -e 9.176160
+N -t 36.000000 -n 4 -e 8.857440
+N -t 36.000000 -n 5 -e 8.946480
+s -t 36.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 8.946480 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 7 -Iv 0 
+r -t 36.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 8.824586 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 7 -Iv 0 
+N -t 37.000000 -n 0 -e 9.614960
+N -t 37.000000 -n 1 -e 9.375920
+N -t 37.000000 -n 2 -e 9.286880
+N -t 37.000000 -n 3 -e 9.168160
+N -t 37.000000 -n 4 -e 8.819760
+N -t 37.000000 -n 5 -e 8.858800
+s -t 37.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 8.819760 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 7 -Iv 0 
+r -t 37.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 8.826576 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 7 -Iv 0 
+N -t 38.000000 -n 0 -e 9.606960
+N -t 38.000000 -n 1 -e 9.367920
+N -t 38.000000 -n 2 -e 9.278880
+N -t 38.000000 -n 3 -e 9.130480
+N -t 38.000000 -n 4 -e 8.732080
+N -t 38.000000 -n 5 -e 8.821120
+N -t 39.000000 -n 0 -e 9.598960
+N -t 39.000000 -n 1 -e 9.359920
+N -t 39.000000 -n 2 -e 9.270880
+N -t 39.000000 -n 3 -e 9.122480
+N -t 39.000000 -n 4 -e 8.724080
+N -t 39.000000 -n 5 -e 8.813120
+N -t 40.000000 -n 0 -e 9.590960
+N -t 40.000000 -n 1 -e 9.351920
+N -t 40.000000 -n 2 -e 9.262880
+N -t 40.000000 -n 3 -e 9.114480
+N -t 40.000000 -n 4 -e 8.716080
+N -t 40.000000 -n 5 -e 8.805120
+N -t 41.000000 -n 0 -e 9.582960
+N -t 41.000000 -n 1 -e 9.343920
+N -t 41.000000 -n 2 -e 9.254880
+N -t 41.000000 -n 3 -e 9.106480
+N -t 41.000000 -n 4 -e 8.708080
+N -t 41.000000 -n 5 -e 8.797120
+s -t 41.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 8.797120 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 8 -Iv 0 
+r -t 41.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 8.675226 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 8 -Iv 0 
+N -t 42.000000 -n 0 -e 9.574960
+N -t 42.000000 -n 1 -e 9.335920
+N -t 42.000000 -n 2 -e 9.246880
+N -t 42.000000 -n 3 -e 9.098480
+N -t 42.000000 -n 4 -e 8.670400
+N -t 42.000000 -n 5 -e 8.709440
+s -t 42.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 8.670400 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 8 -Iv 0 
+r -t 42.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 8.677216 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 8 -Iv 0 
+N -t 43.000000 -n 0 -e 9.566960
+N -t 43.000000 -n 1 -e 9.327920
+N -t 43.000000 -n 2 -e 9.238880
+N -t 43.000000 -n 3 -e 9.060800
+N -t 43.000000 -n 4 -e 8.582720
+N -t 43.000000 -n 5 -e 8.671760
+N -t 44.000000 -n 0 -e 9.558960
+N -t 44.000000 -n 1 -e 9.319920
+N -t 44.000000 -n 2 -e 9.230880
+N -t 44.000000 -n 3 -e 9.052800
+N -t 44.000000 -n 4 -e 8.574720
+N -t 44.000000 -n 5 -e 8.663760
+N -t 45.000000 -n 0 -e 9.550960
+N -t 45.000000 -n 1 -e 9.311920
+N -t 45.000000 -n 2 -e 9.222880
+N -t 45.000000 -n 3 -e 9.044800
+N -t 45.000000 -n 4 -e 8.566720
+N -t 45.000000 -n 5 -e 8.655760
+N -t 46.000000 -n 0 -e 9.542960
+N -t 46.000000 -n 1 -e 9.303920
+N -t 46.000000 -n 2 -e 9.214880
+N -t 46.000000 -n 3 -e 9.036800
+N -t 46.000000 -n 4 -e 8.558720
+N -t 46.000000 -n 5 -e 8.647760
+s -t 46.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 8.647760 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 9 -Iv 0 
+r -t 46.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 8.525866 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 9 -Iv 0 
+N -t 47.000000 -n 0 -e 9.534960
+N -t 47.000000 -n 1 -e 9.295920
+N -t 47.000000 -n 2 -e 9.206880
+N -t 47.000000 -n 3 -e 9.028800
+N -t 47.000000 -n 4 -e 8.521040
+N -t 47.000000 -n 5 -e 8.560080
+s -t 47.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 8.521040 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 9 -Iv 0 
+r -t 47.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 8.527856 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 9 -Iv 0 
+r -t 47.339064406 -Hs 3 -Hd 2 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 8.996407 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 9 -Iv 0 
+N -t 48.000000 -n 0 -e 9.526960
+N -t 48.000000 -n 1 -e 9.287920
+N -t 48.000000 -n 2 -e 9.198880
+N -t 48.000000 -n 3 -e 8.991120
+N -t 48.000000 -n 4 -e 8.433360
+N -t 48.000000 -n 5 -e 8.522400
+s -t 48.047815992 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 8.991120 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 9 -Iv 0 
+r -t 48.121149326 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 9.168231 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 9 -Iv 0 
+r -t 48.135542062 -Hs 4 -Hd 1 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 8.402596 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 9 -Iv 0 
+N -t 49.000000 -n 0 -e 9.518960
+N -t 49.000000 -n 1 -e 9.279920
+N -t 49.000000 -n 2 -e 9.161200
+N -t 49.000000 -n 3 -e 8.903440
+N -t 49.000000 -n 4 -e 8.395680
+N -t 49.000000 -n 5 -e 8.514400
+s -t 49.040878299 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 9.161200 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 9 -Iv 0 
+r -t 49.128604369 -Hs 1 -Hd 1 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 9.249211 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 9 -Iv 0 
+s -t 49.703702583 -Hs 1 -Hd 0 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 9.249211 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 9 -Iv 0 
+r -t 49.791428654 -Hs 2 -Hd 0 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 9.045509 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 9 -Iv 0 
+r -t 49.797035917 -Hs 0 -Hd 0 -Ni 0 -Nx 440.00 -Ny 0.00 -Nz 0.00 -Ne 9.482904 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 9 -Iv 0 
+N -t 50.000000 -n 0 -e 9.481280
+N -t 50.000000 -n 1 -e 9.162560
+N -t 50.000000 -n 2 -e 9.043840
+N -t 50.000000 -n 3 -e 8.865760
+N -t 50.000000 -n 4 -e 8.387680
+N -t 50.000000 -n 5 -e 8.506400
+N -t 51.000000 -n 0 -e 9.473280
+N -t 51.000000 -n 1 -e 9.154560
+N -t 51.000000 -n 2 -e 9.035840
+N -t 51.000000 -n 3 -e 8.857760
+N -t 51.000000 -n 4 -e 8.379680
+N -t 51.000000 -n 5 -e 8.498400
+s -t 51.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 8.498400 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 10 -Iv 0 
+r -t 51.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 8.346826 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 10 -Iv 0 
+N -t 52.000000 -n 0 -e 9.465280
+N -t 52.000000 -n 1 -e 9.146560
+N -t 52.000000 -n 2 -e 9.027840
+N -t 52.000000 -n 3 -e 8.849760
+N -t 52.000000 -n 4 -e 8.342000
+N -t 52.000000 -n 5 -e 8.410720
+s -t 52.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 8.342000 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 10 -Iv 0 
+r -t 52.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 8.378496 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 10 -Iv 0 
+r -t 52.339064406 -Hs 3 -Hd 2 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 8.817367 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 10 -Iv 0 
+N -t 53.000000 -n 0 -e 9.457280
+N -t 53.000000 -n 1 -e 9.138560
+N -t 53.000000 -n 2 -e 9.019840
+N -t 53.000000 -n 3 -e 8.812080
+N -t 53.000000 -n 4 -e 8.254320
+N -t 53.000000 -n 5 -e 8.373040
+s -t 53.047815992 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 8.812080 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 10 -Iv 0 
+r -t 53.121149326 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 8.989191 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 10 -Iv 0 
+r -t 53.135542062 -Hs 4 -Hd 1 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 8.223556 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 10 -Iv 0 
+N -t 54.000000 -n 0 -e 9.449280
+N -t 54.000000 -n 1 -e 9.130560
+N -t 54.000000 -n 2 -e 8.982160
+N -t 54.000000 -n 3 -e 8.724400
+N -t 54.000000 -n 4 -e 8.216640
+N -t 54.000000 -n 5 -e 8.365040
+s -t 54.040878299 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 8.982160 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 10 -Iv 0 
+r -t 54.114211632 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 8.693806 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 10 -Iv 0 
+r -t 54.128604369 -Hs 1 -Hd 1 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 9.099851 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 10 -Iv 0 
+s -t 54.703702583 -Hs 1 -Hd 0 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 9.099851 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 10 -Iv 0 
+r -t 54.791428654 -Hs 2 -Hd 0 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 8.866469 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 10 -Iv 0 
+r -t 54.797035917 -Hs 0 -Hd 0 -Ni 0 -Nx 440.00 -Ny 0.00 -Nz 0.00 -Ne 9.413224 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 10 -Iv 0 
+N -t 55.000000 -n 0 -e 9.411600
+N -t 55.000000 -n 1 -e 9.013200
+N -t 55.000000 -n 2 -e 8.864800
+N -t 55.000000 -n 3 -e 8.686720
+N -t 55.000000 -n 4 -e 8.208640
+N -t 55.000000 -n 5 -e 8.357040
+N -t 56.000000 -n 0 -e 9.403600
+N -t 56.000000 -n 1 -e 9.005200
+N -t 56.000000 -n 2 -e 8.856800
+N -t 56.000000 -n 3 -e 8.678720
+N -t 56.000000 -n 4 -e 8.200640
+N -t 56.000000 -n 5 -e 8.349040
+s -t 56.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 8.349040 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 11 -Iv 0 
+r -t 56.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 8.167786 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 11 -Iv 0 
+N -t 57.000000 -n 0 -e 9.395600
+N -t 57.000000 -n 1 -e 8.997200
+N -t 57.000000 -n 2 -e 8.848800
+N -t 57.000000 -n 3 -e 8.670720
+N -t 57.000000 -n 4 -e 8.162960
+N -t 57.000000 -n 5 -e 8.261360
+s -t 57.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 8.162960 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 11 -Iv 0 
+r -t 57.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 8.229136 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 11 -Iv 0 
+r -t 57.339064406 -Hs 3 -Hd 2 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 8.638327 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 11 -Iv 0 
+N -t 58.000000 -n 0 -e 9.387600
+N -t 58.000000 -n 1 -e 8.989200
+N -t 58.000000 -n 2 -e 8.840800
+N -t 58.000000 -n 3 -e 8.633040
+N -t 58.000000 -n 4 -e 8.075280
+N -t 58.000000 -n 5 -e 8.223680
+s -t 58.047815992 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 8.633040 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 11 -Iv 0 
+r -t 58.121149326 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 8.810151 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 11 -Iv 0 
+r -t 58.135542062 -Hs 4 -Hd 1 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 8.044516 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 11 -Iv 0 
+N -t 59.000000 -n 0 -e 9.379600
+N -t 59.000000 -n 1 -e 8.981200
+N -t 59.000000 -n 2 -e 8.803120
+N -t 59.000000 -n 3 -e 8.545360
+N -t 59.000000 -n 4 -e 8.037600
+N -t 59.000000 -n 5 -e 8.215680
+s -t 59.040878299 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 8.803120 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 11 -Iv 0 
+r -t 59.114211632 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 8.514766 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 11 -Iv 0 
+r -t 59.128604369 -Hs 1 -Hd 1 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 8.950491 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 11 -Iv 0 
+s -t 59.703702583 -Hs 1 -Hd 0 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 8.950491 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 11 -Iv 0 
+r -t 59.791428654 -Hs 2 -Hd 0 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 8.687429 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 11 -Iv 0 
+r -t 59.797035917 -Hs 0 -Hd 0 -Ni 0 -Nx 440.00 -Ny 0.00 -Nz 0.00 -Ne 9.343544 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 11 -Iv 0 
+N -t 60.000000 -n 0 -e 9.341920
+N -t 60.000000 -n 1 -e 8.863840
+N -t 60.000000 -n 2 -e 8.685760
+N -t 60.000000 -n 3 -e 8.507680
+N -t 60.000000 -n 4 -e 8.029600
+N -t 60.000000 -n 5 -e 8.207680
+N -t 61.000000 -n 0 -e 9.333920
+N -t 61.000000 -n 1 -e 8.855840
+N -t 61.000000 -n 2 -e 8.677760
+N -t 61.000000 -n 3 -e 8.499680
+N -t 61.000000 -n 4 -e 8.021600
+N -t 61.000000 -n 5 -e 8.199680
+s -t 61.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 8.199680 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 12 -Iv 0 
+r -t 61.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 7.988746 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 12 -Iv 0 
+N -t 62.000000 -n 0 -e 9.325920
+N -t 62.000000 -n 1 -e 8.847840
+N -t 62.000000 -n 2 -e 8.669760
+N -t 62.000000 -n 3 -e 8.491680
+N -t 62.000000 -n 4 -e 7.983920
+N -t 62.000000 -n 5 -e 8.112000
+s -t 62.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 7.983920 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 12 -Iv 0 
+r -t 62.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 8.079776 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 12 -Iv 0 
+N -t 63.000000 -n 0 -e 9.317920
+N -t 63.000000 -n 1 -e 8.839840
+N -t 63.000000 -n 2 -e 8.661760
+N -t 63.000000 -n 3 -e 8.454000
+N -t 63.000000 -n 4 -e 7.896240
+N -t 63.000000 -n 5 -e 8.074320
+N -t 64.000000 -n 0 -e 9.309920
+N -t 64.000000 -n 1 -e 8.831840
+N -t 64.000000 -n 2 -e 8.653760
+N -t 64.000000 -n 3 -e 8.446000
+N -t 64.000000 -n 4 -e 7.888240
+N -t 64.000000 -n 5 -e 8.066320
+N -t 65.000000 -n 0 -e 9.301920
+N -t 65.000000 -n 1 -e 8.823840
+N -t 65.000000 -n 2 -e 8.645760
+N -t 65.000000 -n 3 -e 8.438000
+N -t 65.000000 -n 4 -e 7.880240
+N -t 65.000000 -n 5 -e 8.058320
+N -t 66.000000 -n 0 -e 9.293920
+N -t 66.000000 -n 1 -e 8.815840
+N -t 66.000000 -n 2 -e 8.637760
+N -t 66.000000 -n 3 -e 8.430000
+N -t 66.000000 -n 4 -e 7.872240
+N -t 66.000000 -n 5 -e 8.050320
+s -t 66.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 8.050320 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 13 -Iv 0 
+r -t 66.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 7.839386 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 13 -Iv 0 
+N -t 67.000000 -n 0 -e 9.285920
+N -t 67.000000 -n 1 -e 8.807840
+N -t 67.000000 -n 2 -e 8.629760
+N -t 67.000000 -n 3 -e 8.422000
+N -t 67.000000 -n 4 -e 7.834560
+N -t 67.000000 -n 5 -e 7.962640
+s -t 67.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 7.834560 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 13 -Iv 0 
+r -t 67.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 7.930416 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 13 -Iv 0 
+r -t 67.339064406 -Hs 3 -Hd 2 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 8.389607 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 13 -Iv 0 
+N -t 68.000000 -n 0 -e 9.277920
+N -t 68.000000 -n 1 -e 8.799840
+N -t 68.000000 -n 2 -e 8.621760
+N -t 68.000000 -n 3 -e 8.384320
+N -t 68.000000 -n 4 -e 7.746880
+N -t 68.000000 -n 5 -e 7.924960
+s -t 68.047815992 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 8.384320 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 13 -Iv 0 
+r -t 68.121149326 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 8.591111 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 13 -Iv 0 
+r -t 68.135542062 -Hs 4 -Hd 1 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 7.716116 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 13 -Iv 0 
+N -t 69.000000 -n 0 -e 9.269920
+N -t 69.000000 -n 1 -e 8.791840
+N -t 69.000000 -n 2 -e 8.584080
+N -t 69.000000 -n 3 -e 8.296640
+N -t 69.000000 -n 4 -e 7.709200
+N -t 69.000000 -n 5 -e 7.916960
+s -t 69.040878299 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 8.584080 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 13 -Iv 0 
+r -t 69.114211632 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 8.266046 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 13 -Iv 0 
+r -t 69.128604369 -Hs 1 -Hd 1 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 8.761131 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 13 -Iv 0 
+s -t 69.703702583 -Hs 1 -Hd 0 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 8.761131 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 13 -Iv 0 
+r -t 69.791428654 -Hs 2 -Hd 0 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 8.468389 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 13 -Iv 0 
+r -t 69.797035917 -Hs 0 -Hd 0 -Ni 0 -Nx 440.00 -Ny 0.00 -Nz 0.00 -Ne 9.233864 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 13 -Iv 0 
+N -t 70.000000 -n 0 -e 9.232240
+N -t 70.000000 -n 1 -e 8.674480
+N -t 70.000000 -n 2 -e 8.466720
+N -t 70.000000 -n 3 -e 8.258960
+N -t 70.000000 -n 4 -e 7.701200
+N -t 70.000000 -n 5 -e 7.908960
+N -t 71.000000 -n 0 -e 9.224240
+N -t 71.000000 -n 1 -e 8.666480
+N -t 71.000000 -n 2 -e 8.458720
+N -t 71.000000 -n 3 -e 8.250960
+N -t 71.000000 -n 4 -e 7.693200
+N -t 71.000000 -n 5 -e 7.900960
+s -t 71.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 7.900960 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 14 -Iv 0 
+r -t 71.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 7.660346 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 14 -Iv 0 
+N -t 72.000000 -n 0 -e 9.216240
+N -t 72.000000 -n 1 -e 8.658480
+N -t 72.000000 -n 2 -e 8.450720
+N -t 72.000000 -n 3 -e 8.242960
+N -t 72.000000 -n 4 -e 7.655520
+N -t 72.000000 -n 5 -e 7.813280
+s -t 72.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 7.655520 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 14 -Iv 0 
+r -t 72.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 7.781056 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 14 -Iv 0 
+r -t 72.339064406 -Hs 3 -Hd 2 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 8.210567 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 14 -Iv 0 
+N -t 73.000000 -n 0 -e 9.208240
+N -t 73.000000 -n 1 -e 8.650480
+N -t 73.000000 -n 2 -e 8.442720
+N -t 73.000000 -n 3 -e 8.205280
+N -t 73.000000 -n 4 -e 7.567840
+N -t 73.000000 -n 5 -e 7.775600
+s -t 73.047815992 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 8.205280 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 14 -Iv 0 
+r -t 73.121149326 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 8.412071 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 14 -Iv 0 
+r -t 73.135542062 -Hs 4 -Hd 1 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 7.537076 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 14 -Iv 0 
+N -t 74.000000 -n 0 -e 9.200240
+N -t 74.000000 -n 1 -e 8.642480
+N -t 74.000000 -n 2 -e 8.405040
+N -t 74.000000 -n 3 -e 8.117600
+N -t 74.000000 -n 4 -e 7.530160
+N -t 74.000000 -n 5 -e 7.767600
+s -t 74.040878299 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 8.405040 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 14 -Iv 0 
+r -t 74.114211632 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 8.087006 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 14 -Iv 0 
+r -t 74.128604369 -Hs 1 -Hd 1 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 8.611771 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 14 -Iv 0 
+s -t 74.703702583 -Hs 1 -Hd 0 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 8.611771 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 14 -Iv 0 
+r -t 74.791428654 -Hs 2 -Hd 0 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 8.289349 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 14 -Iv 0 
+r -t 74.797035917 -Hs 0 -Hd 0 -Ni 0 -Nx 440.00 -Ny 0.00 -Nz 0.00 -Ne 9.164184 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 14 -Iv 0 
+N -t 75.000000 -n 0 -e 9.162560
+N -t 75.000000 -n 1 -e 8.525120
+N -t 75.000000 -n 2 -e 8.287680
+N -t 75.000000 -n 3 -e 8.079920
+N -t 75.000000 -n 4 -e 7.522160
+N -t 75.000000 -n 5 -e 7.759600
+N -t 76.000000 -n 0 -e 9.154560
+N -t 76.000000 -n 1 -e 8.517120
+N -t 76.000000 -n 2 -e 8.279680
+N -t 76.000000 -n 3 -e 8.071920
+N -t 76.000000 -n 4 -e 7.514160
+N -t 76.000000 -n 5 -e 7.751600
+s -t 76.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 7.751600 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 15 -Iv 0 
+r -t 76.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 7.481306 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 15 -Iv 0 
+N -t 77.000000 -n 0 -e 9.146560
+N -t 77.000000 -n 1 -e 8.509120
+N -t 77.000000 -n 2 -e 8.271680
+N -t 77.000000 -n 3 -e 8.063920
+N -t 77.000000 -n 4 -e 7.476480
+N -t 77.000000 -n 5 -e 7.663920
+s -t 77.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 7.476480 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 15 -Iv 0 
+r -t 77.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 7.631696 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 15 -Iv 0 
+r -t 77.339064406 -Hs 3 -Hd 2 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 8.031527 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 15 -Iv 0 
+N -t 78.000000 -n 0 -e 9.138560
+N -t 78.000000 -n 1 -e 8.501120
+N -t 78.000000 -n 2 -e 8.263680
+N -t 78.000000 -n 3 -e 8.026240
+N -t 78.000000 -n 4 -e 7.388800
+N -t 78.000000 -n 5 -e 7.626240
+s -t 78.047815992 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 8.026240 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 15 -Iv 0 
+r -t 78.121149326 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 8.233031 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 15 -Iv 0 
+r -t 78.135542062 -Hs 4 -Hd 1 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 7.358036 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 15 -Iv 0 
+N -t 79.000000 -n 0 -e 9.130560
+N -t 79.000000 -n 1 -e 8.493120
+N -t 79.000000 -n 2 -e 8.226000
+N -t 79.000000 -n 3 -e 7.938560
+N -t 79.000000 -n 4 -e 7.351120
+N -t 79.000000 -n 5 -e 7.618240
+s -t 79.040878299 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 8.226000 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 15 -Iv 0 
+r -t 79.114211632 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 7.907966 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 15 -Iv 0 
+r -t 79.128604369 -Hs 1 -Hd 1 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 8.462411 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 15 -Iv 0 
+s -t 79.703702583 -Hs 1 -Hd 0 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 8.462411 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 15 -Iv 0 
+r -t 79.791428654 -Hs 2 -Hd 0 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 8.110309 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 15 -Iv 0 
+r -t 79.797035917 -Hs 0 -Hd 0 -Ni 0 -Nx 440.00 -Ny 0.00 -Nz 0.00 -Ne 9.094504 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 15 -Iv 0 
+N -t 80.000000 -n 0 -e 9.092880
+N -t 80.000000 -n 1 -e 8.375760
+N -t 80.000000 -n 2 -e 8.108640
+N -t 80.000000 -n 3 -e 7.900880
+N -t 80.000000 -n 4 -e 7.343120
+N -t 80.000000 -n 5 -e 7.610240
+N -t 81.000000 -n 0 -e 9.084880
+N -t 81.000000 -n 1 -e 8.367760
+N -t 81.000000 -n 2 -e 8.100640
+N -t 81.000000 -n 3 -e 7.892880
+N -t 81.000000 -n 4 -e 7.335120
+N -t 81.000000 -n 5 -e 7.602240
+s -t 81.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 7.602240 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 16 -Iv 0 
+r -t 81.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 7.302266 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 16 -Iv 0 
+N -t 82.000000 -n 0 -e 9.076880
+N -t 82.000000 -n 1 -e 8.359760
+N -t 82.000000 -n 2 -e 8.092640
+N -t 82.000000 -n 3 -e 7.884880
+N -t 82.000000 -n 4 -e 7.297440
+N -t 82.000000 -n 5 -e 7.514560
+s -t 82.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 7.297440 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 16 -Iv 0 
+r -t 82.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 7.482336 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 16 -Iv 0 
+r -t 82.339064406 -Hs 3 -Hd 2 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 7.852487 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 16 -Iv 0 
+N -t 83.000000 -n 0 -e 9.068880
+N -t 83.000000 -n 1 -e 8.351760
+N -t 83.000000 -n 2 -e 8.084640
+N -t 83.000000 -n 3 -e 7.847200
+N -t 83.000000 -n 4 -e 7.209760
+N -t 83.000000 -n 5 -e 7.476880
+s -t 83.047815992 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 7.847200 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 16 -Iv 0 
+r -t 83.121149326 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 8.053991 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 16 -Iv 0 
+r -t 83.135542062 -Hs 4 -Hd 1 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 7.178996 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 16 -Iv 0 
+N -t 84.000000 -n 0 -e 9.060880
+N -t 84.000000 -n 1 -e 8.343760
+N -t 84.000000 -n 2 -e 8.046960
+N -t 84.000000 -n 3 -e 7.759520
+N -t 84.000000 -n 4 -e 7.172080
+N -t 84.000000 -n 5 -e 7.468880
+s -t 84.040878299 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 8.046960 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 16 -Iv 0 
+r -t 84.128604369 -Hs 1 -Hd 1 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 8.313051 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 16 -Iv 0 
+s -t 84.703702583 -Hs 1 -Hd 0 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 8.313051 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 16 -Iv 0 
+r -t 84.791428654 -Hs 2 -Hd 0 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 7.931269 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 16 -Iv 0 
+r -t 84.797035917 -Hs 0 -Hd 0 -Ni 0 -Nx 440.00 -Ny 0.00 -Nz 0.00 -Ne 9.024824 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 16 -Iv 0 
+N -t 85.000000 -n 0 -e 9.023200
+N -t 85.000000 -n 1 -e 8.226400
+N -t 85.000000 -n 2 -e 7.929600
+N -t 85.000000 -n 3 -e 7.721840
+N -t 85.000000 -n 4 -e 7.164080
+N -t 85.000000 -n 5 -e 7.460880
+N -t 86.000000 -n 0 -e 9.015200
+N -t 86.000000 -n 1 -e 8.218400
+N -t 86.000000 -n 2 -e 7.921600
+N -t 86.000000 -n 3 -e 7.713840
+N -t 86.000000 -n 4 -e 7.156080
+N -t 86.000000 -n 5 -e 7.452880
+s -t 86.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 7.452880 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 17 -Iv 0 
+r -t 86.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 7.123226 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 17 -Iv 0 
+N -t 87.000000 -n 0 -e 9.007200
+N -t 87.000000 -n 1 -e 8.210400
+N -t 87.000000 -n 2 -e 7.913600
+N -t 87.000000 -n 3 -e 7.705840
+N -t 87.000000 -n 4 -e 7.118400
+N -t 87.000000 -n 5 -e 7.365200
+s -t 87.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 7.118400 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 17 -Iv 0 
+r -t 87.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 7.332976 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 17 -Iv 0 
+r -t 87.339064406 -Hs 3 -Hd 2 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 7.673447 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 17 -Iv 0 
+N -t 88.000000 -n 0 -e 8.999200
+N -t 88.000000 -n 1 -e 8.202400
+N -t 88.000000 -n 2 -e 7.905600
+N -t 88.000000 -n 3 -e 7.668160
+N -t 88.000000 -n 4 -e 7.030720
+N -t 88.000000 -n 5 -e 7.327520
+s -t 88.047815992 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 7.668160 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 17 -Iv 0 
+r -t 88.121149326 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 7.874951 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 17 -Iv 0 
+r -t 88.135542062 -Hs 4 -Hd 1 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 6.999956 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 17 -Iv 0 
+N -t 89.000000 -n 0 -e 8.991200
+N -t 89.000000 -n 1 -e 8.194400
+N -t 89.000000 -n 2 -e 7.867920
+N -t 89.000000 -n 3 -e 7.580480
+N -t 89.000000 -n 4 -e 6.993040
+N -t 89.000000 -n 5 -e 7.319520
+s -t 89.040878299 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 7.867920 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 17 -Iv 0 
+r -t 89.114211632 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 7.549886 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 17 -Iv 0 
+r -t 89.128604369 -Hs 1 -Hd 1 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 8.163691 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 17 -Iv 0 
+s -t 89.703702583 -Hs 1 -Hd 0 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 8.163691 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 17 -Iv 0 
+r -t 89.791428654 -Hs 2 -Hd 0 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 7.752229 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 17 -Iv 0 
+r -t 89.797035917 -Hs 0 -Hd 0 -Ni 0 -Nx 440.00 -Ny 0.00 -Nz 0.00 -Ne 8.955144 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 17 -Iv 0 
+N -t 90.000000 -n 0 -e 8.953520
+N -t 90.000000 -n 1 -e 8.077040
+N -t 90.000000 -n 2 -e 7.750560
+N -t 90.000000 -n 3 -e 7.542800
+N -t 90.000000 -n 4 -e 6.985040
+N -t 90.000000 -n 5 -e 7.311520
+N -t 91.000000 -n 0 -e 8.945520
+N -t 91.000000 -n 1 -e 8.069040
+N -t 91.000000 -n 2 -e 7.742560
+N -t 91.000000 -n 3 -e 7.534800
+N -t 91.000000 -n 4 -e 6.977040
+N -t 91.000000 -n 5 -e 7.303520
+s -t 91.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 7.303520 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 18 -Iv 0 
+r -t 91.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 6.944186 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 18 -Iv 0 
+N -t 92.000000 -n 0 -e 8.937520
+N -t 92.000000 -n 1 -e 8.061040
+N -t 92.000000 -n 2 -e 7.734560
+N -t 92.000000 -n 3 -e 7.526800
+N -t 92.000000 -n 4 -e 6.939360
+N -t 92.000000 -n 5 -e 7.215840
+s -t 92.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 6.939360 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 18 -Iv 0 
+r -t 92.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 7.183616 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 18 -Iv 0 
+r -t 92.339064406 -Hs 3 -Hd 2 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 7.494407 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 18 -Iv 0 
+N -t 93.000000 -n 0 -e 8.929520
+N -t 93.000000 -n 1 -e 8.053040
+N -t 93.000000 -n 2 -e 7.726560
+N -t 93.000000 -n 3 -e 7.489120
+N -t 93.000000 -n 4 -e 6.851680
+N -t 93.000000 -n 5 -e 7.178160
+s -t 93.047815992 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 7.489120 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 18 -Iv 0 
+r -t 93.121149326 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 7.695911 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 18 -Iv 0 
+r -t 93.135542062 -Hs 4 -Hd 1 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 6.820916 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 18 -Iv 0 
+N -t 94.000000 -n 0 -e 8.921520
+N -t 94.000000 -n 1 -e 8.045040
+N -t 94.000000 -n 2 -e 7.688880
+N -t 94.000000 -n 3 -e 7.401440
+N -t 94.000000 -n 4 -e 6.814000
+N -t 94.000000 -n 5 -e 7.170160
+s -t 94.040878299 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 7.688880 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 18 -Iv 0 
+r -t 94.128604369 -Hs 1 -Hd 1 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 8.014331 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 18 -Iv 0 
+s -t 94.703702583 -Hs 1 -Hd 0 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 8.014331 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 18 -Iv 0 
+r -t 94.791428654 -Hs 2 -Hd 0 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 7.573189 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 18 -Iv 0 
+r -t 94.797035917 -Hs 0 -Hd 0 -Ni 0 -Nx 440.00 -Ny 0.00 -Nz 0.00 -Ne 8.885464 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 18 -Iv 0 
+N -t 95.000000 -n 0 -e 8.883840
+N -t 95.000000 -n 1 -e 7.927680
+N -t 95.000000 -n 2 -e 7.571520
+N -t 95.000000 -n 3 -e 7.363760
+N -t 95.000000 -n 4 -e 6.806000
+N -t 95.000000 -n 5 -e 7.162160
+N -t 96.000000 -n 0 -e 8.875840
+N -t 96.000000 -n 1 -e 7.919680
+N -t 96.000000 -n 2 -e 7.563520
+N -t 96.000000 -n 3 -e 7.355760
+N -t 96.000000 -n 4 -e 6.798000
+N -t 96.000000 -n 5 -e 7.154160
+s -t 96.330025000 -Hs 5 -Hd 4 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 7.154160 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 19 -Iv 0 
+r -t 96.396691667 -Hs 4 -Hd 4 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 6.765146 -Nl MAC -Nw --- -Ma 0 -Md 5000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 19 -Iv 0 
+N -t 97.000000 -n 0 -e 8.867840
+N -t 97.000000 -n 1 -e 7.911680
+N -t 97.000000 -n 2 -e 7.555520
+N -t 97.000000 -n 3 -e 7.347760
+N -t 97.000000 -n 4 -e 6.760320
+N -t 97.000000 -n 5 -e 7.066480
+s -t 97.251338336 -Hs 4 -Hd 2 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 6.760320 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 19 -Iv 0 
+r -t 97.318005003 -Hs 5 -Hd 2 -Ni 5 -Nx 140.00 -Ny 0.00 -Nz 0.00 -Ne 7.034256 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 19 -Iv 0 
+r -t 97.339064406 -Hs 3 -Hd 2 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 7.315367 -Nl MAC -Nw --- -Ma 0 -Md 4000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 19 -Iv 0 
+N -t 98.000000 -n 0 -e 8.859840
+N -t 98.000000 -n 1 -e 7.903680
+N -t 98.000000 -n 2 -e 7.547520
+N -t 98.000000 -n 3 -e 7.310080
+N -t 98.000000 -n 4 -e 6.672640
+N -t 98.000000 -n 5 -e 7.028800
+s -t 98.047815992 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 7.310080 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 19 -Iv 0 
+r -t 98.121149326 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 7.516871 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 19 -Iv 0 
+r -t 98.135542062 -Hs 4 -Hd 1 -Ni 4 -Nx 180.00 -Ny 0.00 -Nz 0.00 -Ne 6.641876 -Nl MAC -Nw --- -Ma 0 -Md 3000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 19 -Iv 0 
+N -t 99.000000 -n 0 -e 8.851840
+N -t 99.000000 -n 1 -e 7.895680
+N -t 99.000000 -n 2 -e 7.509840
+N -t 99.000000 -n 3 -e 7.222400
+N -t 99.000000 -n 4 -e 6.634960
+N -t 99.000000 -n 5 -e 7.020800
+s -t 99.040878299 -Hs 2 -Hd 1 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 7.509840 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 19 -Iv 0 
+r -t 99.114211632 -Hs 3 -Hd 1 -Ni 3 -Nx 250.00 -Ny 0.00 -Nz -15.00 -Ne 7.191806 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 19 -Iv 0 
+r -t 99.128604369 -Hs 1 -Hd 1 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 7.864971 -Nl MAC -Nw --- -Ma 0 -Md 2000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 19 -Iv 0 
+s -t 99.703702583 -Hs 1 -Hd 0 -Ni 1 -Nx 360.00 -Ny 0.00 -Nz 0.00 -Ne 7.864971 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 19 -Iv 0 
+r -t 99.791428654 -Hs 2 -Hd 0 -Ni 2 -Nx 290.00 -Ny 0.00 -Nz 15.00 -Ne 7.394149 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 19 -Iv 0 
+r -t 99.797035917 -Hs 0 -Hd 0 -Ni 0 -Nx 440.00 -Ny 0.00 -Nz 0.00 -Ne 8.815784 -Nl MAC -Nw --- -Ma 0 -Md 1000000 -Ms ffff0008 -Mt 0 -Is 5 -Id 0 -It vectorbasedforward -Il 50 -If 0 -Ii 19 -Iv 0 
+N -t 100.000000 -n 0 -e 8.814160
+N -t 100.000000 -n 1 -e 7.778320
+N -t 100.000000 -n 2 -e 7.392480
+N -t 100.000000 -n 3 -e 7.184720
+N -t 100.000000 -n 4 -e 6.626960
+N -t 100.000000 -n 5 -e 7.012800

@@ -1,0 +1,36 @@
+send pkt back to node(3,4) propdelay:0.042169 at time 3.660561
+send pkt back to node(2,4) propdelay:0.066496 at time 3.684889
+send pkt back to node(3,4) propdelay:0.042169 at time 12.262833
+send pkt back to node(2,4) propdelay:0.066496 at time 12.287160
+send pkt back to node(3,4) propdelay:0.042169 at time 22.686332
+send pkt back to node(2,4) propdelay:0.066496 at time 22.710660
+send pkt back to node(2,4) propdelay:0.066496 at time 32.448731
+send pkt back to node(3,4) propdelay:0.042169 at time 42.262833
+send pkt back to node(2,4) propdelay:0.066496 at time 42.287160
+send pkt back to node(2,4) propdelay:0.066496 at time 52.509075
+send pkt back to node(3,4) propdelay:0.042169 at time 63.892086
+send pkt back to node(2,4) propdelay:0.066496 at time 63.916413
+send pkt back to node(3,4) propdelay:0.042169 at time 73.011709
+send pkt back to node(2,4) propdelay:0.066496 at time 73.036037
+send pkt back to node(3,4) propdelay:0.042169 at time 82.804210
+send pkt back to node(2,4) propdelay:0.066496 at time 82.828538
+send pkt back to node(3,4) propdelay:0.042169 at time 92.325518
+send pkt back to node(2,4) propdelay:0.066496 at time 92.349845
+recv pkt on channel:(4,3) txtime:0.010400 at 3.702730
+recv pkt on channel:(4,2) txtime:0.010400 at 3.751385
+recv pkt on channel:(4,3) txtime:0.010400 at 12.305002
+recv pkt on channel:(4,2) txtime:0.010400 at 12.353657
+recv pkt on channel:(4,3) txtime:0.010400 at 22.728501
+recv pkt on channel:(4,2) txtime:0.010400 at 22.777156
+recv pkt on channel:(4,2) txtime:0.010400 at 32.515227
+recv pkt on channel:(4,3) txtime:0.010400 at 42.305002
+recv pkt on channel:(4,2) txtime:0.010400 at 42.353657
+recv pkt on channel:(4,2) txtime:0.010400 at 52.575571
+recv pkt on channel:(4,3) txtime:0.010400 at 63.934255
+recv pkt on channel:(4,2) txtime:0.010400 at 63.982910
+recv pkt on channel:(4,3) txtime:0.010400 at 73.053878
+recv pkt on channel:(4,2) txtime:0.010400 at 73.102533
+recv pkt on channel:(4,3) txtime:0.010400 at 82.846379
+recv pkt on channel:(4,2) txtime:0.010400 at 82.895034
+recv pkt on channel:(4,3) txtime:0.010400 at 92.367687
+recv pkt on channel:(4,2) txtime:0.010400 at 92.416342

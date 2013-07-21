@@ -1,0 +1,24 @@
+1、实验场景描述：
+node[0,1,2,3,4,5] = {(440,0,0),(360,0,0),(290,0,0),(250,0,0),(180,0,0),(140,0,0)}
+初始能量：100，发送功率：2.0，接收功率：0.75，空闲功率：0.008，Packet-Size：50，拓扑范围：(1000,10,10)，仿真时间：200，管道半径：100，传输范围：100
+
+（1）数据包发送间隔：4
+VBF+Broadcast：send:50,recv:35,36.758240
+VBF+UWAloha：send:50,recv:46,112.078352
+
+（2）数据包发送间隔：5
+VBF+Broadcast：send:40,recv:25,29.964000
+VBF+UWAloha：send:40,recv:39,96.795685
+
+（3）数据包发送间隔：10
+VBF+Broadcast：send:20,recv:10,18.739200
+VBF+UWAloha：send:20,recv:20,53.419827
+
+（4）数据包发送间隔：20
+VBF+Broadcast：send:10,recv:5,14.169600
+VBF+UWAloha：send:10,recv:10,30.650646
+
+（5）数据包发送间隔：25
+VBF+Broadcast：send:8,recv:6,14.089920
+VBF+UWAloha：send:8,recv:8,26.784224
+

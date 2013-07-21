@@ -1,0 +1,77 @@
+一、实验技巧
+在实验时利用C++提供的条件编译技术，#ifdef #ifndef #endif来分别为MVBF和VBF进行编译，因为编译生成的程序名都是ns，因此需要区分改进算法实现的NS和原有的NS，通过以下步骤：
+(1)在ns的仿真源码中，定义宏变量：#define USING_MODIFIED_VBF；
+(2)在所有的改进的代码处用#ifdef USING_MODIFIED_VBF和#ENDIF代码块括起来，make源程序，生成ns可执行程序，在我们的实验目录下执行以下命令：
+cp /home/villasy/Desktop/aqua-sim2/ns-allinone-2.30/ns-2.30/ns ns_mvbf
+(3)将宏变量#define USING_MODIFIED_VBF注释掉，然后重新make，生成ns可执行程序，同样的目录执行：
+cp /home/villasy/Desktop/aqua-sim2/ns-allinone-2.30/ns-2.30/ns ns_vbf
+(4)这样我们得到了改进的VBF可执行程序，和原生的ns可执行程序。
+
+二、实验
+(1)实验方法：
+在进行实验时，利用tcl脚本设计场景，然后用第一部分得到的可执行程序ns_mvbf和ns_vbf来执行脚本：
+nohup ns_vbf 3_bcst.tcl > res2.txt &
+nohup ns_mvbf 3_aloha.tcl > res1.txt &
+这里将程序运行结果重定向到res2.txt和res1.txt中，是为了整个网络的能量消耗状况，因为我在仿真程序中设置了检测点，通过输入到文本文件中，然后利用grep进行统计；程序运行同样会产生与之对应的trace文件，即data目录下的3_aloha.tr和3_bcst.tr两个trace文件，对trace文件的统计需要单独来做。
+(2)实验策略：
+因为要对比改进的VBF和VBF，因此主要针对不同的
+
+三、结果统计
+包括delay和throughput需要根据tr文件来分析，之前跟您说过，ns2.30的uw部分采用了新的new trace格式，不同于以往，因此这里重点讲以下如何解决和分析的，如果以后空锋或赵婷要作实验的话，tr文件的分析不可避免，所以需要注意trace文件分析方法：
+传统的trace文件格式：
+1 2 3 4 5:6 7 8 9 [10/11/12/13] 14:16 [ 17 - 18 19 20]
+而新的trace文件安格式（多达40多列的数据需要统计）：
+r -t 1.330000000 -Hs 6 -Hd -2 -Ni 6 -Nx 130.00 -Ny 0.00 -Nz 0.00 -Ne 999.992000 -Nl RTR -Nw --- -Ma 0 -Md 0 -Ms 0 -Mt 0 -Is 6 -Id 0 -It vectorbasedforward -Il 500 -If 0 -Ii 0 -Iv 0 。
+为了统计throughput，我参考无线网络的统计方法设计的算法如下：
+(1)throughput
+统计的基本思路如下：统计sink_node在不同时间，接收到的字节数目的量，每当接收到新包时，将新接收到的数据大小加到原来已经接收到的数据量之上，根据以下方法统计throughput：
+for(count++,j=0;j<pkt_num;j++){
+	duration = end_time[j] - start_time;
+	th =pkt_byte_sum[j]/duration;
+	total += th
+	count++;
+}
+average = total/count;
+该统计算法的代码参见data/throughput.awk文件。
+
+(2)Packet delivery ratio
+同throuhput，我们统计src_node发送的数据包，和sink_node成功接收到的数据包，计算成功率。因为NS2提供了GOD变量，在仿真结束之前利用该GOD变量能够输出src和sink，发送的数据包数量：send_pkts，sink节点成功接收的数据包数：recv_pkts，从而计算出投递成功率。
+
+
+(3)Energy Cost Per Byte
+NS2提供GOD变量，在仿真结束之前利用该GOD变量能够统计出每个节点的消耗的能量，最后计算出整个网络的消耗能量；同时我们能统计出成功传输的字节数目，进而可以统计出每成功传输一字节的数据所消耗的能量。
+
+另外，新加了对delay统计的模块，统计的delay的算法如下，详细代码参见data/delay.awk
+begin{
+	pkt_num ＝ 0
+}
+{
+	####
+	通过awk的参数设定获取不同参数项的值
+	####
+	#统计每个数据包被src_node发送的时间
+	#和被sink_node接收到的时间
+	if(this_node ==  src_node)
+		start_time[pkt_num] = time;
+	else if(this_node == sink_node){
+		if(end_time[pkt_num] <= 0)
+			end_time[pkt_num] = time;
+		else
+			end_time[pkt_num] = -1;
+  }
+}
+end
+{
+	//统计成功接收数据包的延时
+	total_delay = 0;
+	for(i=0;i<pkt_num;++i){
+		duration = end_time[i] - start_time[i];
+		total_delay += duration;	
+	}
+	avg = total_delay/pkt_num;
+}
+
+四、实验数据
+	统计的脚本和数据均在data目录下，文件“expr_data.txt”是用文本记录的实验数据，根据该文件最后汇总到了“expr_result.xls”的电子表各种，方便制图，最后的结果就是在上次给你发的《邵阳－毕设进度2》里的图表了。
+	想要说明的一点是：expr_data.txt统计文件是根据trace文件统计而来，而expr_result.xls又是根据expr_data.txt而来，所有数据都可以检查，均在data中。
+

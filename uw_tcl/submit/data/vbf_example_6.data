@@ -1,0 +1,36 @@
+New simulation....
+nodes  = 20, maxspeed = 3, minspeed = 0.2, random_seed = 10, sending_interval_=5.0, width=100
+x= 1000 y= 1000 z= 100
+SINK(1) : num_send = 40, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 18.507200
+New simulation....
+nodes  = 20, maxspeed = 3, minspeed = 0.2, random_seed = 10, sending_interval_=5.0, width=100
+x= 1000 y= 1000 z= 100
+SINK(1) : num_send = 40, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 19.999200
+New simulation....
+nodes  = 20, maxspeed = 3, minspeed = 0.2, random_seed = 10, sending_interval_=5.0, width=100
+x= 500 y= 500 z= 100
+SINK(1) : num_send = 40, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 30.456113
+New simulation....
+nodes  = 40, maxspeed = 3, minspeed = 0.2, random_seed = 10, sending_interval_=5.0, width=100
+x= 500 y= 500 z= 100
+SINK(1) : num_send = 40, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 50.243062
+New simulation....
+nodes  = 40, maxspeed = 3, minspeed = 0.2, random_seed = 10, sending_interval_=5.0, width=100
+x= 500 y= 500 z= 100
+SINK(1) : num_send = 40, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 64.520213
+New simulation....
+nodes  = 40, maxspeed = 3, minspeed = 0.2, random_seed = 10, sending_interval_=5.0, width=100
+x= 500 y= 500 z= 100
+SINK(1) : num_send = 40, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 13, cum_delay = 15.884454
+God : consumped_energy = 57.721897

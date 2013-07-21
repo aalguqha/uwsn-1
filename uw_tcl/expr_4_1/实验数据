@@ -1,0 +1,12 @@
+实验数据：
+VBFU:考虑能量均衡和
+SINK 20 : terminates (pkt_count:5,send 20, recv 0, cum_delay 0.000000)
+SINK 0 : terminates (pkt_count:0,send 0, recv 19, cum_delay 86.446897)
+SINK(0) : send_id = 5, num_recv = 19
+God node's residual energy:(0,7.498086,0.250191)
+God node's residual energy:(1,4.232792,0.576721)
+God node's residual energy:(2,3.032083,0.696792)
+God node's residual energy:(3,6.567853,0.343215)
+God node's residual energy:(4,2.971738,0.702826)
+God node's residual energy:(5,4.540032,0.545997)
+god: the energy consumped is 31.157415

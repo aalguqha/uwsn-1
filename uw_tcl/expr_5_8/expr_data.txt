@@ -1,0 +1,284 @@
+一、吞吐量 vs 负荷，packet_size = 50
+
+（1）load:	1.0e4,10kbps
+aloha:10.437479 Bps
+broadcast:6.856394 Bps
+
+（2）load:	5.0e4,50kbps
+aloha:10.774312 Bps
+broadcast:7.281230 Bps
+
+（3）load:	10.0e4,100kbps
+aloha:11.386176 Bps
+broadcast:7.867513 Bps
+
+（4）load:	20.0e4,200kbps
+aloha:11.713517 Bps
+broadcast:8.087263 Bps
+
+（5）load:	50.0e4,500kbps
+aloha:11.745836 Bps
+broadcast:9.459007 Bps
+
+（6）load:	75.0e4,750kbps
+aloha:12.026226 Bps
+broadcast:8.275750 Bps
+
+（6）load:	100.0e4,1000kbps
+aloha:12.080538 Bps
+broadcast:6.669602 Bps
+
+（7）load:	150.0e4,1500kbps
+aloha:12.221076 Bps
+broadcast:5.547529 Bps
+
+（8）load:	200.0e4,2000kbps
+aloha:12.559579 Bps
+broadcast:7.487425 Bps
+
+
+二、吞吐量 vs Packet-Size，load = 50.0e4
+
+(1)packet-size = 50
+aloha:13.349710 Bps
+broadcast:9.459007 Bps
+
+(2) 75
+aloha:15.478230 Bps
+broadcast:10.469017 Bps
+
+(3) 100
+aloha:22.417514 Bps
+broadcast:17.756083 Bps
+
+(4) 200
+aloha:48.891634 Bps
+broadcast:27.763580 Bps
+
+(5) 400
+aloha:95.938506 Bps
+broadcast:85.814911 Bps
+
+(6) 600
+aloha:135.913736 Bps
+broadcast:124.346294 Bps
+
+(7) 800
+aloha:208.182390 Bps
+broadcast:183.403854 Bps
+
+(8) 1000
+aloha:211.089352 Bps
+broadcast:139.310889 Bps
+
+(9) 1100
+aloha:274.649509 Bps
+broadcast:229.659738 Bps
+
+(10) 1200
+aloha:283.124768 Bps
+broadcast:219.712496 Bps
+
+(11) 1300
+aloha:317.646793 Bps
+broadcast:256.589876 Bps
+
+三、投递成功率 vs 负荷，packet_size=100
+(1) send_num = 20,load = 50.0e4,500kbps
+aloha:	SINK(0) : send_id = 6, num_recv = 19, ratio:	0.95
+bcst:		SINK(0) : send_id = 6, num_recv = 16, ratio:	0.8
+
+(2) send_num = 40,load = 100.0e4,1000kbps
+aloha:	SINK(0) : send_id = 6, num_recv = 39, ratio:	0.975
+bcst:		SINK(0) : send_id = 6, num_recv = 33, ratio:	0.825
+
+(3) send_num = 80,load = 200.0e4,2000kbps
+aloha:	SINK(0) : send_id = 6, num_recv = 77, ratio:	0.9625
+bcst:		SINK(0) : send_id = 6, num_recv = 62, ratio:	0.775
+
+(4) send_num = 118,load = 400.0e4,4000kbps
+aloha:	SINK(0) : send_id = 6, num_recv = 120, ratio:	0.93
+bcst:		SINK(0) : send_id = 6, num_recv = 98, ratio:	0.8166667
+
+(6) send_num = 160,load = 500.0e4,5000kbps
+aloha:	SINK(0) : send_id = 6, num_recv = 155, ratio:	0.96875
+bcst:		SINK(0) : send_id = 6, num_recv = 130, ratio:	0.8125
+
+(7) send_num = 200,load = 600.0e4,6000kbps
+aloha:	SINK(0) : send_id = 6, num_recv = 199, ratio:	0.995
+bcst:		SINK(0) : send_id = 6, num_recv = 168, ratio:	0.84
+
+(8) send_num = 240,load = 700.0e4,7000kbps
+aloha:	SINK(0) : send_id = 6, num_recv = 238, ratio:	0.9916667
+bcst:		SINK(0) : send_id = 6, num_recv = 186, ratio:	0.775
+
+四、投递成功率 vs packet_size，load = 200.0e4, 2000kbps
+(1) send_num = 20, packet_size = 50
+aloha:	SINK(0) : send_id = 6, num_recv = 19, ratio:	0.95
+bcst:		SINK(0) : send_id = 6, num_recv = 16, ratio:	0.8
+
+(2) send_num = 40, packet_size = 75
+SINK(0) : send_id = 6, num_recv = 37, ratio:	0.925
+SINK(0) : send_id = 6, num_recv = 28, ratio:	0.7
+
+(3) send_num = 80, packet_size = 100
+SINK(0) : send_id = 6, num_recv = 78, ratio:	0.975
+SINK(0) : send_id = 6, num_recv = 63, ratio:	0.7875
+
+(4) send_num = 160, packet_size = 150
+SINK(0) : send_id = 6, num_recv = 157, ratio:	0.98125
+SINK(0) : send_id = 6, num_recv = 121, ratio:	0.75625
+
+(5) send_num = 200, packet_size = 200
+SINK(0) : send_id = 6, num_recv = 193, ratio:	0.965
+SINK(0) : send_id = 6, num_recv = 163, ratio:	0.815
+
+(6) send_num = 240, packet_size = 250
+SINK(0) : send_id = 6, num_recv = 229, ratio:	0.9541667
+SINK(0) : send_id = 6, num_recv = 178, ratio:	0.7416667
+
+(7) send_num = 260, packet_size = 280
+SINK(0) : send_id = 6, num_recv = 231, ratio:	0.8884615
+SINK(0) : send_id = 6, num_recv = 180, ratio:	0.6923077
+
+(8) send_num = 240, packet_size = 300
+SINK(0) : send_id = 6, num_recv = 219, ratio:	0.9125
+SINK(0) : send_id = 6, num_recv = 184, ratio:	0.7666667
+
+能量消耗/成功传输每比特 vs Load
+如果单纯评价能量的话，MVBF肯定不占优，因此用成功传输妹比特数据包的能量消耗
+packet_size=100
+(1) load = 1.0e4,10kbps,send 20
+aloha:
+	SINK(0) : send_id = 6, num_recv = 18
+	god: the energy consumped is 42.713757,	ratio:	0.023729865
+bcst:
+	SINK(0) : send_id = 6, num_recv = 12
+	god: the energy consumped is 26.815360,	ratio:	0.02234613333
+
+(2) load = 50.0e4,500kbps,send = 160
+aloha:
+	SINK(0) : send_id = 6, num_recv = 157
+	god: the energy consumped is 51.103135,	ratio:	0.00325497675
+bcst:
+	SINK(0) : send_id = 6, num_recv = 123
+	god: the energy consumped is 48.743741,	ratio:	0.00396290577
+
+(3) load = 100.0e4,1000kbps,send = 200
+aloha:
+	SINK(0) : send_id = 6, num_recv = 191
+	god: the energy consumped is 59.927432,	ratio:	0.00313756188
+bcst:
+	SINK(0) : send_id = 6, num_recv = 161
+	god: the energy consumped is 58.526843,	ratio:	0.00363520764
+
+(4) load = 200.0e4,2000kbps,send = 240 
+aloha:
+	SINK(0) : send_id = 6, num_recv = 236
+	god: the energy consumped is 69.054185,	ratio:	0.00292602479
+bcst:
+	SINK(0) : send_id = 6, num_recv = 191
+	god: the energy consumped is 68.752438,	ratio:	0.00359960408
+
+(5) load = 300.0e4,3000kpbs,send = 250
+aloha:
+	SINK(0) : send_id = 6, num_recv = 241
+	god: the energy consumped is 71.02004,	ratio:	0.00294688963
+bcst:
+	SINK(0) : send_id = 6, num_recv = 192
+	god: the energy consumped is 68.12373,	ratio:	0.00354811094
+
+(6) load = 500.0e4,5000kbps,send = 280
+aloha:
+	SINK(0) : send_id = 6, num_recv = 269
+	god: the energy consumped is 79.513438,	ratio:	0.00295588989
+bcst:
+	SINK(0) : send_id = 6, num_recv = 222
+	god: the energy consumped is 79.112785,	ratio:	0.00356363896
+
+(7) load = 1000.0e4, 10000kbps,send = 320
+aloha:
+	SINK(0) : send_id = 6, num_recv = 309
+	god: the energy consumped is 90.213481,	ratio:	0.00291953013
+bcst:
+	SINK(0) : send_id = 6, num_recv = 254
+	god: the energy consumped is 90.011534,	ratio:	0.00354376118
+
+(8) load = 1200.0e4, send = 300
+aloha:
+	SINK(0) : send_id = 6, num_recv = 293
+	god: the energy consumped is 84.496888,	ratio:	0.00288385283
+bcst:
+	SINK(0) : send_id = 6, num_recv = 233
+	god: the energy consumped is 84.312075,	ratio:	0.00361854399
+
+
+发送一个数据包，不同packet_size所消耗的能量。
+packet_size=50，phy decrease energy:0.000267
+packet_size=100，phy decrease energy:0.000533
+packet_size=200,phy decrease energy:0.001067
+从这里看出，即使100个数据包，消耗总能量为：
+packet_size=50，phy decrease energy:0.0267
+packet_size=100，phy decrease energy:0.0533
+packet_size=200,phy decrease energy:0.1067
+因此差距不是很明显，也是可以理解的，哈哈，但是数据得重新做，因为这几个图主要是关于能量的，前面的几组统计数据和能量基本没啥关系。
+
+能量消耗/成功传输每比特 vs Packet_size,load=
+(1) send = 100, packet_size = 50
+	SINK(0) : send_id = 6, num_recv = 91
+	god: the energy consumped is 28.451297，	ratio:	0.006253
+	SINK(0) : send_id = 6, num_recv = 84
+	god: the energy consumped is 28.221808，	ratio:	0.006719
+
+(2) send = 120, packet_size = 100
+	SINK(0) : send_id = 6, num_recv = 110
+	god: the energy consumped is 34.384491，	ratio:	0.003126 
+	SINK(0) : send_id = 6, num_recv = 97
+	god: the energy consumped is 34.113605，	ratio:	0.003517
+
+(3) send = 140, packet_size = 150
+	SINK(0) : send_id = 6, num_recv = 137
+	god: the energy consumped is 40.386143，	ratio: 0.001965
+	SINK(0) : send_id = 6, num_recv = 109
+	god: the energy consumped is 40.084826，	ratio: 0.002452
+
+(4) send = 160, packet_size = 200
+	SINK(0) : send_id = 6, num_recv = 156
+	god: the energy consumped is 46.493969，	ratio:	0.001490 
+	SINK(0) : send_id = 6, num_recv = 126
+	god: the energy consumped is 46.158406，	ratio:	0.001832
+
+
+(5) send = 200, packet_size = 250
+	SINK(0) : send_id = 6, num_recv = 194
+	god: the energy consumped is 58.539711，	ratio:	0.001207
+	SINK(0) : send_id = 6, num_recv = 157
+	god: the energy consumped is 58.150071，	ratio: 0.001482
+
+(6) send = 240, packet_size = 300
+	SINK(0) : send_id = 6, num_recv = 235
+	god: the energy consumped is 70.644852，	ratio:	0.001002
+	SINK(0) : send_id = 6, num_recv = 191
+	god: the energy consumped is 70.221451，	ratio: 0.001226
+
+(7) send = 260, packet_size = 350
+	SINK(0) : send_id = 6, num_recv = 252
+	god: the energy consumped is 77.013156，	ratio:	0.000873
+	SINK(0) : send_id = 6, num_recv = 213
+	god: the energy consumped is 76.832517，	ratio: 	0.001031
+
+(9) send = 280, packet_size = 400
+	SINK(0) : send_id = 6, num_recv = 271
+	god: the energy consumped is 83.614047，	ratio:	0.000771
+	SINK(0) : send_id = 6, num_recv = 233
+	god: the energy consumped is 83.334871，	ratio: 0.000894
+
+
+(10) send = 300, packet_size = 500
+	SINK(0) : send_id = 6, num_recv = 293
+	god: the energy consumped is 90.263079，	ratio:0.000616
+	SINK(0) : send_id = 6, num_recv = 234
+	god: the energy consumped is 90.284197，	ratio: 0.000772
+
+
+

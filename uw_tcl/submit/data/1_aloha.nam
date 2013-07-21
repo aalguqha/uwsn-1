@@ -1,0 +1,12 @@
+n -t * -s 0  -x 415 -y 0 -Z 0 -z 10  -v circle -c green
+n -t * -s 1  -x 330 -y 49 -Z 0 -z 10  -v circle -c green
+n -t * -s 2  -x 380 -y -40 -Z 0 -z 10  -v circle -c green
+n -t * -s 3  -x 290 -y -43 -Z 0 -z 10  -v circle -c green
+n -t * -s 4  -x 240 -y 49 -Z 0 -z 10  -v circle -c green
+n -t * -s 5  -x 210 -y 0 -Z 0 -z 10  -v circle -c green
+n -t * -s 6  -x 130 -y 0 -Z 0 -z 10  -v circle -c green
+V -t * -v 1.0a5 -a 0
+W -t * -x 1000 -y 10
+A -t * -n 1 -p 0 -o 0xffffffff -c 31 -a 1
+A -t * -h 1 -m 2147483647 -s 0
+W -t 100

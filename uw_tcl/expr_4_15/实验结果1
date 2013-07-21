@@ -1,0 +1,11 @@
+SINK 20 : terminates (pkt_count:5,send 20, recv 0, cum_delay 0.000000)
+SINK 32 : terminates (pkt_count:0,send 0, recv 16, cum_delay 284.516747)
+SINK(0) : send_id = 5, num_recv = 16
+God node's residual energy:(0,5.642315,0.435768)
+God node's residual energy:(1,1.900696,0.809930)
+God node's residual energy:(2,4.092846,0.590715)
+God node's residual energy:(3,3.863549,0.613645)
+God node's residual energy:(4,2.628851,0.737115)
+God node's residual energy:(5,4.158326,0.584167)
+god: the energy consumped is 37.713417
+

@@ -1,0 +1,1284 @@
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 1.801000
+God : consumped_energy = 14.126400
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 30.755829
+God : consumped_energy = 16.346832
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 30.755829
+God : consumped_energy = 16.346832
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 1.801000
+God : consumped_energy = 14.126400
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 1.801000
+God : consumped_energy = 14.126400
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 30.755829
+God : consumped_energy = 16.346832
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 30.755829
+God : consumped_energy = 16.346832
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 30.755829
+God : consumped_energy = 16.346832
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 30.755829
+God : consumped_energy = 14.864928
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 31.435510
+God : consumped_energy = 14.864928
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 31.435510
+God : consumped_energy = 16.346832
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 1.801000
+God : consumped_energy = 14.126400
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 1.801000
+God : consumped_energy = 14.126400
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 1.945000
+God : consumped_energy = 15.454928
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 1.945000
+God : consumped_energy = 15.454928
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 1.945000
+God : consumped_energy = 15.454928
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 1.945000
+God : consumped_energy = 15.454928
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 1.945000
+God : consumped_energy = 15.454928
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 1.945000
+God : consumped_energy = 15.454928
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 1.945000
+God : consumped_energy = 15.454928
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 32.430838
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 32.430838
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 32.430838
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 32.430838
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 32.430838
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 32.430838
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 32.430838
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 1.945000
+God : consumped_energy = 15.454928
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 32.430838
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : num_send = 0, num_recv = 10, cum_delay = 1.945000
+God : consumped_energy = 15.454928
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.430838
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.430838
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.430838
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.148400
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.148400
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.148400
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.148400
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.148400
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.148400
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.148400
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.148400
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.148400
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.654560
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.654560
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.148400
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.148400
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.148400
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 6.727840
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.237440
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.237440
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.237440
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.237440
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.237440
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.237440
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.237440
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.237440
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.237440
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.237440
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.237440
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.237440
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.237440
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 1, cum_delay = 3.243298
+God : consumped_energy = 7.701120
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 1, cum_delay = 3.243298
+God : consumped_energy = 7.701120
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 1, cum_delay = 3.243298
+God : consumped_energy = 7.701120
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 1, cum_delay = 3.243298
+God : consumped_energy = 7.701120
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 1, cum_delay = 3.243298
+God : consumped_energy = 7.701120
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 1, cum_delay = 3.243298
+God : consumped_energy = 7.701120
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 1, cum_delay = 3.243298
+God : consumped_energy = 7.701120
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 1, cum_delay = 3.243298
+God : consumped_energy = 7.701120
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 5, cum_delay = 16.216491
+God : consumped_energy = 9.369600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 5, cum_delay = 16.216491
+God : consumped_energy = 9.369600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 5, cum_delay = 16.216491
+God : consumped_energy = 9.369600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 5, cum_delay = 16.216491
+God : consumped_energy = 9.369600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 5, cum_delay = 16.216491
+God : consumped_energy = 9.369600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 5, cum_delay = 16.216491
+God : consumped_energy = 9.369600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 7.284000
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 5, cum_delay = 16.216491
+God : consumped_energy = 9.369600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 5, cum_delay = 16.216491
+God : consumped_energy = 9.369600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 1, cum_delay = 3.243298
+God : consumped_energy = 7.701120
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 9, cum_delay = 29.189683
+God : consumped_energy = 11.038080
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 9, cum_delay = 29.189683
+God : consumped_energy = 11.038080
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 9, cum_delay = 29.189683
+God : consumped_energy = 11.038080
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 9, cum_delay = 29.189683
+God : consumped_energy = 11.038080
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 9, cum_delay = 29.189683
+God : consumped_energy = 11.038080
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 9, cum_delay = 29.189683
+God : consumped_energy = 11.038080
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 9, cum_delay = 29.189683
+God : consumped_energy = 11.038080
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 9, cum_delay = 29.189683
+God : consumped_energy = 11.038080
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10.0, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 9, cum_delay = 29.189683
+God : consumped_energy = 11.038080
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=5.0, width=100
+x= 1000 y= 10 z= 10
+SINK(20) : pkt_count = 5,num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 18, cum_delay = 58.379366
+God : consumped_energy = 17.276160
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2.5, width=100
+x= 1000 y= 10 z= 10
+SINK(40) : pkt_count = 5,num_send = 40, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 30, cum_delay = 97.298944
+God : consumped_energy = 27.249600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2.5, width=100
+x= 1000 y= 10 z= 10
+SINK(40) : pkt_count = 5,num_send = 40, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 30, cum_delay = 97.298944
+God : consumped_energy = 27.249600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2.5, width=100
+x= 1000 y= 10 z= 10
+SINK(40) : pkt_count = 5,num_send = 40, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 30, cum_delay = 97.298944
+God : consumped_energy = 27.249600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2.5, width=100
+x= 1000 y= 10 z= 10
+SINK(40) : pkt_count = 5,num_send = 40, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 30, cum_delay = 97.298944
+God : consumped_energy = 27.249600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2.5, width=100
+x= 1000 y= 10 z= 10
+SINK(40) : pkt_count = 5,num_send = 40, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 30, cum_delay = 97.298944
+God : consumped_energy = 27.249600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=1, width=100
+x= 1000 y= 10 z= 10
+SINK(99) : pkt_count = 5,num_send = 99, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 75, cum_delay = 243.247359
+God : consumped_energy = 60.814640
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=1, width=100
+x= 1000 y= 10 z= 10
+SINK(99) : pkt_count = 5,num_send = 99, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 75, cum_delay = 243.247359
+God : consumped_energy = 60.814640
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=1, width=100
+x= 1000 y= 10 z= 10
+SINK(99) : pkt_count = 5,num_send = 99, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 75, cum_delay = 243.247359
+God : consumped_energy = 60.814640
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=1, width=100
+x= 1000 y= 10 z= 10
+SINK(99) : pkt_count = 5,num_send = 99, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 75, cum_delay = 243.247359
+God : consumped_energy = 60.814640
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 9, cum_delay = 29.189683
+God : consumped_energy = 11.038080
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 8, cum_delay = 25.946385
+God : consumped_energy = 10.620960
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 8, cum_delay = 25.946385
+God : consumped_energy = 10.620960
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 8, cum_delay = 25.946385
+God : consumped_energy = 10.620960
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 8, cum_delay = 25.946385
+God : consumped_energy = 10.620960
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 8, cum_delay = 25.946385
+God : consumped_energy = 10.620960
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=20, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : pkt_count = 5,num_send = 5, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 5, cum_delay = 16.216491
+God : consumped_energy = 8.127600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=20, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : pkt_count = 5,num_send = 5, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 5, cum_delay = 16.216491
+God : consumped_energy = 8.127600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=4, width=100
+x= 1000 y= 10 z= 10
+SINK(25) : pkt_count = 5,num_send = 25, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 24, cum_delay = 77.839155
+God : consumped_energy = 21.298960
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=4, width=100
+x= 1000 y= 10 z= 10
+SINK(25) : pkt_count = 5,num_send = 25, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 17, cum_delay = 55.136068
+God : consumped_energy = 18.379120
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=4, width=100
+x= 1000 y= 10 z= 10
+SINK(25) : pkt_count = 5,num_send = 25, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 17, cum_delay = 55.136068
+God : consumped_energy = 18.379120
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=4, width=100
+x= 1000 y= 10 z= 10
+SINK(25) : pkt_count = 5,num_send = 25, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 17, cum_delay = 55.136068
+God : consumped_energy = 18.379120
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=4, width=100
+x= 1000 y= 10 z= 10
+SINK(25) : pkt_count = 5,num_send = 25, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 17, cum_delay = 55.136068
+God : consumped_energy = 18.379120
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=4, width=100
+x= 1000 y= 10 z= 10
+SINK(25) : pkt_count = 5,num_send = 25, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 17, cum_delay = 55.136068
+God : consumped_energy = 18.379120
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=4, width=100
+x= 1000 y= 10 z= 10
+SINK(25) : pkt_count = 5,num_send = 25, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 17, cum_delay = 55.136068
+God : consumped_energy = 18.379120
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=5, width=100
+x= 1000 y= 10 z= 10
+SINK(20) : pkt_count = 5,num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 17, cum_delay = 55.136068
+God : consumped_energy = 16.859040
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=5, width=100
+x= 1000 y= 10 z= 10
+SINK(20) : pkt_count = 5,num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 17, cum_delay = 55.136068
+God : consumped_energy = 16.859040
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=5, width=100
+x= 1000 y= 10 z= 10
+SINK(20) : pkt_count = 5,num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 17, cum_delay = 55.136068
+God : consumped_energy = 16.859040
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 9, cum_delay = 29.189683
+God : consumped_energy = 11.038080
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=20, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : pkt_count = 5,num_send = 5, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 5, cum_delay = 16.216491
+God : consumped_energy = 8.127600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=20, width=100
+x= 1000 y= 10 z= 10
+SINK(5) : pkt_count = 5,num_send = 5, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 5, cum_delay = 16.216491
+God : consumped_energy = 8.127600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2, width=100
+x= 1000 y= 10 z= 10
+SINK(50) : pkt_count = 5,num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 35, cum_delay = 113.515434
+God : consumped_energy = 31.958240
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2, width=100
+x= 1000 y= 10 z= 10
+SINK(50) : pkt_count = 5,num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 35, cum_delay = 113.515434
+God : consumped_energy = 31.958240
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2, width=100
+x= 1000 y= 10 z= 10
+SINK(50) : pkt_count = 5,num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 35, cum_delay = 113.515434
+God : consumped_energy = 31.958240
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2, width=100
+x= 1000 y= 10 z= 10
+SINK(50) : pkt_count = 5,num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 35, cum_delay = 113.515434
+God : consumped_energy = 31.958240
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2, width=100
+x= 1000 y= 10 z= 10
+SINK(50) : pkt_count = 5,num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 35, cum_delay = 113.515434
+God : consumped_energy = 31.958240
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2, width=100
+x= 1000 y= 10 z= 10
+SINK(50) : pkt_count = 5,num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 35, cum_delay = 113.515434
+God : consumped_energy = 31.958240
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2, width=100
+x= 1000 y= 10 z= 10
+SINK(50) : pkt_count = 5,num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 35, cum_delay = 113.515434
+God : consumped_energy = 31.958240
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2, width=100
+x= 1000 y= 10 z= 10
+SINK(50) : pkt_count = 5,num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 35, cum_delay = 113.515434
+God : consumped_energy = 31.958240
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2, width=100
+x= 1000 y= 10 z= 10
+SINK(50) : pkt_count = 5,num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 10.268000
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2, width=100
+x= 1000 y= 10 z= 10
+SINK(50) : pkt_count = 5,num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 10.268000
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2, width=100
+x= 1000 y= 10 z= 10
+SINK(50) : pkt_count = 5,num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 10.268000
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2, width=100
+x= 1000 y= 10 z= 10
+SINK(50) : pkt_count = 5,num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 10.268000
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2, width=100
+x= 1000 y= 10 z= 10
+SINK(50) : pkt_count = 5,num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 10.268000
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.893600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.893600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.893600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.893600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.893600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.893600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.893600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.893600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.893600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.893600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.893600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 4.909360
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.893600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.893600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.893600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 0, cum_delay = 0.000000
+God : consumped_energy = 5.893600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 32.432981
+God : consumped_energy = 11.455200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 8, cum_delay = 25.946385
+God : consumped_energy = 10.620960
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=5, width=100
+x= 1000 y= 10 z= 10
+SINK(20) : pkt_count = 5,num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 14, cum_delay = 45.406174
+God : consumped_energy = 15.607680
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=5, width=100
+x= 1000 y= 10 z= 10
+SINK(20) : pkt_count = 5,num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 14, cum_delay = 45.406174
+God : consumped_energy = 15.607680
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=5, width=100
+x= 1000 y= 10 z= 10
+SINK(20) : pkt_count = 5,num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 13, cum_delay = 45.071792
+God : consumped_energy = 15.190560
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=5, width=100
+x= 1000 y= 10 z= 10
+SINK(40) : pkt_count = 5,num_send = 40, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 25, cum_delay = 86.676523
+God : consumped_energy = 29.964000
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(20) : pkt_count = 5,num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 10, cum_delay = 34.670609
+God : consumped_energy = 18.739200
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=20, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 5, cum_delay = 17.335305
+God : consumped_energy = 14.169600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=20, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 5, cum_delay = 17.335305
+God : consumped_energy = 14.169600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=20, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 5, cum_delay = 17.335305
+God : consumped_energy = 14.169600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=20, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 5, cum_delay = 17.335305
+God : consumped_energy = 14.169600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=20, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 5, cum_delay = 17.335305
+God : consumped_energy = 14.169600
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=25, width=100
+x= 1000 y= 10 z= 10
+SINK(8) : pkt_count = 5,num_send = 8, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 6, cum_delay = 20.802366
+God : consumped_energy = 14.089920
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2, width=100
+x= 1000 y= 10 z= 10
+SINK(100) : pkt_count = 5,num_send = 100, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 68, cum_delay = 235.760142
+God : consumped_energy = 62.804160
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2, width=100
+x= 1000 y= 10 z= 10
+SINK(100) : pkt_count = 5,num_send = 100, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 68, cum_delay = 235.760142
+God : consumped_energy = 62.804160
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2, width=100
+x= 1000 y= 10 z= 10
+SINK(100) : pkt_count = 5,num_send = 100, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 68, cum_delay = 235.760142
+God : consumped_energy = 62.804160
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2, width=100
+x= 1000 y= 10 z= 10
+SINK(100) : pkt_count = 5,num_send = 100, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 68, cum_delay = 235.760142
+God : consumped_energy = 62.804160
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=2, width=100
+x= 1000 y= 10 z= 10
+SINK(100) : pkt_count = 5,num_send = 100, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 68, cum_delay = 235.760142
+God : consumped_energy = 62.804160
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=4, width=100
+x= 1000 y= 10 z= 10
+SINK(50) : pkt_count = 5,num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 35, cum_delay = 121.347132
+God : consumped_energy = 36.758240
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=4, width=100
+x= 1000 y= 10 z= 10
+SINK(50) : pkt_count = 5,num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 35, cum_delay = 121.347132
+God : consumped_energy = 36.758240
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=4, width=100
+x= 1000 y= 10 z= 10
+SINK(50) : pkt_count = 5,num_send = 50, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 35, cum_delay = 121.347132
+God : consumped_energy = 36.758240
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 4, cum_delay = 13.868244
+God : consumped_energy = 8.952480
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 4, cum_delay = 13.868244
+God : consumped_energy = 8.952480
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 4, cum_delay = 13.868244
+God : consumped_energy = 8.952480
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 4, cum_delay = 13.868244
+God : consumped_energy = 8.952480
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=10, width=100
+x= 1000 y= 10 z= 10
+SINK(10) : pkt_count = 5,num_send = 10, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 4, cum_delay = 13.868244
+God : consumped_energy = 8.952480
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=5.0, width=100
+x= 1000 y= 10 z= 10
+SINK(20) : pkt_count = 5,num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 13, cum_delay = 45.071792
+God : consumped_energy = 15.190560
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=5.0, width=100
+x= 1000 y= 10 z= 10
+SINK(20) : pkt_count = 5,num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 13, cum_delay = 45.071792
+God : consumped_energy = 15.190560
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=5.0, width=100
+x= 1000 y= 10 z= 10
+SINK(20) : pkt_count = 5,num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 13, cum_delay = 45.071792
+God : consumped_energy = 15.190560
+New simulation....
+nodes=6, maxspeed = 3, minspeed = 0, random_seed = 11, sending_interval_=5.0, width=100
+x= 1000 y= 10 z= 10
+SINK(20) : pkt_count = 5,num_send = 20, num_recv = 0, cum_delay = 0.000000
+SINK(0) : pkt_count = 0,num_send = 0, num_recv = 13, cum_delay = 45.071792
+God : consumped_energy = 15.190560
