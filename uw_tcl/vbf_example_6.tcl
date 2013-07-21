@@ -3,45 +3,42 @@ set opt(prop)		Propagation/UnderwaterPropagation
 set opt(netif)		Phy/UnderwaterPhy
 set opt(mac)		Mac/UnderwaterMac/BroadcastMac
 set opt(ifq)		Queue/DropTail/PriQueue
-set opt(ll)		LL
+set opt(ll)			LL
 set opt(energy)         EnergyModel
 set opt(txpower)        2.0
 set opt(rxpower)        0.75
 set opt(initialenergy)  10000
 set opt(idlepower)      0.008
 set opt(ant)            Antenna/OmniAntenna
-set opt(filters)        GradientFilter    ;# options can be one or more of 
-                                ;# TPP/OPP/Gear/Rmst/SourceRoute/Log/TagFilter
-set opt(minspeed)           0.2  ;#minimum speed of node
-set opt(maxspeed)           3   ;#maximum speed of node
-set opt(speed)              0.5  ;#speed of node
-set opt(position_update_interval) 0.3  ;# the length of period to update node's position
-set opt(packet_size)    50  ;#50 bytes
-set opt(routing_control_packet_size) 20 ;#bytes 
-set opt(ifqlen)		50	;# max queue length in if
-set opt(nn)	        100	;# number of nodes 
-set opt(x)		300	;# X dimension of the topography
-set opt(y)	        300  ;# Y dimension of the topography
-set opt(z)              500
-set opt(seed)		10
-set opt(stop)		100	;# simulation time
-set opt(prestop)        90     ;# time to prepare to stop
-set opt(tr)		"vbf_example_6.tr"	;# trace file
-set opt(datafile)	"vbf_example_6.data"
-set opt(nam)            "vbf_example_6.nam"  ;# nam file
+set opt(filters)        GradientFilter    		;# options can be one or more of 
+												;# TPP/OPP/Gear/Rmst/SourceRoute/Log/TagFilter
+set opt(minspeed)       0.2  					;#minimum speed of node
+set opt(maxspeed)       3   					;#maximum speed of node
+set opt(speed)          0.5  					;#speed of node
+set opt(position_update_interval) 0.3  			;# the length of period to update node's position
+set opt(packet_size)    50  					;#50 bytes
+set opt(routing_control_packet_size) 20 		;#bytes
+set opt(ifqlen)			50						;# max queue length in if
+set opt(nn)	        	40						;# number of nodes 
+set opt(x)				500						;# X dimension of the topography
+set opt(y)	        	500  					;# Y dimension of the topography
+set opt(z)              10
+set opt(seed)			10
+set opt(stop)			100						;# simulation time
+set opt(prestop)        90     					;# time to prepare to stop
+set opt(tr)				"data/vbf_example_6.tr"	;# trace file
+set opt(datafile)		"data/vbf_example_6.data"
+set opt(nam)            "data/vbf_example_6.nam";# nam file
 set opt(adhocRouting)   Vectorbasedforward
-set opt(width)           100
-set opt(interval)        10.0
-set opt(range)           120    ;#range of each node in meters
+set opt(width)          100
+set opt(interval)       5.0
+set opt(range)          120    					;#range of each node in meters
 
 if { $argc > 0 } {
-  set opt(seed) [lindex $argv 0]
-  set opt(nn) [lindex $argv 1]
+  set opt(seed) 	[lindex $argv 0]
+  set opt(nn) 		[lindex $argv 1]
   set opt(datafile) [lindex $argv 2]
 }
-
-puts "the file name is $opt(datafile)"
-puts "the sending interval is $opt(interval)"
 
 # ==================================================================
 
@@ -60,7 +57,7 @@ Antenna/OmniAntenna set Z_ 0.05
 Antenna/OmniAntenna set Gt_ 1.0
 Antenna/OmniAntenna set Gr_ 1.0
 
-Agent/Vectorbasedforward set hop_by_hop_ 0
+Agent/Vectorbasedforward set hop_by_hop_ 1
 
 Mac/UnderwaterMac set bit_rate_  1.0e4 ;#10kbps
 Mac/UnderwaterMac set encoding_efficiency_ 1
@@ -89,51 +86,46 @@ set topo  [new Topography]
 
 $topo load_cubicgrid $opt(x) $opt(y) $opt(z)
 $ns_ use-newtrace
+
 set tracefd	[open $opt(tr) w]
 $ns_ trace-all $tracefd
 
 set nf [open $opt(nam) w]
 $ns_ namtrace-all-wireless $nf $opt(x) $opt(y)
 
-
 set data [open $opt(datafile) a]
-
 
 set total_number  [expr $opt(nn)-1]
 set god_ [create-god  $opt(nn)]
 
-
 $ns_ at 0.0 "$god_  set_filename $opt(datafile)"
 
-
 set chan_1_ [new $opt(chan)]
-
 
 global defaultRNG
 $defaultRNG seed $opt(seed)
 
 
 $ns_ node-config -adhocRouting $opt(adhocRouting) \
-		 -llType $opt(ll) \
-		 -macType $opt(mac) \
-		 -ifqType $opt(ifq) \
-		 -ifqLen $opt(ifqlen) \
-		 -antType $opt(ant) \
-		 -propType $opt(prop) \
-		 -phyType $opt(netif) \
-		 #-channelType $opt(chan) \
-		 -agentTrace OFF \
-                 -routerTrace ON \
-                 -macTrace OFF\
-                 -topoInstance $topo\
-                 -energyModel $opt(energy)\
-                 -txPower $opt(txpower)\
-                 -rxPower $opt(rxpower)\
-                 -initialEnergy $opt(initialenergy)\
-                 -idlePower $opt(idlepower)\
-                 -channel $chan_1_
+		-llType $opt(ll) \
+		-macType $opt(mac) \
+		-ifqType $opt(ifq) \
+		-ifqLen $opt(ifqlen) \
+		-antType $opt(ant) \
+		-propType $opt(prop) \
+		-phyType $opt(netif) \
+		#-channelType $opt(chan) \
+		-agentTrace OFF \
+		-routerTrace ON \
+		-macTrace OFF\
+		-topoInstance $topo\
+		-energyModel $opt(energy)\
+		-txPower $opt(txpower)\
+		-rxPower $opt(rxpower)\
+		-initialEnergy $opt(initialenergy)\
+		-idlePower $opt(idlepower)\
+		-channel $chan_1_
                  
-
 puts "Width=$opt(width)"
 #Set the Sink node
 
@@ -143,7 +135,7 @@ $node_(0) set sinkStatus_ 1
 $god_ new_node $node_(0)
 $node_(0) set X_  250
 $node_(0) set Y_  250
-$node_(0) set Z_  0
+$node_(0) set Z_  10
 $node_(0) set passive 1
 
 set rt [$node_(0) set ragent_]
@@ -154,11 +146,10 @@ $ns_ attach-agent $node_(0) $a_(0)
 $a_(0) attach-vectorbasedforward $opt(width)
 $a_(0) cmd set-range $opt(range) 
 $a_(0) cmd set-target-x 250
-$a_(0) cmd set-target-y 200
+$a_(0) cmd set-target-y 250
 $a_(0) cmd set-target-z 10
 $a_(0) cmd set-filename $opt(datafile)
-$a_(0) cmd set-packetsize $opt(packet_size) ;# # of bytes
-
+$a_(0) cmd set-packetsize $opt(packet_size) ;
 
 
 set xrand_ [new RandomVariable/Uniform]
@@ -171,7 +162,7 @@ set zrand_ [new RandomVariable/Uniform]
 $zrand_ set min_ 0
 $zrand_ set max_ $opt(z)
 
-
+#set max [expr $opt(nn)-1]
 for {set i 2} { $i < $opt(nn) } { incr i } {
 
 	set node_($i) [ $ns_  node $i]
@@ -197,7 +188,7 @@ for {set i 2} { $i < $opt(nn) } { incr i } {
 	$a_($i) attach-vectorbasedforward $opt(width)
 	$a_($i) cmd set-range $opt(range) 
 	$a_($i) cmd set-target-x 250
-	$a_($i) cmd set-target-y 200
+	$a_($i) cmd set-target-y 250
 	$a_($i) cmd set-target-z 10
 	$a_($i) cmd set-filename $opt(datafile)
 	$a_($i) cmd set-packetsize $opt(packet_size) ;# # of bytes
@@ -216,7 +207,7 @@ $node_(1) set min_speed $opt(minspeed)
 $node_(1) set position_update_interval_ $opt(position_update_interval)
 
 $node_(1) set X_  100
-$node_(1) set Y_  300
+$node_(1) set Y_  100
 $node_(1) set Z_  $opt(z)
 $node_(1) set-cx  100
 $node_(1) set-cy  300
@@ -241,29 +232,34 @@ $a_(1) set data_rate_ [expr 1.0/$opt(interval)]
 # make nam workable
 set node_size 10
 for {set k 0} { $k<$opt(nn)} {incr k} {
-$ns_ initial_node_pos $node_($k) $node_size
+	$ns_ initial_node_pos $node_($k) $node_size
 }
 
+proc finish {} {
+    set ns [Simulator instance]
+    exec nam data/vbf_example_6.nam
+}
 
 set opt(stop2) [expr $opt(stop)+2]
 
 
 puts "Node 1 is sending first!!"
 $ns_ at 1.33 "$a_(1) cbr-start"
-$ns_ at $opt(stop).001 "$a_(1) stop"
+$ns_ at $opt(stop).001 	"$a_(1) stop"
 $ns_ at $opt(stop2).002 "$a_(1) terminate"
-
 $ns_ at $opt(stop2).002 "$a_(0) terminate"
 
+#for {set k 0} {$k < $opt(nn)} {incr k} {
+#	$ns_ at $opt(stop2).003 "$a_($k) terminate"
+#}
+$ns_ at $opt(stop2).003 "$god_ compute_energy"
+$ns_ at $opt(stop2).004 "$ns_ nam-end-wireless $opt(stop)"
+$ns_ at $opt(stop2).005 "puts \"NS EXISTING...\";"
+$ns_ at $opt(stop2).005 "finish"
 
-$ns_ at $opt(stop2).003  "$god_ compute_energy"
-$ns_ at $opt(stop2).004  "$ns_ nam-end-wireless $opt(stop)"
-$ns_ at $opt(stop2).005 "puts \"NS EXISTING...\"; $ns_ halt"
-
-
- puts $data  "New simulation...."
- puts $data "nodes  = $opt(nn), maxspeed = $opt(maxspeed), minspeed = $opt(minspeed), random_seed = $opt(seed), sending_interval_=$opt(interval), width=$opt(width)"
- puts $data "x= $opt(x) y= $opt(y) z= $opt(z)"
- close $data
- puts "starting Simulation..."
- $ns_ run
+puts $data  "New simulation...."
+puts $data "nodes  = $opt(nn), maxspeed = $opt(maxspeed), minspeed = $opt(minspeed), random_seed = $opt(seed), sending_interval_=$opt(interval), width=$opt(width)"
+puts $data "x= $opt(x) y= $opt(y) z= $opt(z)"
+close $data
+puts "starting Simulation..."
+$ns_ run

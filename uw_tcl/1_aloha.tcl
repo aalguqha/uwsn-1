@@ -3,11 +3,11 @@ set opt(prop)		Propagation/UnderwaterPropagation
 set opt(netif)		Phy/UnderwaterPhy
 set opt(mac)		Mac/UnderwaterMac/UWALOHA
 set opt(ifq)		Queue/DropTail/PriQueue
-set opt(ll)			LL
+set opt(ll)		LL
 set opt(energy)         EnergyModel
 set opt(txpower)        2.0
 set opt(rxpower)        0.75
-set opt(initialenergy)  10000
+set opt(initialenergy)  1000
 set opt(idlepower)      0.008
 set opt(ant)            Antenna/OmniAntenna
 set opt(filters)        GradientFilter  ;# options can be one or more of 
@@ -15,26 +15,26 @@ set opt(filters)        GradientFilter  ;# options can be one or more of
 set opt(minspeed)       0.2  			;#minimum speed of node
 set opt(maxspeed)       3   			;#maximum speed of node
 set opt(speed)          0.5  			;#speed of node
-set opt(position_update_interval) 0.3  	;# the length of period to update node's position
+set opt(position_update_interval) 0.3  		;# the length of period to update node's position
 set opt(packet_size) 	50  			;#50 bytes
-set opt(routing_control_packet_size) 20 ;#bytes 
-set opt(ifqlen)			50				;# max queue length in if
-set opt(nn)				6				;# number of nodes 
-set opt(x)				1000				;# X dimension of the topography
-set opt(y)	        	10  			;# Y dimension of the topography
+set opt(routing_control_packet_size) 20 	;#bytes
+set opt(ifqlen)		50			;# max queue length in if
+set opt(nn)		6			;# number of nodes 
+set opt(x)		1000			;# X dimension of the topography
+set opt(y)	        10  			;# Y dimension of the topography
 set opt(z)              10
-set opt(tx)				250
-set opt(ty)				250
-set opt(tz)				10
-set opt(seed)			11
-set opt(stop)			100				;# simulation time
+set opt(tx)		250
+set opt(ty)		250
+set opt(tz)		10
+set opt(seed)		11
+set opt(stop)		200			;# simulation time
 set opt(prestop)        90     			;# time to prepare to stop
-set opt(tr)				"data/1_aloha.tr"		;# trace file
-set opt(datafile)		"data/1_aloha.data"	;# data file
+set opt(tr)		"data/1_aloha.tr"	;# trace file
+set opt(datafile)	"data/1_aloha.data"	;# data file
 set opt(nam)            "data/1_aloha.nam" 	;# nam file
 set opt(adhocRouting)   Vectorbasedforward
 set opt(width)          100
-set opt(interval)       10.0
+set opt(interval)       4
 set opt(range)          100    			;#range of each node in meters
 
 if { $argc > 0 } {
@@ -143,11 +143,11 @@ set node_(0) [ $ns_  node 0]
 $node_(0) set sinkStatus_ 1
 $node_(0) random-motion 1
 $god_ new_node $node_(0)
-$node_(0) set X_  480
+$node_(0) set X_  440
 $node_(0) set Y_  0
 $node_(0) set Z_  0
 $node_(0) set passive 1
-$node_(0) set-neighbors "1,0,0,0"
+#$node_(0) set-neighbors "1,0,0,0"
 
 set rt [$node_(0) set ragent_]
 $rt set control_packet_size  $opt(routing_control_packet_size)
@@ -171,11 +171,11 @@ $node_(1) set min_speed $opt(minspeed)
 $node_(1) set position_update_interval_ $opt(position_update_interval)
 
 $god_ new_node $node_(1)
-$node_(1) set X_  420
+$node_(1) set X_  360
 $node_(1) set Y_  0
 $node_(1) set Z_  0
 $node_(1) set passive 1
-$node_(1) set-neighbors "0,0,0,0"
+#$node_(1) set-neighbors "0,0,0,0"
 
 set rt [$node_(1) set ragent_]
 $rt set control_packet_size  $opt(routing_control_packet_size)
@@ -199,11 +199,11 @@ $node_(2) set min_speed $opt(minspeed)
 $node_(2) set position_update_interval_ $opt(position_update_interval)
 
 $god_ new_node $node_(2)
-$node_(2) set X_  350
+$node_(2) set X_  290
 $node_(2) set Y_  0
 $node_(2) set Z_  0
 $node_(2) set passive 1
-$node_(2) set-neighbors "1,0,0,0"
+#$node_(2) set-neighbors "1,0,0,0"
 
 set rt [$node_(2) set ragent_]
 $rt set control_packet_size  $opt(routing_control_packet_size)
@@ -229,11 +229,11 @@ $node_(3) set position_update_interval_ $opt(position_update_interval)
 
 
 $god_ new_node $node_(3)
-$node_(3) set X_  280
+$node_(3) set X_  250
 $node_(3) set Y_  0
 $node_(3) set Z_  0
 $node_(3) set passive 1
-$node_(3) set-neighbors "2,0,0,0"
+#$node_(3) set-neighbors "2,0,0,0"
 
 set rt [$node_(3) set ragent_]
 $rt set control_packet_size  $opt(routing_control_packet_size)
@@ -258,11 +258,11 @@ $node_(4) set min_speed $opt(minspeed)
 $node_(4) set position_update_interval_ $opt(position_update_interval)
 
 $god_ new_node $node_(4)
-$node_(4) set X_  220
+$node_(4) set X_  180
 $node_(4) set Y_  0
 $node_(4) set Z_  0
 $node_(4) set passive 1
-$node_(4) set-neighbors "3,0,0,0"
+#$node_(4) set-neighbors "3,0,0,0"
 
 set rt [$node_(4) set ragent_]
 $rt set control_packet_size  $opt(routing_control_packet_size)
@@ -283,13 +283,13 @@ $a_(4) cmd set-packetsize $opt(packet_size) ;# # of bytes
 set node_($total_number) [$ns_  node $total_number]
 $god_ new_node $node_($total_number)
 $node_($total_number) set  sinkStatus_ 1
-$node_($total_number) set X_  170
+$node_($total_number) set X_  140
 $node_($total_number) set Y_  0
 $node_($total_number) set Z_  0
 $node_($total_number) set-cx  200
 $node_($total_number) set-cy  0
 $node_($total_number) set-cz  0
-$node_($total_number) set-neighbors "4,0,0,0"
+#$node_($total_number) set-neighbors "4,0,0,0"
 
 set rt [$node_($total_number) set ragent_]
 $rt set control_packet_size  $opt(routing_control_packet_size)
@@ -310,9 +310,9 @@ set a [new Agent/UWSink]
 $ns_ attach-agent $node_($total_number) $a
 $a attach-vectorbasedforward $opt(width)
 $a cmd set-range $opt(range)
-$a cmd set-target-x $opt(x)
-$a cmd set-target-y $opt(y)
-$a cmd set-target-z $opt(z)
+$a cmd set-target-x 440
+$a cmd set-target-y 0
+$a cmd set-target-z 0
 $a cmd set-filename $opt(datafile)
 $a cmd set-packetsize $opt(packet_size) ;# # of bytes
 
@@ -320,7 +320,7 @@ proc record {} {
 	global a fd
 	set ns [Simulator instance]
 	set time 0.5
-	set bw0 [$a set num_send]
+	#set bw0 [$a set num_send]
 	set now [$ns now]
 	puts $fd "$now $bw0"
 	#$a set num_send 0

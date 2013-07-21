@@ -1,8 +1,3 @@
-/*
- * the base class for mobility model for 3D underwatersensor network. 
- * Contributed by Yibo Zhu, email: yibo.zhu@engr.uconn.edu
- * http://uwsn.engr.uconn.edu
- */
 #ifndef __uw_mobility_pattern_h__
 #define __uw_mobility_pattern_h__
 
@@ -45,7 +40,6 @@ public:
 	mpt_info(){
 		name_[MPT_KINEMATIC]="kinematic";
 		name_[MPT_RWP]="RWP";
-		
 		name_[MPT_NTYPE]="undefined";
 	}
 	
@@ -92,10 +86,6 @@ protected:
 	double NextZ_;
 	
 };
-
-	
-
-
 #endif
 
 

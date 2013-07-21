@@ -1,8 +1,3 @@
-/*
-This program is the modified version of phy.h, it supports the periodic operation of sensor nodes---modified by xp at 2007
-
-*/
-
 #ifndef ns_underwaterphy_h
 #define ns_underwaterphy_h
 
@@ -142,7 +137,9 @@ protected:
 	friend class Underwater_Idle_Timer;
 	//        friend class SenseHandler;
 	// friend class UnderwaterPhy_Status_Timer;
+private:
+    //void bind(const char* arg1, double* arg2);
 };
 
-#endif /* !ns_UnderwaterPhy_h */
+#endif
 

@@ -306,8 +306,12 @@ UnderwaterSensorNode
 double
 UnderwaterSensorNode::propdelay(UnderwaterSensorNode *m)
 {
-	//printf("underwatersensornode: ?????????????????the properdelay\n");
-	return distance(m) / SPEED_OF_SOUND_IN_WATER;
+    double d = distance(m) / SPEED_OF_SOUND_IN_WATER;
+/*    if((nodeid()==2||nodeid()==3)&&m->nodeid()==4)
+	//printf("askf:my_pos(%f,%f,%f),m_pos(%f,%f,%f)\n\n",CX(),CY(),CZ(),m->CX(),m->CY(),m->CZ());
+	printf("askf:my_pos:delay in seconds:%f\n",d);*/
+	
+    return d;
 }
 
 int

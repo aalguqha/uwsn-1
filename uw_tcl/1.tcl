@@ -1,9 +1,9 @@
 set opt(chan)		Channel/UnderwaterChannel
 set opt(prop)		Propagation/UnderwaterPropagation
 set opt(netif)		Phy/UnderwaterPhy
-set opt(mac)		Mac/UnderwaterMac/BroadcastMac
+#set opt(mac)		Mac/UnderwaterMac/BroadcastMac
 #set opt(mac)		Mac/UnderwaterMac/SFAMA
-#set opt(mac)		Mac/UnderwaterMac/UWALOHA
+set opt(mac)		Mac/UnderwaterMac/UWALOHA
 set opt(ifq)		Queue/DropTail/PriQueue
 set opt(ll)			LL
 set opt(energy)         EnergyModel
@@ -50,7 +50,7 @@ if { $argc > 0 } {
 
 LL set mindelay_		50us
 LL set delay_			25us
-LL set bandwidth_		0	;# not used
+LL set bandwidth_		0
 
 Queue/DropTail/PriQueue set Prefer_Routing_Protocols    1
 
@@ -63,19 +63,28 @@ Antenna/OmniAntenna set Z_ 0.05
 Antenna/OmniAntenna set Gt_ 1.0
 Antenna/OmniAntenna set Gr_ 1.0
 
-Agent/Vectorbasedforward set hop_by_hop_ 1
-Mac/UnderwaterMac set bit_rate_  1.0e4 ;#10kbps
-Mac/UnderwaterMac set encoding_efficiency_ 1
-Mac/UnderwaterMac/BroadcastMac set packetheader_size_ 0 ;# #of bytes
+Agent/Vectorbasedforward set hop_by_hop_ 0
+
+#Mac/UnderwaterMac set bit_rate_  1.0e4 ;#10kbps
+#Mac/UnderwaterMac set encoding_efficiency_ 1
+#Mac/UnderwaterMac/BroadcastMac set packetheader_size_ 0 ;# #of bytes
+Mac/UnderwaterMac/UWALOHA set bit_rate_ 1.0e4
+Mac/UnderwaterMac/UWALOHA set encoding_efficiency_ 1
+Mac/UnderwaterMac/UWALOHA set packetheader_size_ 0
+Mac/UnderwaterMac/UWALOHA set Persistent 1.0
+Mac/UnderwaterMac/UWALOHA set ACKOn 1
+Mac/UnderwaterMac/UWALOHA set Min_Backoff 0.0
+Mac/UnderwaterMac/UWALOHA set Max_Backoff 1.5
+Mac/UnderwaterMac/UWALOHA set WaitACKTime 1
 # Initialize the SharedMedia interface with parameters to make
 # it work like the 914MHz Lucent WaveLAN DSSS radio interface
-Phy/UnderwaterPhy set CPThresh_  10  ;#10.0
-Phy/UnderwaterPhy set CSThresh_  0    ;#1.559e-11
-Phy/UnderwaterPhy set RXThresh_  0    ;#3.652e-10
+Phy/UnderwaterPhy set CPThresh_  10  	;#10.0
+Phy/UnderwaterPhy set CSThresh_  0    	;#1.559e-11
+Phy/UnderwaterPhy set RXThresh_  0   	;#3.652e-10
 #Phy/WirelessPhy set Rb_ 2*1e6
-Phy/UnderwaterPhy set Pt_  0.2818
-Phy/UnderwaterPhy set freq_  25  ;# 25khz  
-Phy/UnderwaterPhy set K_ 2.0    ;# spherical spreading
+Phy/UnderwaterPhy set Pt_  		0.2818
+Phy/UnderwaterPhy set freq_  	25  	;# 25khz  
+Phy/UnderwaterPhy set K_ 		2.0    	;# spherical spreading
 
 # ==================================================================
 # Main Program
@@ -346,7 +355,7 @@ proc finish {} {
 }
 
 set opt(stop2) [expr $opt(stop)]
-$ns_ at 0 "record"
+#$ns_ at 0 "record"
 puts "Node $total_number is sending first!!"
 $a set data_rate_ [expr 1.0/$opt(interval)]
 $ns_ at 1.33 "$a cbr-start"
@@ -354,12 +363,13 @@ $ns_ at $opt(stop).001 "$a terminate"
 $ns_ at $opt(stop2).002 "$a_(0) terminate"
 $ns_ at $opt(stop2).003  "$god_ compute_energy"
 $ns_ at $opt(stop2).004  "$ns_ nam-end-wireless $opt(stop)"
-$ns_ at $opt(stop2).005 "puts \"xgraph...\""
-#$ns_ at $opt(stop2).005 "puts \"NS EXISTING...\"; $ns_ halt"
+#$ns_ at $opt(stop2).005 "puts \"xgraph...\""
+$ns_ at $opt(stop2).005 "puts \"NS EXISTING...\"; $ns_ halt"
+
 puts $data  "New simulation...."
 puts $data "nodes=$opt(nn), maxspeed = $opt(maxspeed), minspeed = $opt(minspeed), random_seed = $opt(seed), sending_interval_=$opt(interval), width=$opt(width)"
 puts $data "x= $opt(x) y= $opt(y) z= $opt(z)"
 close $data
-$ns_ at [expr $opt(stop2).005] "finish"
+#$ns_ at [expr $opt(stop2).005] "finish"
 puts "starting Simulation..."
 $ns_ run

@@ -178,6 +178,9 @@ protected:
     UWReport_Timer report_timer_;
 
     friend class UWPeriodic_Timer;
+
+    void bind(const char* arg1, int* arg2);private:
+    void bind(const char* arg1, int* arg2);
 };
 
 

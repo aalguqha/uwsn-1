@@ -78,8 +78,8 @@ report_timer_(this)
 
 	//Bind Tcl and C++ Variables
 	bind("num_send",&num_send);
-	bind("num_recv",&num_recv);
-	bind("maxpkts_", &maxpkts_);
+	//bind("num_recv",&num_recv);
+	//bind("maxpkts_", &maxpkts_);
 
 	//Initialize variables.
 
@@ -230,13 +230,12 @@ void UWSinkAgent::sendpkt()
 	
 	cmh->ptype()=PT_UWVB;
 	cmh->size() = packetsize_;
+	printf("set packet size of agent:cc%d\n",cmh->size());
 	cmh->uid() = pkt_id_++;
 	vbh->mess_type = DATA;
 	vbh->pk_num = pk_count;
 	vbh->ts_=NOW;
 	pk_count++;
-	//shaoyang
-	num_send++;
 	iph->src_=here_;
 	iph->dst_.addr_=here_.addr_;
 	iph->dst_.port_=255;
@@ -269,10 +268,8 @@ void UWSinkAgent::sendpkt()
 	num_send++;
 	//   vbh->attr[0] = data_type_;
 
-
 	if (target_==NULL)  printf("The target_ is empty\n");
 	else { 
-
 		// printf("The target_ is not  empty\n");
 		send(pkt, 0);
 	}
@@ -287,7 +284,6 @@ void UWSinkAgent::data_ready()
 	if (pk_count >=  maxpkts_) {
 		running_ = 0;
 		return;
-
 	}
 	// printf("I am in the sendpk2 \n");
 	Packet* pkt = create_packet();
@@ -295,22 +291,15 @@ void UWSinkAgent::data_ready()
 	hdr_ip* iph = HDR_IP(pkt);
 	//hdr_cmn*  cmh = HDR_CMN(pkt);
 
-
 	vbh->mess_type = DATA_READY;
 	vbh->pk_num = pk_count;
-
 	pk_count++;
-
-
 	iph->src_=here_;
 	iph->dst_.addr_=here_.addr_;
 	iph->dst_.port_=255;
-
-
 	vbh->sender_id = here_;
 	//      vbh->data_type = data_type_;
 	vbh->forward_agent_id = here_; 
-
 	vbh->target_id=target_id;
 	vbh->range=range_;
 	vbh->ts_=NOW;
@@ -325,10 +314,6 @@ void UWSinkAgent::data_ready()
 
 	//  num_send++;
 	//      vbh->attr[0] = data_type_;
-
-
-
-
 	if (target_==NULL)  printf("The target_ is empty\n");
 	else {
 		// printf("The target_ is not  empty\n");
@@ -352,48 +337,34 @@ void UWSinkAgent::source_deny(ns_addr_t id, double x, double y, double z)
 	vbh->pk_num = pk_count;
 	pk_count++;
 
-
 	iph->src_=here_;
 	iph->dst_.addr_=here_.addr_;
 	iph->dst_.port_=255;
-
 	vbh->sender_id = here_;	
-	//      vbh->data_type = data_type_;
+	//vbh->data_type = data_type_;
 	vbh->forward_agent_id = here_; 
-
 	vbh->target_id=id;
-
-
-
 	vbh->info.tx=x;
 	vbh->info.ty=y; 
 	vbh->info.tz=z;
 	vbh->range=range_;
 	vbh->ts_=NOW;
 
-
 	// Send the packet
-
 	vbh->info.ox=node->X();
 	vbh->info.oy=node->Y(); 
 	vbh->info.oz=node->Z();
-
 	/* 
 	vbh->original_source.x=vbh->info.ox;
 	vbh->original_source.y=vbh->info.oy;
 	vbh->original_source.z=vbh->info.oz;
 	*/
-
 	vbh->info.dx=0;
 	vbh->info.dy=0; 
 	vbh->info.dz=0;
 
-
-
 	printf("uw_sink:source(%d,%d) send source-deny packet %d at %lf : the target is (%d,%d)\n", vbh->sender_id.addr_,vbh->sender_id.port_,vbh->pk_num, NOW, vbh->target_id.addr_,vbh->target_id.port_);
-
 	send(pkt, 0);	
-
 }
 
 
@@ -407,9 +378,6 @@ void UWSinkAgent::bcast_interest()
 	hdr_ip* iph = HDR_IP(pkt);
 
 	// Set message type, packet number and sender ID
-
-
-
 	iph->src_=here_;
 	iph->dst_.addr_=here_.addr_;
 	iph->dst_.port_=255;
@@ -420,20 +388,16 @@ void UWSinkAgent::bcast_interest()
 	vbh->sender_id = here_;	
 	// vbh->data_type = data_type_;
 	vbh->forward_agent_id = here_; 
-
 	vbh->target_id=target_id;
-
 	vbh->info.tx=target_x;
 	vbh->info.ty=target_y; 
 	vbh->info.tz=target_z;
 	vbh->range=range_;
 	vbh->ts_=NOW;
-
-
+	
 	// Send the packet
-
 	vbh->info.ox=node->X();
-	vbh->info.oy=node->Y(); 
+	vbh->info.oy=node->Y();
 	vbh->info.oz=node->Z();
 
 	/*
@@ -465,34 +429,6 @@ void UWSinkAgent::bcast_interest()
 		periodic_timer_.resched(INTEREST_PERIOD);
 }
 
-
-/*
-void UWSinkAgent::data_ready()
-{
-
-// Create a new packet
-Packet* pkt = create_packet();
-
-// Access the Sink header for the new packet:
-hdr_uwvb* vbh = HDR_UWVB(pkt);
-// hdr_ip* iph = HDR_IP(pkt);
-
-// Set message type, packet number and sender ID
-vbh->mess_type = DATA_READY;
-vbh->pk_num = pk_count;
-pk_count++;
-vbh->sender_id = here_;	
-vbh->data_type = data_type_;
-vbh->forward_agent_id = here_; 
-
-
-send(pkt, 0);
-
-}
-*/
-
-
-
 void UWSinkAgent::Terminate () 
 {
 	FILE * fp;
@@ -505,11 +441,11 @@ void UWSinkAgent::Terminate ()
 	printf("SINK(%d): terminates (send %d, recv %d, cum_delay %f)\n", 
 		here_.addr_, num_send, num_recv, cum_delay);
 #endif
-	fprintf(fp,"SINK(%d) : num_send = %d, num_recv = %d, cum_delay = %f\n",
-		here_.addr_, num_send, num_recv, cum_delay);
+	fprintf(fp,"SINK(%d) : pkt_count = %d,num_send = %d, num_recv = %d, cum_delay = %f\n",
+		pk_count,here_.addr_, num_send, num_recv, cum_delay);
 
-	printf("SINK %d : terminates (send %d, recv %d, cum_delay %f)\n", 
-		here_.addr_, num_send, num_recv, cum_delay);
+	printf("SINK %d : terminates (pkt_count:%d,send %d, recv %d, cum_delay %f)\n", 
+		pk_count, here_.addr_, num_send, num_recv, cum_delay);
 	int index=DataTable.current_index;
 
 	for(int i=0;i<index;i++){
@@ -553,7 +489,6 @@ int UWSinkAgent::command(int argc, const char*const* argv)
 		if (strcmp(argv[1], "announce") == 0) {
 			bcast_interest();
 			// report_timer_.resched(REPORT_PERIOD);
-
 			return (TCL_OK);
 		}
 

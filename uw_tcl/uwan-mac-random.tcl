@@ -1,7 +1,6 @@
 set opt(chan)			Channel/UnderwaterChannel
 set opt(prop)			Propagation/UnderwaterPropagation
 set opt(netif)			Phy/UnderwaterPhy
-#set opt(mac)			Mac/UnderwaterMac/SFAMA
 set opt(mac)			Mac/UnderwaterMac/UWANMac
 set opt(ifq)			Queue/DropTail/PriQueue
 set opt(ll)				LL

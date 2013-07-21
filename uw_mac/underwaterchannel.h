@@ -1,7 +1,3 @@
-/* 
-This program is the modified version of channel.h, it supports 3-dimensional space and position estimation used by VBF--modified by xp at 2007
-
-*/
 #ifndef __ns_underwaterchannel_h__
 #define __ns_underwaterchannel_h__
 
@@ -11,7 +7,6 @@ This program is the modified version of channel.h, it supports 3-dimensional spa
 #include "packet.h"
 #include "phy.h"
 #include "node.h"
-
 
 class UnderwaterChannel : public Channel {
 	friend class Topography;
@@ -38,7 +33,8 @@ private:
        
 	
 protected:
-	static double distCST_;        
+	//double distCST_;
+	static double distCST_;
 };
 
 #endif //_underwaterchannel_h_

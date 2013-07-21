@@ -2,9 +2,8 @@ set opt(chan)		Channel/UnderwaterChannel
 set opt(prop)		Propagation/UnderwaterPropagation
 set opt(netif)		Phy/UnderwaterPhy
 set opt(mac)		Mac/UnderwaterMac/BroadcastMac
-#set opt(mac)		Mac/UnderwaterMac/UWALOHA
 set opt(ifq)		Queue/DropTail/PriQueue
-set opt(ll)		LL
+set opt(ll)			LL
 set opt(energy)         EnergyModel
 set opt(txpower)        2.0
 set opt(rxpower)        0.75
@@ -20,21 +19,21 @@ set opt(position_update_interval) 0.3  ;# the length of period to update node's 
 set opt(packet_size) 50  ;#50 bytes
 set opt(routing_control_packet_size) 20 ;#bytes 
 
-set opt(ifqlen)		50	;# max queue length in if
-set opt(nn)		6	;# number of nodes 
-set opt(x)		1000	;# X dimension of the topography
-set opt(y)	        10  ;# Y dimension of the topography
+set opt(ifqlen)		    50	;# max queue length in if
+set opt(nn)		        6	;# number of nodes 
+set opt(x)		        1000	;# X dimension of the topography
+set opt(y)	            10  ;# Y dimension of the topography
 set opt(z)              10
-set opt(seed)		11
-set opt(stop)		500	;# simulation time
+set opt(seed)		    11
+set opt(stop)		    500	;# simulation time
 set opt(prestop)        90     ;# time to prepare to stop
-set opt(tr)		"vbf_example_5.tr"	;# trace file
-set opt(datafile)	"vbf_example_5.data"
-set opt(nam)            "vbf_example_5.nam"  ;# nam file
+set opt(tr)		        "data/vbf_example_5.tr"	;# trace file
+set opt(datafile)	    "data/vbf_example_5.data"
+set opt(nam)            "data/vbf_example_5.nam"  ;# nam file
 set opt(adhocRouting)   Vectorbasedforward
-set opt(width)           100
-set opt(interval)        10.0
-set opt(range)           120    ;#range of each node in meters
+set opt(width)          100
+set opt(interval)       10.0
+set opt(range)          120    ;#range of each node in meters
 
 if { $argc > 0 } {
   set opt(seed) [lindex $argv 0]
@@ -97,7 +96,6 @@ $ns_ trace-all $tracefd
 set nf [open $opt(nam) w]
 $ns_ namtrace-all-wireless $nf $opt(x) $opt(y)
 
-
 set data [open $opt(datafile) a]
 
 
@@ -116,25 +114,25 @@ $defaultRNG seed $opt(seed)
 
 
 $ns_ node-config -adhocRouting $opt(adhocRouting) \
-		 -llType $opt(ll) \
-		 -macType $opt(mac) \
-		 -ifqType $opt(ifq) \
-		 -ifqLen $opt(ifqlen) \
-		 -antType $opt(ant) \
-		 -propType $opt(prop) \
-		 -phyType $opt(netif) \
-		 #-channelType $opt(chan) \
-		 -agentTrace OFF \
-                 -routerTrace OFF \
-                 -macTrace ON\
-                 -topoInstance $topo\
-                 -energyModel $opt(energy)\
-                 -txPower $opt(txpower)\
-                 -rxPower $opt(rxpower)\
-                 -initialEnergy $opt(initialenergy)\
-                 -idlePower $opt(idlepower)\
-                 -channel $chan_1_
-                 
+		-llType $opt(ll) \
+		-macType $opt(mac) \
+		-ifqType $opt(ifq) \
+		-ifqLen $opt(ifqlen) \
+		-antType $opt(ant) \
+		-propType $opt(prop) \
+		-phyType $opt(netif) \
+		#-channelType $opt(chan) \
+		-agentTrace OFF \
+		-routerTrace OFF \
+		-macTrace ON\
+		-topoInstance $topo\
+		-energyModel $opt(energy)\
+		-txPower $opt(txpower)\
+		-rxPower $opt(rxpower)\
+		-initialEnergy $opt(initialenergy)\
+		-idlePower $opt(idlepower)\
+		-channel $chan_1_
+		
 
 puts "Width=$opt(width)"
 #Set the Sink node
@@ -195,8 +193,8 @@ $node_(2) set min_speed $opt(minspeed)
 $node_(2) set position_update_interval_ $opt(position_update_interval)
 
 $god_ new_node $node_(2)
-$node_(2) set X_  450
-$node_(2) set Y_  50
+$node_(2) set X_  400
+$node_(2) set Y_  0
 $node_(2) set Z_  0
 $node_(2) set passive 1
 
@@ -224,8 +222,8 @@ $node_(3) set min_speed $opt(minspeed)
 $node_(3) set position_update_interval_ $opt(position_update_interval)
 
 $god_ new_node $node_(3)
-$node_(3) set X_  500
-$node_(3) set Y_  70
+$node_(3) set X_  340
+$node_(3) set Y_  0
 $node_(3) set Z_  0
 $node_(3) set passive 1
 
@@ -254,9 +252,9 @@ $node_(4) set min_speed $opt(minspeed)
 $node_(4) set position_update_interval_ $opt(position_update_interval)
 
 $god_ new_node $node_(4)
-$node_(4) set X_  470
-$node_(4) set Y_  20
-$node_(4) set Z_  30
+$node_(4) set X_  280
+$node_(4) set Y_  0
+$node_(4) set Z_  0
 $node_(4) set passive 1
 
 set rt [$node_(4) set ragent_]
@@ -280,9 +278,9 @@ $god_ new_node $node_($total_number)
 
 $node_($total_number) set  sinkStatus_ 1
 
-$node_($total_number) set X_  490
-$node_($total_number) set Y_  10
-$node_($total_number) set Z_  40
+$node_($total_number) set X_  240
+$node_($total_number) set Y_  0
+$node_($total_number) set Z_  0
 $node_($total_number) set-cx  200
 $node_($total_number) set-cy  0
 $node_($total_number) set-cz  0
@@ -311,12 +309,19 @@ for { set i 1 } { $i<$opt(nn) } {incr i } {
 # make nam workable
 set node_size 10
 for {set k 0} { $k<$opt(nn)} {incr k} {
-$ns_ initial_node_pos $node_($k) $node_size
+	$ns_ initial_node_pos $node_($k) $node_size
 }
 
+proc finish {} {
+    global nf opt
+    set ns [Simulator instance]
+    close $nf
+    #exec nam data/vbf_example_5.nam
+	#exec xgraph
+	$ns halt
+}
 
 set opt(stop2) [expr $opt(stop)+200]
-
 
 puts "Node $total_number is sending first!!"
 #$ns_ at 1.33 "$a_($total_number) cbr-start"
@@ -327,12 +332,12 @@ $ns_ at $opt(stop2).002 "$a_(0) terminate"
 
 $ns_ at $opt(stop2).003  "$god_ compute_energy"
 $ns_ at $opt(stop2).004  "$ns_ nam-end-wireless $opt(stop)"
-$ns_ at $opt(stop2).005 "puts \"NS EXISTING...\"; $ns_ halt"
+$ns_ at $opt(stop2).005 "puts \"NS EXISTING...\";"
+$ns_ at $opt(stop2).005 "finish"
 
-
- puts $data  "New simulation...."
- puts $data "nodes  = $opt(nn), maxspeed = $opt(maxspeed), minspeed = $opt(minspeed), random_seed = $opt(seed), sending_interval_=$opt(interval), width=$opt(width)"
- puts $data "x= $opt(x) y= $opt(y) z= $opt(z)"
- close $data
- puts "starting Simulation..."
- $ns_ run
+puts $data  "New simulation...."
+puts $data "nodes  = $opt(nn), maxspeed = $opt(maxspeed), minspeed = $opt(minspeed), random_seed = $opt(seed), sending_interval_=$opt(interval), width=$opt(width)"
+puts $data "x= $opt(x) y= $opt(y) z= $opt(z)"
+close $data
+puts "starting Simulation..."
+$ns_ run

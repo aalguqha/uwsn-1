@@ -1,10 +1,11 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 from math import sqrt
 SOUND_SPEED= 1500.0
 width = 50
 tranDistance = 100.0
-fwd_list = [(200.0,0,0),(260.0,0,0),(260.0,0,0),(320.0,0,-15),(320.0,0,-15)]
-nod_list = [(260.0,0,0),(320.0,0,20),(320.0,0,-15),(320.0,0,20),(380.0,0,0)]
+fwd_list = [(290,-43,0),(240,49,0),(290,-43,0),(240,49,0),(290,-43,0),(330,49,0),(330,49,0),(380,-40,0)]
+nod_list = [(200,0,0),(200,0,0),(330,49,0),(380,-20,0),(380,-20,0),(380,-40,0),(415,0,0),(415,0,0)]
 
 class Node(object):
   
@@ -15,20 +16,20 @@ class Node(object):
         self.fx = fx_
         self.fy = fy_
         self.fz = fz_
-        self.sx = 200.0
+        self.sx = 130.0
         self.sy = 0.0
         self.sz = 0.0
-        self.tx = 500.0
+        self.tx = 415.0
         self.ty = 0.0
         self.tz = 0.0
-l
+
     def display(self):
         #print "Advance:",self.advance()
         #print "Project:",self.projection()
         #print "Distance:",self.distance()
-        #print "Delay:",self.calDelay()
+        print "Delay:",self.calDelay()
         #print "d2:",(tranDistance - self.distance())/SOUND_SPEED
-        print "Real Time Out:",self.calTimeout()
+        #print "distance:",self.distance(),"Real Timeout:",self.calTimeout()
         
     def distance(self):
         return sqrt((self.fx-self.x)*(self.fx-self.x) + (self.fy-self.y)*(self.fy-self.y) + (self.fz-self.z)*(self.fz-self.z))
@@ -72,6 +73,6 @@ l
         if delay > 0:
             return sqrt(delay) + soundTranDelay*2;
 
-for i in range(1,5):
+for i in range(0,7):
     node = Node(nod_list[i][0],nod_list[i][1],nod_list[i][2],fwd_list[i][0],fwd_list[i][1],fwd_list[i][2])
     node.display()

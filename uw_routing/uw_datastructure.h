@@ -26,6 +26,7 @@
 #define EXPENSION 14
 #define V_SHIFT_DATA 15
 #define EXPENSION_DATA 16
+#define V_ACK 17
 
 // next hop status 
 #define UNKNOWN 1

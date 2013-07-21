@@ -2,10 +2,8 @@
 
 #ifndef ns_underwaterpropagation_h
 #define ns_underwaterpropagation_h
-
-
-
-#define SPEED_OF_SOUND_IN_WATER	1500  //actual speed of sound in water
+//actual speed of sound in water
+#define SPEED_OF_SOUND_IN_WATER	1500
 
 #include <topography.h>
 #include <packet-stamp.h>

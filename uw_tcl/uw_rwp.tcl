@@ -47,8 +47,8 @@ set opt(z)                      		10
 set opt(seed)	                		648.88
 set opt(stop)	                		1000 ;#[lindex $argv 3] ;#150	;# simulation time
 set opt(prestop)                       	80     ;# time to prepare to stop
-set opt(tr)	                		"uw_rwp.tr"	;# trace file
-set opt(nam)                            	"uw_rwp.nam"  ;# nam file
+set opt(tr)	                		    "data/uw_rwp.tr"	;# trace file
+set opt(nam)                            "data/uw_rwp.nam"  ;# nam file
 set opt(adhocRouting)                 	Vectorbasedforward 
 set opt(width)                           	20
 set opt(adj)                             	10

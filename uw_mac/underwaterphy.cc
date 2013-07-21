@@ -8,11 +8,11 @@ This program is the modified version of phy.cc, it supports the periodic operati
 #include "underwaterpropagation.h"
 #include "underwatersensor/uw_common/underwatersensornode.h"
 #include <modulation.h>
-
-#include  "underwaterphy.h"
 #include <packet.h>
 #include "rmac.h"
 #include "random.h"
+
+#include  "underwaterphy.h"
 
 void Underwater_Idle_Timer::expire(Event *) {
 	a_->UpdateIdleEnergy();
@@ -30,10 +30,7 @@ public:
 	}
 } class_UnderwaterPhy;
 
-
-UnderwaterPhy::UnderwaterPhy() : Phy(), idle_timer_(this)
-/*,sense_handler(this)*/
-{
+UnderwaterPhy::UnderwaterPhy() : Phy(), idle_timer_(this)/*,sense_handler(this)*/{
 	/*
 	*  It sounds like 10db should be the capture threshold.
 	*
@@ -96,9 +93,7 @@ UnderwaterPhy::UnderwaterPhy() : Phy(), idle_timer_(this)
 	//Energy_turn_off_ = 0.0;
 }
 
-int
-UnderwaterPhy::command(int argc, const char*const* argv)
-{
+int UnderwaterPhy::command(int argc, const char*const* argv){
 	TclObject *obj; 
 
 	if (argc==2) {
@@ -147,9 +142,7 @@ UnderwaterPhy::command(int argc, const char*const* argv)
 	return Phy::command(argc,argv);
 }
 
-void 
-UnderwaterPhy::sendDown(Packet *p)
-{
+void UnderwaterPhy::sendDown(Packet *p){
 	UnderwaterSensorNode* n1;
 	int it=hdr_cmn::access(p)->next_hop();
 	printf("ok, node %d is underwaterphy senddown to node %d at %f pidel is%f pt=%f and pr=%f\n",node_->address(),it,NOW,P_idle_,Pt_consume_,Pr_consume_);
@@ -194,17 +187,20 @@ UnderwaterPhy::sendDown(Packet *p)
 
 			  // update energy
 			  if (start_time >= update_energy_time_) {
+				  printf("node initial: %f, energy: %f\n",em()->initialenergy(), em()->energy());
 				  em()->DecrIdleEnergy(start_time - 
 					  update_energy_time_, P_idle_);
 				  update_energy_time_ = start_time;
 			  }
-			  else printf("underwater phy node %d: overlappd transmission %f and %f\n",node_->address(),start_time,update_energy_time_ );
+			  else 
+			    printf("underwater phy node %d: overlappd transmission %f and %f\n",node_->address(),start_time,update_energy_time_ );
 
 			  //minus the forwarding delay part
 			  //suppose modem cannot recv when the packet is experiencing forwarding delay
 			  em()->DecrIdleEnergy(forwarding_delay(), P_idle_);
-			  
+			  double init_energy = em()->energy();
 			  em()->DecrTxEnergy(txtime-forwarding_delay(), Pt_consume_);
+			  printf("phy decrease energy:%f\n",init_energy-em()->energy());
 			  update_energy_time_ =end_time;
 			  break;
 		  }
@@ -230,32 +226,25 @@ UnderwaterPhy::sendDown(Packet *p)
 	*/
 	if (!ant_) 
 		printf("ok, there is no antenna\n");
+	
 	p->txinfo_.stamp((MobileNode*)node(), ant_->copy(), Pt_, lambda_);
 
 	channel_->recv(p, this);	//underwaterchannel的sendup函数
 }
 
-
-
-
-int 
-UnderwaterPhy::sendUp(Packet *p)
-{
+int UnderwaterPhy::sendUp(Packet *p){
 	/*
 	* Sanity Check
 	*/
-
 	UnderwaterSensorNode* n1;
 	hdr_cmn* cmnh=HDR_CMN(p);
 
-	printf("underwater phy: node %d, got the upgoing packet  ptytype=%d at %f\n", node_->address(),cmnh->ptype_,NOW);
 	assert(initialized());
 
 	double rcvtime = hdr_cmn::access(p)->txtime();
 
 
 	n1=(UnderwaterSensorNode*) node_;  
-
 	// this part is moved from routing protocol by peng xie at 12-20-06 
 
 	if (n1->failure_status()==1){
@@ -338,8 +327,7 @@ UnderwaterPhy::sendUp(Packet *p)
 			em()->setenergy(0);
 			((MobileNode*)node())->log_energy(0);
 		}
-	//	printf("underwaterphy: received!!!!\n");
-
+		printf("underwaterphy: received!!!!\n");
 		return 1;
 }
 

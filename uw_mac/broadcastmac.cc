@@ -4,8 +4,9 @@
 #include "mac.h"
 #include "broadcastmac.h"
 #include "underwaterphy.h"
+#include "../uw_routing/vectorbasedforward.h"
 
-
+#define POS_DROP_PACKET
 StatusHandler:: StatusHandler(BroadcastMac*  p):mac_(p){}
 
 void StatusHandler::handle(Event* e)
@@ -58,8 +59,9 @@ public:
 
 BroadcastMac::BroadcastMac() : UnderwaterMac(),status_handler(this),backoff_handler(this),callback_handler(this)
 {
-	bind("packetheader_size_",&packetheader_size_); 
-	bind("packet_size_", &packet_size_);
+  packetheader_size_ = 0;
+	//bind("packetheader_size_",&packetheader_size_); 
+	//bind("packet_size_", &packet_size_);
 }
 
 /*
@@ -81,7 +83,7 @@ BroadcastMac::RecvProcess(Packet* pkt){
 
 	if (cmh->error()) 
 	{
-//		printf("broadcast:node %d  gets a corrupted packet at  %f\n",index_,NOW);
+		printf("broadcast:node %d  gets a corrupted packet at  %f\n",index_,NOW);
 		if(drop_) drop_->recv(pkt,"Error/Collision");
 		else Packet::free(pkt);
 		return;
@@ -91,11 +93,19 @@ BroadcastMac::RecvProcess(Packet* pkt){
 		if( packet_size_ ==0 ) {
 			cmh->size() -= packetheader_size_;
 		}
-		uptarget_->recv(pkt, this);	//uptarget_运行时是，VectorbasedForward
-		return;
+		if(index_ == 4 || index_ == 5){
+		  bool poi_factor = uw_tools.ifSend(NOW);
+		  if(poi_factor == false){
+		    printf("broadcastmac drop packets:%d\n",index_);
+		    drop_->recv(pkt,"Error/Collision");
+		    Packet::free(pkt);
+		    return;
+		  }
+		}
+		hdr_uwvb* vbh = HDR_UWVB(pkt);
+		printf("Recv pkts from node:(%d,%d,%d)\n",index_,vbh->pk_num,vbh->forward_agent_id.addr_);
+		uptarget_->recv(pkt->copy(), this);	//uptarget_运行时是，VectorbasedForward
 	}
-
-//	printf("underwaterbroadcastmac: this is neither broadcast nor my packet, just drop it\n");
 	Packet::free(pkt);
 	return;
 }
@@ -128,20 +138,16 @@ BroadcastMac::TxProcess(Packet* pkt){
 	
 	mach->macDA() = (int)MAC_BROADCAST;
 	mach->macSA() = index_;
-
 	assert(initialized());
 	UnderwaterSensorNode* n=(UnderwaterSensorNode*) node_;
-
-
 	if( packet_size_ != 0 )
 		cmh->size() = packet_size_;
 	else
 		cmh->size()+=(packetheader_size_);
 
 
-
-	cmh->txtime()=getTxTime(pkt);
-
+	cmh->txtime()=getTxTime(cmh->size());
+	printf("set pkt size and txtime:%d,txtime:%f\n",cmh->size(),cmh->txtime());
 	Scheduler& s=Scheduler::instance();
 	switch( n->TransmissionStatus() )
 	{
@@ -153,8 +159,8 @@ BroadcastMac::TxProcess(Packet* pkt){
 		cmh->addr_type()=NS_AF_ILINK;
 		//add the sync hdr
 		sendDown(pkt);
-		backoff_handler.clear();
 		s.schedule(&status_handler,&status_event,cmh->txtime());
+		backoff_handler.clear();
 		return;
 	case RECV:
 		{
@@ -214,5 +220,3 @@ BroadcastMac::command(int argc, const char*const* argv)
 
 	return UnderwaterMac::command(argc, argv);
 }
-
-

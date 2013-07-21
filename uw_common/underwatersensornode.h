@@ -1,6 +1,5 @@
 #include <stdio.h>
 #undef max
-//#undef min
 #include <set>
 #include <list>
 #include <string>
@@ -15,7 +14,7 @@ using namespace std;
 #include "topography.h"
 #include "arp.h"
 #include "node.h"
-#include "gridkeeper.h" // I am not sure if it is useful in our case
+#include "gridkeeper.h"
 #include "energy-model.h"
 #include "location.h"
 #include "underwatersensor/uw_mobility_pattern/mobility_pattern_allinone.h"
@@ -78,6 +77,7 @@ private:
 	UnderwaterSensorNode *node;
 };
 
+/*added by shaoyang 为了在脚本初始化时将下一跳节点位置设置进来而创建的数据结构*/
 struct neighbor_node_elem{
 	int node_id;
 	float _X;

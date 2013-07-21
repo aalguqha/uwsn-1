@@ -1,3 +1,4 @@
+#include "./uwaloha/uwaloha.h"
 #ifndef ns_underwatermac_h
 #define ns_underwatermac_h
 
@@ -51,9 +52,9 @@ class UnderwaterMac: public Mac {
 
 public:
 	UnderwaterMac();
-
+	//change these two parameters as static value!!!
 	double  bit_rate_; // bit rate of the MAC
-	double  encoding_efficiency_; //ratio of encoding    //change these two parameters as static value!!!
+	double  encoding_efficiency_; //ratio of encoding
 
 
 	int  command(int argc, const char*const* argv);
@@ -91,7 +92,7 @@ public:
 	double getSyncHdrLen();
 	double getForwardingDelay();
 protected:
-	Node*	node_;// the node this mac is attached
+	Node*	node_;		//the node this mac is attached
 	bool	IsOFDMPhy_;
 
 

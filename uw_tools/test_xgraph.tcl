@@ -1,17 +1,18 @@
 set ns [new Simulator]
 
 #recording data in output files
-set f0 [open out0.tr w]
-set f1 [open out1.tr w]
-set f2 [open out2.tr w]
+set f0 [open data/test_xgraph0.tr w]
+set f1 [open data/test_xgraph1.tr w]
+set f2 [open data/test_xgraph2.tr w]
 
 proc finish {} {
     global f0 f1 f2
-    #$ns flush-trace
+	set ns [Simulator instance]
+    $ns flush-trace
     close $f0
     close $f1
     close $f2
-    exec xgraph out0.tr out1.tr out2.tr -geometry 400*200 &
+    exec xgraph data/test_xgraph0.tr data/test_xgraph1.tr data/test_xgraph2.tr -geometry 100*100 &
     exit 0
 }
 
@@ -20,7 +21,6 @@ set n1 [$ns node]
 set n2 [$ns node]
 set n3 [$ns node]
 set n4 [$ns node]
-
 
 $ns duplex-link $n0 $n3 1Mb 100ms DropTail
 $ns duplex-link $n1 $n3 1Mb 100ms DropTail
@@ -32,6 +32,7 @@ proc attach-expoo-traffic { node sink size burst idle rate } {
     #get an instance of the simulator
     set ns [Simulator instance]
     #create a UDP agent and attach it to the node
+	#用udp来产生数据，就像uwsink一样
     set source [new Agent/UDP]
     $ns attach-agent $node $source
 
@@ -64,7 +65,7 @@ set source2 [attach-expoo-traffic $n2 $sink2 200 2s 1s 300k]
 
 #actually writes the data to the output files
 proc record {} {
-    global sink0 sink1 sink2 f0 f1 f2
+    global sink0 sink1 sink2 f0 f1 f2 f3
     set ns [ Simulator instance]
     set time 0.5
     #how many bytes have been received by the traffic sinks
@@ -80,7 +81,7 @@ proc record {} {
     $sink0 set bytes_ 0
     $sink1 set bytes_ 0
     $sink2 set bytes_ 0
-    #re-schedule the procedure
+    #re-schedule the procedure，循环调用该过程
     $ns at [expr $now + $time] "record"
 }
 

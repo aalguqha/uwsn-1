@@ -2,7 +2,7 @@
 #define ns_broadcastmac_h
 
 #include "underwatermac.h"
-
+#include "../uw_common/uw_tools.h"
 
 
 #define BACKOFF  0.1 		// the maximum time period for backoff
@@ -49,7 +49,8 @@ public:
     int  command(int argc, const char*const* argv);
     int packetheader_size_; //# of bytes in the header
     int packet_size_;  //to test the optimized length of packet
-
+    /*shaoyang*/
+    UWTools uw_tools;
     Event backoff_event;
     Event status_event;
     Event callback_event;
@@ -64,7 +65,7 @@ public:
     void StatusProcess(Event*);
     void CallbackProcess(Event*);
     void DropPacket(Packet*);
-
+    
     // to process the outgoing packet
     virtual  void TxProcess(Packet*);
 

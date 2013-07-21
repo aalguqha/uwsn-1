@@ -1,9 +1,3 @@
-/*
-This program is the modified version of channel.cc, it supports 3-dimensional space and position estimation used by VBF--modified by xp at 2007
-
-*/
-
-
 #include <float.h>
 #include "trace.h"
 #include "delay.h"
@@ -17,11 +11,8 @@ This program is the modified version of channel.cc, it supports 3-dimensional sp
 #include "underwatersensor/uw_common/underwatersensornode.h"
 #include "ip.h"
 #include "dsr/hdr_sr.h"
-
-#include "underwatersensor/uw_routing/vectorbasedforward.h" // added by peng xie
+#include "underwatersensor/uw_routing/vectorbasedforward.h"
 #include "rmac.h"
-
-
 
 static class UnderwaterChannelClass : public TclClass {
 public:
@@ -33,7 +24,7 @@ public:
 
 class MobileNode;
 
-double UnderwaterChannel::distCST_ =50.0;
+double UnderwaterChannel::distCST_ =100.0;
 
 
 UnderwaterChannel::UnderwaterChannel(void) : Channel(), numNodes_(0),
@@ -63,9 +54,7 @@ int UnderwaterChannel::command(int argc, const char*const* argv)
 
 
 void
-UnderwaterChannel::sendUp(Packet* p, Phy *tifp)
-{
-    //	 printf("underwaterchannel sendup\n");
+UnderwaterChannel::sendUp(Packet* p, Phy *tifp){
     Scheduler &s = Scheduler::instance();
     Phy *rifp = ifhead_.lh_first;
     Node *tnode = tifp->node();
@@ -79,37 +68,38 @@ UnderwaterChannel::sendUp(Packet* p, Phy *tifp)
     // use list-based improvement
     printf("Underwaterchannel: the distCST is %f\n",distCST_);
     MobileNode *mtnode = (MobileNode *) tnode;
-    MobileNode **affectedNodes;// **aN;
+    MobileNode **affectedNodes;
     int numAffectedNodes = -1, i;
 
     if (!sorted_) {
         sortLists();
     }
     affectedNodes = getAffectedNodes(mtnode, distCST_ , &numAffectedNodes);
-
-    printf("underwaterchannel the affected number of node is %d\n",numAffectedNodes);
     for (i=0; i < numAffectedNodes; i++) {
         rnode = affectedNodes[i];
         double d1=distance(tnode,rnode);
-
-        if ((rnode == tnode)||(d1>distCST_))
-        {
-            //printf("channel they are same\n");
+        if ((rnode == tnode)||(d1>distCST_)){
             continue;
         }
-	
+	printf("the affected node is %d ,%d\n",tnode->nodeid(),rnode->nodeid());
         newp = p->copy();
         calculatePosition(tnode,rnode,newp);
-        propdelay = get_pdelay(tnode, rnode);
-
         rifp = (rnode->ifhead()).lh_first;
+	propdelay = get_pdelay(tnode, rnode);
+	/*该方法能够一定程度降低冲突，但是也不能保证完全没有包冲突*/
+/*
+	double ran_numf = 0.0;
+	double random_backoff = 0.0;	
+	ran_numf =  rand()/ (double)(RAND_MAX);
+	random_backoff = ran_numf/250;
+	propdelay +=  random_backoff;*/
 
-        for (; rifp; rifp = rifp->nextnode()) {
-
-            printf("channel :node %d and node %d distance is %f propdelay is %f at time %f\n",mtnode->nodeid(),rnode->nodeid(),d1,propdelay,NOW);
-            s.schedule(rifp, newp, propdelay);
+	//hdr_UWALOHA* UWALOHAh = hdr_UWALOHA::access(p);
+        for (;rifp;rifp = rifp->nextnode()) {
+/*            printf("channel :node %d and node %d distance is %f propdelay is %f at time %f\n",   
+				mtnode->nodeid(),rnode->nodeid(),d1,propdelay,NOW);*/
+	    s.schedule(rifp, newp, propdelay);
         }
-
     }
 
     delete [] affectedNodes;
@@ -160,12 +150,8 @@ UnderwaterChannel::calculatePosition(Node *sender,Node* receiver, Packet* p)
     vbh->info.dz=dz;
 }
 
-void
-UnderwaterChannel::addNodeToList(MobileNode *mn)
-{
+void UnderwaterChannel::addNodeToList(MobileNode *mn){
     MobileNode *tmp;
-    //  printf("channel: new node :(%f,%f,%f)\n",mn->X(),mn->Y(),mn->Z());
-    // create list of mobilenodes for this channel
     if (xListHead_ == NULL) {
         fprintf(stderr, "INITIALIZE THE LIST xListHead\n");
         xListHead_ = mn;
@@ -180,8 +166,7 @@ UnderwaterChannel::addNodeToList(MobileNode *mn)
     numNodes_++;
 }
 
-void
-UnderwaterChannel::removeNodeFromList(MobileNode *mn) {
+void UnderwaterChannel::removeNodeFromList(MobileNode *mn) {
 
     MobileNode *tmp;
     // Find node in list
@@ -204,8 +189,7 @@ UnderwaterChannel::removeNodeFromList(MobileNode *mn) {
     fprintf(stderr, "Channel: node not found in list\n");
 }
 
-void
-UnderwaterChannel::sortLists(void) {
+void UnderwaterChannel::sortLists(void) {
     bool flag = true;
     MobileNode *m, *q;
 
@@ -328,10 +312,9 @@ UnderwaterChannel::updateNodesList(class MobileNode *mn, double oldX) {
 
 MobileNode **
 UnderwaterChannel::getAffectedNodes(MobileNode *mn, double radius,
-                                    int *numAffectedNodes)
-{
+                                    int *numAffectedNodes){
     double xmin, xmax, ymin, ymax;
-    double zmin,zmax;// add by peng xie
+    double zmin,zmax;
     int n = 0;
     MobileNode *tmp, **list, **tmpList;
 
@@ -387,24 +370,12 @@ UnderwaterChannel::getAffectedNodes(MobileNode *mn, double radius,
 }
 
 
-double
-UnderwaterChannel::get_pdelay(Node* tnode, Node* rnode)
-{
+double UnderwaterChannel::get_pdelay(Node* tnode, Node* rnode){
     // Scheduler	&s = Scheduler::instance();
     UnderwaterSensorNode* tmnode = (UnderwaterSensorNode*)tnode;
     UnderwaterSensorNode* rmnode = (UnderwaterSensorNode*)rnode;
     double propdelay = 0;
-
     propdelay = tmnode->propdelay(rmnode);
-
     assert(propdelay >= 0.0);
-
-    //if (propdelay == 0.0) {
-    /* if the propdelay is 0 b/c two nodes are on top of
-       each other, move them slightly apart -dam 7/28/98 */
-    //propdelay = 2 * DBL_EPSILON;
-    //printf ("propdelay 0: %d->%d at %f\n",
-    //	tmnode->address(), rmnode->address(), s.clock());
-    //	}
     return propdelay;
 }

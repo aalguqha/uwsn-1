@@ -3,40 +3,55 @@
 
 #include <packet.h>
 #include <random.h>
+#include <queue>
+#include <map>
+
+#include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
+#include <time.h>
 
 #include <timer-handler.h>
-
 #include <mac.h>
 #include "../underwatermac.h"
 #include "../underwaterchannel.h"
 #include "../underwaterpropagation.h"
-
-
-#include <queue>
-#include <map>
-
-using namespace std;
+#include "../../uw_common/uw_tools.h"
+#include "../../uw_routing/vectorbasedforward.h"
+#include "chanl_status_table.h"
 
 typedef double Time;
 #define CALLBACK_DELAY 0.001	//the interval between two consecutive sendings
-#define MAXIMUMCOUNTER 4
-//#define Broadcast -1
+//#define MAXIMUMCOUNTER 3
+const int MAXIMUMCOUNTER = 3;
 class UWALOHA;
+
+typedef struct{
+  double x;
+  double y;
+  double z;
+} pos_info;
+
 
 struct hdr_UWALOHA{
 	nsaddr_t SA;
 	nsaddr_t DA;
-
+	int ack_pkt_no;
+	double residual_energy;
+	double chnl_status_factor;
+	pos_info instant_pos;
+	
 	enum PacketType {
-		DATA,
-		ACK		
+		UW_DATA,
+		UW_ACK
 	} packet_type;
+	
 	static int offset_;
+	
 	inline static int& offset() {  return offset_; }
 	
 	inline static int size() {
-		return sizeof(nsaddr_t)*2 + 1 /*for packet_type*/;
+		return sizeof(nsaddr_t)*2 +sizeof(int)+2*sizeof(double) + sizeof(pos_info)+1; /*for packet_type*/
 	}
 
 	inline static hdr_UWALOHA* access(const Packet*  p) {
@@ -46,27 +61,27 @@ struct hdr_UWALOHA{
 };
 
 class UWALOHA_DataSendTimer: public TimerHandler{
-public:
+  public:
 	UWALOHA_DataSendTimer(UWALOHA* mac): TimerHandler() {
 		mac_ = mac;
 	}
 	//void resched(double delay);
 	Packet* pkt_;
 
-protected:
+  protected:
 	UWALOHA* mac_;
 	virtual void expire(Event *e);
 };
 
 class UWALOHA_WaitACKTimer: public TimerHandler{
-public:
+  public:
 	UWALOHA_WaitACKTimer(UWALOHA* mac): TimerHandler() {
 		mac_ = mac;
-		ack_times_ = 30;
+		ack_times_ = 1;
 	}
 	//void resched(double delay);
 
-protected:
+  protected:
 	UWALOHA* mac_;
 	int	 ack_times_;
 	virtual void expire(Event* e);
@@ -74,20 +89,20 @@ protected:
 
 
 class UWALOHA_BackoffTimer: public TimerHandler{
-public:
+  public:
 	UWALOHA_BackoffTimer(UWALOHA* mac): TimerHandler() {
 		mac_ = mac;
 	}
 	//void resched(double delay);
 
-protected:
+  protected:
 	UWALOHA* mac_;
 	virtual void expire(Event* e);
 };
 
 
 class UWALOHA_ACK_RetryTimer: public TimerHandler{
-public:
+  public:
 	UWALOHA_ACK_RetryTimer(UWALOHA* mac, Packet* pkt=NULL) {
 		mac_ = mac;
 		pkt_ = pkt;
@@ -102,7 +117,7 @@ public:
 		return id_;
 	}
 	
-protected:
+  protected:
 	UWALOHA* mac_;
 	Packet* pkt_;
 	long	id_;
@@ -110,28 +125,26 @@ protected:
 	virtual void expire(Event* e);
 };
 
-
 class UWALOHA_StatusHandler: public Handler{
-public:
+  public:
 	UWALOHA_StatusHandler(UWALOHA* mac): Handler() {
 		mac_ = mac;
 	}
 	bool&	is_ack() {
 		return is_ack_;
 	}
-protected:
+  protected:
 	UWALOHA* mac_;
 	bool	is_ack_;
 	virtual void handle(Event* e);
 };
 
-
 class UWALOHA_CallBackHandler: public Handler{
-public:
+  public:
 	UWALOHA_CallBackHandler(UWALOHA* mac): Handler() {
 		mac_ = mac;
 	}
-protected:
+  protected:
 	UWALOHA* mac_;
 	virtual void handle(Event* e);
 };
@@ -147,7 +160,6 @@ public:
 	
 	void	processRetryTimer(UWALOHA_ACK_RetryTimer* timer);
 protected:
-
 	enum {
 		PASSIVE,
 		BACKOFF,
@@ -155,8 +167,11 @@ protected:
 		WAIT_ACK,
 	}UWALOHA_Status;
 
+	EnergyModel* em() { return node()->energy_model(); }
+
 	double	Persistent;
-	int	ACKOn;
+	int ACKOn;
+	double AckSizeRatio;
 	Time	Min_Backoff;
 	Time 	Max_Backoff;
 	Time	WaitACKTime;
@@ -178,17 +193,19 @@ protected:
 
 	queue<Packet*>	PktQ_;
 	map<long, UWALOHA_ACK_RetryTimer*> RetryTimerMap_;   //map timer id to the corresponding pointer
-
+	/*shaoyang*/
+	Packet* makeACK(nsaddr_t,const hdr_uwvb*);	
+	int passBack(Packet* pkt,int sz);
+	int WAIT_ACK_NODE;
+	UWTools uw_tools;
+	Chanl_Status_Table* chan_status_table;
+	
+	/*shaoyang*/
 	Event	status_event;
 	Event 	Forward_event;
 	Event	callback_event;
-
-	Packet* makeACK(nsaddr_t RTS_Sender);
-
 	void	replyACK(Packet* pkt);
-
 	void	sendACK(Time DeltaTime);
-
 	void	sendPkt(Packet* pkt);//why?
 	void	sendDataPkt();
 //	void 	DropPacket(Packet*);
@@ -197,24 +214,21 @@ protected:
 	void	processWaitACKTimer(Event *e);
 	void	processPassive();
 //	void	processBackoffTimer();
-
 	
 	void	retryACK(Packet* ack);
-
 	void	StatusProcess(bool is_ack);
 	void	BackoffProcess();
 	void	CallbackProcess(Event* e);
 
 	bool	CarrierDected();
 //	void	doBackoff(Event *e);
-
-
+	/*start shaoyang*/
+	
 	friend class UWALOHA_BackoffTimer;
 	friend class UWALOHA_WaitACKTimer;
 	friend class UWALOHA_CallBackHandler;
 	friend class UWALOHA_StatusHandler;
 	friend class UWALOHA_ForwardHandler;
-
 };
 
 #endif
